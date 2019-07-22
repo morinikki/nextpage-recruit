@@ -5,6 +5,96 @@ html(lang="ja")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title 採用情報 | NEXPAGE
-    body
+    body#top
         include _includes/_header.pug
+        //- 
+        .hero-area
+            p 2021
+            h2 私たちと一緒に
+                br
+                | "ものづくり"を仕事にしませんか？
+            p キャッチ
+            .scroll-arrow
+        //- 
+        main.top-content
+            section.company-info
+                .content-catch
+                    h2 私たちと一緒に
+                        br
+                        | "ものづくり"を仕事にしませんか？
+                .info-col
+                    ul
+                        li
+                            p 楽しくクリエイティブな仕事がしたい!
+                        li
+                            p 仕事を通じて、会社と一緒に自分を成長させたい!
+                        li
+                            p ウェブサイトでお客様を元気にさせたい!
+                .det-btn
+                    a(href="#") 詳しく見る
+            section.concept
+                .content-catch
+                    h2 つくる、たのしむ、やくだつ
+                    p ネクストページでは、この3つをコンセプトに日々業務に取り組んでいます。
+                .content-catch
+                    h3 ネクストページの3つの強み
+                    p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                .concept-inner
+                    ul
+                        li
+                            figure
+                                img(src="", alt="")
+                                figcaption クリエイティブ
+                        li
+                            figure
+                                img(src="", alt="")
+                                figcaption 社員重視
+                        li
+                            figure
+                                img(src="", alt="")
+                                figcaption 拡大思考
+            section.business-content
+                .content-catch
+                    h2 業務内容紹介
+                    p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                .bc-img
+                    img(src="", alt="")
+                .det-btn
+                    a(href="#") 詳しく見る
+            section.lower-links
+                .link-col#link-flow
+                    .link-text
+                        h3 選考の流れ
+                        p 選考フローや、採用スケジュールなど
+                        .link-det
+                            p
+                                a(href="#") 詳しく見る
+                    .link-img
+                        img(src="", alt="")
+                .link-col#link-rec
+                    .link-text
+                        h3 募集要項
+                        p 募集要項・必須スキルなど
+                        .link-det
+                            p
+                                a(href="#") 詳しく見る
+                    .link-img
+                        img(src="", alt="")
+                .link-col#link-message
+                    .link-text
+                        h3 メッセージ
+                        p 実際の社員の声や代表者メッセージ
+                        .link-det
+                            p
+                                a(href="#") 詳しく見る
+                    .link-img
+                        img(src="", alt="")
+        //- 
         include _includes/_footer.pug
+        //- 
+        .follow#entry-btn
+            a(href="#")
+                em ENTRY
+        .follow#contact-btn
+            a(href="#")
+                em CONTACT
