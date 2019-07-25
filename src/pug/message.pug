@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title メッセージ |株式会社 NEXPAGE
+        link(rel="stylesheet", href="css/reset.css")
+        link(rel="stylesheet", href="css/style.css")
+    body#message
+        .wrap
+            include _includes/_header.pug
+            //- 
+            .lower-visual
+                h2.lv-tit メッセージ
+                p.lv-cap 実際の社員の声をお届けします。
+            //- 
+            .pagelink-wrap
+                .pagelink
+                    p
+                        a(href="#staff-slides") スタッフ紹介
+                .pagelink
+                    p
+                        a(href="#member-mess") 社員からのメッセージ
+                .pagelink
+                    p
+                        a(href="#presi-mess") 代表からのメッセージ
+            //- 
+            section.staff-slides#staff-slides
+                .staff-card
+                    .staff-img
+                        img(src="", alt="")
+                    .staff-pro
+                        p name
+                        p name
+                        p job
+                        p job
+            //- 
+            section.members-mess#member-mess
+                h3 社員からのメッセージ
+                .member-col#member_01
+                    .member-face
+                        img(src="", alt="")
+                    .member-pro
+                        p MEMBER1
+                        p
+                            small Designer/デザイナー
+                        p name
+                        .member-text
+                            h4 title
+                            p テキストテキストテキストテキストテキストテキストテキスト
+                .member-col#member_02
+                    .member-face
+                        img(src="", alt="")
+                    .member-pro
+                        p MEMBER1
+                        p
+                            small Designer/デザイナー
+                        p name
+                        .member-text
+                            h4 title
+                            p テキストテキストテキストテキストテキストテキストテキスト
+                .member-col#member_03
+                    .member-face
+                        img(src="", alt="")
+                    .member-pro
+                        p MEMBER1
+                        p
+                            small Designer/デザイナー
+                        p name
+                        .member-text
+                            h4 title
+                            p テキストテキストテキストテキストテキストテキストテキスト
+                .btn-int
+                    a(href="#") 社員インタビューページへ
+            //- 
+            section.presi-mess#presi-mess
+                .presi-img
+                    img(src="", alt="")
+                h4 title
+                p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            //- 
+            include _includes/_footer.pug
+            //- 
