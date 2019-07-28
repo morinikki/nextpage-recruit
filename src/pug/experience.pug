@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title インターンシップ体験談 |株式会社 NEXPAGE
+        link(rel="stylesheet", href="css/reset.css")
+        link(rel="stylesheet", href="css/style.css")
+    body#experience
+        .wrap
+            include _includes/_header.pug
+            //- 
+            .lower-visual
+                h2.lv-tit インターンシップ体験談
+                p.lv-cap 実際に弊社でインターンシップに参加した方々の実際の声です！！
+            //- 
+            .years-select
+                .selector
+                    select(name="year" id="year")
+                        option(value="1") 2018年度
+                        option(value="2") 2017年度
+                        option(value="3") 2016年度
+                        option(value="4") 2015年度
+                        option(value="5") 2014年度
+            //- 
+            .exp-wrap
+                .exp-col
+                    .exp-info
+                        img(src="", alt="")
+                        p
+                            em 実際に担当して頂いた仕事
+                        p サイト表示確認、更新チェック、サイトチェック
+                        p
+                            em 期間
+                        p 2018年8月27日〜9月7日
+                    .exp-text
+                        p 〇〇さん
+                        h4 title
+                        p.exp-in サンプルテキスト。ここにはサンプルテキストが入ります。サンプルテキスト。ここにはサンプルテキストが入ります。サンプルテキスト。ここにはサンプルテキストが入ります。サンプルテキスト。ここにはサンプルテキストが入ります。
+            //- 
+            include _includes/_footer.pug
