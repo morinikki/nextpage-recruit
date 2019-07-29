@@ -1,0 +1,37 @@
+html {
+    font-size: 62.5%;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+    z-index: 999;
+    .header-logo {
+        margin-left: -158px;
+    }
+    .global-nav {
+        ul {
+            display: flex;
+            a {
+                margin: 0 0 0 50px;
+                font-size: 1.4rem;
+                letter-spacing: 0.2rem;
+                color: #fff;
+                text-decoration: none;
+            }
+            .close {
+                display: none;
+            }
+        }
+        .btn-menu {
+            display: none;
+        }
+    }
+}

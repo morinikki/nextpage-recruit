@@ -6,25 +6,30 @@ html(lang="ja")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title 採用情報 |株式会社 NEXPAGE
         link(rel="stylesheet", href="css/reset.css")
+        link(rel="stylesheet", href="css/common.css")
+        link(rel="stylesheet", href="css/top.css")
         link(rel="stylesheet", href="css/style.css")
     body#top
         .wrap
             include _includes/_header.pug
             //- 
             .hero-area
-                p 2021
-                h2 私たちと一緒に
-                    br
-                    | "ものづくり"を仕事にしませんか？
-                p キャッチ
+                .hero-image
+                .mv-catch
+                    p.main-catch Creating leads to results
+                    p.sub-catch 結果につながるものづくりを
+                .mv-box
                 .scroll-arrow
             //- 
             main.top-content
                 section.company-info
-                    .content-catch
+                    .phil-col
+                        p.phil Philosophy
+                        .text-deco
                         h2 私たちと一緒に
+                            span "ものづくり"
                             br
-                            | "ものづくり"を仕事にしませんか？
+                            | を仕事にしませんか
                     .info-col
                         ul
                             li
