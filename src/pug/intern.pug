@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title インターンシップ|株式会社 NEXTPAGE
+        link(rel="stylesheet", href="css/reset.css")
+        link(rel="stylesheet", href="css/style.css")
+    body#intern
+        .wrap
+            include _includes/_header.pug
+            //-
+            .lower-visual
+                h2.lv-tit インターンシップ
+                p.lv-cap インターンシップを通じて弊社がどんな企業か体験してみませんか？
+            //-
+            .pagelink-wrap
+                .pagelink
+                    p
+                        a(href="#learn") 体験できること
+                .pagelink
+                    p
+                        a(href="#detail") 募集要項
+                .pagelink
+                    p
+                        a(href="#experience") 体験談
+                .pagelink
+                    p
+                        a(href="") 選考について
+            //-
+            section.learn#learn
+                .content-catch
+                    h3 経験できること・学べること
+                    p 未経験からでもOK。経験豊富な先輩が、皆さんの成長をお手伝いします。
+                table.comp-table
+                    tr
+                        th デザイン
+                        td illustlatarや、photoshopをつかってのwebデザイン制作や、フライヤーなどの制作。
+                    tr
+                        th コーディング
+                        td Wordpressの修正作業や、サイトのレイアウトチェック・修正、Html構成などもしてもらいます。
+            //-
+            section.detail#detail
+                .content-catch
+                    h3 募集要項
+                    p 申し込みは、エントリーフォームのインターンシップ申し込みからご応募ください。
+                table.comp-table
+                    tr
+                        th 日程
+                        td
+                            p 随時受付中
+                            p ※新卒採用の選考時期など、一部受け入れ不可な場合もあります。ご理解のほどよろしくお願いいたします。
+                        th 持ち物
+                        td
+                            p 筆記用具・ノートパソコン
+                            p ※ノートパソコンを持参可能な方限定とさせていただきます。
+                        th その他
+                        td 服装も私服でご参加ください。
+            //-
+            section.experience#experience
+                .content-catch
+                    h3 インターンシップ体験談
+                    p ネクストページは、優秀なWeb制作者をできるだけ多く世の中に輩出することを、
+                    br
+                    |社会貢献の一つと考えており、随時インターン生を受け入れています。
+                .comp-btn
+                    p 詳しく見る
+            //-
+            section.select#select
+                .content-catch
+                    h3 選考について
+                    p 選考については下記のページをご覧ください。
+                .comp-btn
+                    p 選考の流れ
+            include _includes/_footer.pug
+            //-
