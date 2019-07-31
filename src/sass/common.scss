@@ -6,8 +6,10 @@ html {
     width: 100%;
 }
 
+
+
 .header {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,6 +19,7 @@ html {
         margin-left: -158px;
     }
     .global-nav {
+        margin: 0 0 0 240px;
         ul {
             display: flex;
             a {

@@ -7,7 +7,7 @@ html {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -20,6 +20,10 @@ html {
 
 .header .header-logo {
   margin-left: -158px;
+}
+
+.header .global-nav {
+  margin: 0 0 0 240px;
 }
 
 .header .global-nav ul {
