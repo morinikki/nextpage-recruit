@@ -162,7 +162,7 @@
     .det-btn {
         display: flex;
         align-items: center;
-        margin: 100px auto 0;
+        margin: 100px auto 100px;
         width: 231px;
         height: 61px;
         border-radius: 28px;
@@ -187,6 +187,77 @@
             background: #009944;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+    }
+    .concept {
+        height: 860px;
+        background: #eee;
+        .content-catch {
+            text-align: center;
+            h2 {
+                padding: 140px 0 40px 0;
+                font-size: 3rem;
+                font-weight: bold;
+                letter-spacing: 0.3rem;
+                background: url(/images/top/h2-concept-deco@2x.png) no-repeat;
+                background-size: 112px;
+                background-position: 32% 75%;
+                .catch-color {
+                    color: #009944;
+                }
+            }
+            p {
+                margin: 0 0 80px 0;
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+            h3 {
+                margin: 0 0 50px 0;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+        .concept-inner {
+            width: 85%;
+            margin: 0 auto;
+            ul {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .business-content {
+        .business-catch {
+            text-align: center;
+            h2 {
+                margin: 100px auto 0px;
+                font-size: 3rem;
+                font-weight: bold;
+                letter-spacing: 0.3rem;
+                span {
+                    color: #009944;
+                }
+            }
+            p {
+                margin: 50px 0 20px 0;
+                font-size: 1.6rem;
+            }
+        }
+        .bc-img {
+            position: relative;
+            text-align: center;
+            img {
+                box-shadow: 0 0 8px #ccc;
+            }
+            .bc-shadow {
+                position: absolute;
+                top: 130px;
+                right: 250px;
+                width: 800px;
+                height: 300px;
+                background: linear-gradient(to bottom,#00bbcc,#99cc00);
+                z-index: -1;
+            }
         }
     }
 }
