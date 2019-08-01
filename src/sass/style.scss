@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+// *includes
 @import "_includes/reset";
 @import "_includes/base";
 @import "_includes/common";
+
+// *pages
+@import "_pages/top.scss";

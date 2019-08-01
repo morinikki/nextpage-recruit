@@ -15,14 +15,13 @@
   top: 460px;
   left: 100px;
   width: 700px;
-  height: 136px;
+  padding: 40px 0;
   z-index: 991;
   background: #fff;
   opacity: 0.8;
 }
 
 .hero-area .mv-catch .main-catch {
-  margin: 35px 0 0 0;
   text-align: center;
   font-size: 4rem;
   font-family: 'Noto Sans', sans-serif;
@@ -32,11 +31,11 @@
 }
 
 .hero-area .mv-catch .sub-catch {
-  margin: 10px 0 0 0;
+  margin: 15px 0 0 0;
   text-align: center;
-  font-size: 2rem;
-  letter-spacing: 0.3rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  letter-spacing: 0.3rem;
 }
 
 .hero-area .mv-box {
@@ -55,19 +54,20 @@
 
 .top-content .phil-col {
   position: relative;
-  padding: 80px 140px;
+  padding: 80px 140px 200px;
   background: #eee;
 }
 
 .top-content .phil-col .phil {
   font-size: 6rem;
   font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
   letter-spacing: 0.7rem;
   color: #c6c5c5;
 }
 
 .top-content .phil-col .text-deco {
-  margin: 30px 0;
+  margin: 50px 0;
   width: 20px;
   height: 5px;
   background: #c6c5c5;
@@ -92,15 +92,14 @@
   margin: 86px 0 0 0;
   width: 500px;
   font-size: 1.6rem;
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  line-height: 3.5rem;
+  letter-spacing: 1.2px;
+  line-height: 3.2rem;
   z-index: 990;
 }
 
 .top-content .phil-col .p-box {
   position: absolute;
-  top: 350px;
+  top: 380px;
   left: 265px;
   width: 605px;
   height: 307px;
@@ -187,23 +186,37 @@
 }
 
 .top-content .det-btn {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
   margin: 100px auto 0;
-  width: 230px;
-  height: 60px;
+  width: 231px;
+  height: 61px;
   border-radius: 28px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
+}
+
+.top-content .det-btn .btn-inner {
+  background: #fff;
+  width: 225px;
+  height: 55px;
+  margin: 0 auto;
+  border-radius: 26px;
 }
 
 .top-content .det-btn a {
   text-align: center;
   display: block;
   padding: 0.8em;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  font-weight: bold;
   letter-spacing: 0.3rem;
   line-height: 4rem;
   text-decoration: none;
-  background: #fff;
+  background: #009944;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
