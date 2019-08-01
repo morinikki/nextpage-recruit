@@ -23,14 +23,14 @@ const plumber = require('gulp-plumber');
 gulp.task('default', ['browser-sync', 'pug', 'sass', 'stylus', 'js', 'watch']);
 
 gulp.task('watch', () => {
+	gulp.watch(['./src/pug/**'], () => {
+		gulp.start(['pug']);
+	});
 	gulp.watch(['./src/stylus/**'], () => {
 		gulp.start(['stylus']);
 	});
 	gulp.watch(['./src/sass/**'], () => {
 		gulp.start(['sass']);
-	});
-	gulp.watch(['./src/pug/**'], () => {
-		gulp.start(['pug']);
 	});
 });
 

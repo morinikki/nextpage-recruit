@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 html(lang="ja")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title 採用情報 |株式会社 NEXPAGE
-        link(rel="stylesheet", href="css/reset.css")
+    include _includes/_head.pug
+        title 採用情報 | 株式会社 NEXPAGE
         link(rel="stylesheet", href="css/common.css")
         link(rel="stylesheet", href="css/top.css")
-        link(rel="stylesheet", href="css/style.css")
     body#top
         .wrap
             include _includes/_header.pug
-            //- 
             .hero-area
                 .hero-image
+                    img(src="images/top/top_main-visual.jpg")
                 .mv-catch
                     p.main-catch Creating leads to results
                     p.sub-catch 結果につながるものづくりを
                 .mv-box
                 .scroll-arrow
-            //- 
             main.top-content
                 section.company-info
                     .phil-col
