@@ -375,6 +375,50 @@ body {
           justify-content: space-between;
 }
 
+.top-content .concept .concept-inner ul li {
+  position: relative;
+}
+
+.top-content .concept .concept-inner ul li .bg-sankaku {
+  position: absolute;
+  top: 12px;
+}
+
+.top-content .concept .concept-inner ul li .bg-sankaku .inner {
+  overflow: hidden;
+  position: relative;
+  left: -34px;
+  width: 192px;
+  height: 385px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.top-content .concept .concept-inner ul li .bg-sankaku .inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 107px;
+  left: -115px;
+  width: 225px;
+  height: 225px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  opacity: 0.8;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.top-content .concept .concept-inner ul li .concept-text {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: #fff;
+}
+
 .top-content .business-content .business-catch {
   text-align: center;
 }

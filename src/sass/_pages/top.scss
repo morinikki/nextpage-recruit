@@ -223,6 +223,43 @@
             ul {
                 display: flex;
                 justify-content: space-between;
+                li {
+                    position: relative;
+                    .bg-sankaku {
+                        position: absolute;
+                        top: 12px;
+                        .inner {
+                            overflow: hidden;
+                            position: relative;
+                            left: -34px;
+                            width: 192px;
+                            height: 385px;
+                            // background: #f6f6f6;
+                            transform: rotate(135deg);
+                            &::after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: 107px;
+                                left: -115px;
+                                width: 225px;
+                                height: 225px;
+                                background: linear-gradient(to bottom,#00bbcc,#99cc00);
+                                opacity: 0.8;
+                                transform: rotate(-135deg);
+                            }
+                        }
+                    }
+                    .concept-text {
+                        position: absolute;
+                        left: 20px;
+                        bottom: 30px;
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        letter-spacing: 0.2rem;
+                        color: #fff;
+                    }
+                }
             }
         }
     }
