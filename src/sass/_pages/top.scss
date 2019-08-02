@@ -297,4 +297,50 @@
             }
         }
     }
+    .lower-links {
+        padding-top: 40px;
+        padding-bottom: 120px;
+        background: #eee;
+        .link-col {
+            display: flex;
+            align-items: center;
+            width: 75%;
+            margin: 110px auto 0;
+            .link-text {
+                width: 500px;
+                height: 314px;
+                background: linear-gradient(to bottom,#00bbcc,#99cc00);
+                h3 {
+                    margin: 60px 0 20px 30px;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    letter-spacing: 0.4rem;
+                    color: #fff;
+                }
+                .link-deco {
+                    width: 18px;
+                    height: 5px;
+                    margin: 0 0 20px 30px;
+                    background: #fff;
+                }
+                p {
+                    margin: 0 0 0 30px;
+                    font-size: 1.6rem;
+                    letter-spacing: 0.2rem;
+                    color: #fff;
+                }
+                .link-det {
+                    margin: 100px 0 0 0;
+                    a {
+                        font-size: 1.4rem;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .link-img {
+                box-shadow: 0 0 8px rgb(146, 146, 146);
+            }
+        }
+    }
 }
