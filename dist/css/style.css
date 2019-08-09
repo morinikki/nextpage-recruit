@@ -188,6 +188,13 @@ section {
 
 .lower-visual {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lower-visual .lv-img img {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .lower-visual .lv-tri {
@@ -197,7 +204,8 @@ section {
 }
 
 .lower-visual .lv-tri img {
-  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .lower-visual .lv-text {
