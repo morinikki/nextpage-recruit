@@ -344,3 +344,27 @@
         }
     }
 }
+
+#entry-btn,#contact-btn {
+    position: fixed;
+    top: 70%;
+    right: 20px;
+    z-index: 950;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 60px;
+    background: linear-gradient(to bottom,#00bbcc,#99cc00);
+    border-radius: 30px;
+    a {
+        font-size: 1.4rem;
+        font-family: 'Noto Sans', sans-serif;
+        text-decoration: none;
+        letter-spacing: 1.2px;
+        color: #fff;
+    }
+}
+#contact-btn {
+    margin-top: 80px;
+}
