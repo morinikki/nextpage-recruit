@@ -90,7 +90,7 @@ body {
 }
 
 .header .global-nav ul a {
-  margin: 0 0 0 50px;
+  margin: 0 0 0 40px;
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   color: #fff;
@@ -179,6 +179,92 @@ body {
   font-size: 1.4rem;
   color: #fff;
   background: #ccc;
+}
+
+section {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.lower-visual {
+  position: relative;
+}
+
+.lower-visual .lv-tri {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lower-visual .lv-tri img {
+  max-width: 100%;
+}
+
+.lower-visual .lv-text {
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+}
+
+.lower-visual .lv-text .lv-tit {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.6rem;
+  color: #fff;
+}
+
+.lower-visual .lv-text .lv-cap {
+  text-align: right;
+  margin: 10px 0 0 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.pagelink-wrap {
+  width: 35%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.pagelink-wrap .pagelink {
+  position: relative;
+}
+
+.pagelink-wrap .pagelink::after {
+  content: "";
+  display: block;
+  margin: 6px 0 0 0;
+  padding-right: 45px;
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to right, #00bbcc, #99cc00);
+}
+
+.pagelink-wrap .pagelink p a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  color: #000;
+}
+
+.pagelink-wrap .pagelink p a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20%;
+  right: -40px;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #00bbcc;
+  border-bottom: 2px solid #00bbcc;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .hero-area {
