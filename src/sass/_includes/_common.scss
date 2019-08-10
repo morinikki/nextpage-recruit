@@ -176,7 +176,7 @@
 // 
 // 下層ページリンク
 .pagelink-wrap {
-    width: 35%;
+    width: 48%;
     margin: 50px auto 200px;
     display: flex;
     justify-content: space-between;
@@ -251,7 +251,14 @@
                 font-weight: bold;
             }
             td {
+                padding: 25px 0 25px 40px;
+                p {
+                    margin-bottom: 10px;
+                }
             }
         }
     }
 }
+// 
+
+// ボタン

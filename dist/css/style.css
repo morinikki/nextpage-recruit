@@ -278,7 +278,7 @@ body {
 }
 
 .pagelink-wrap {
-  width: 35%;
+  width: 48%;
   margin: 50px auto 200px;
   display: -webkit-box;
   display: flex;
@@ -366,6 +366,14 @@ body {
   text-align: left;
   padding: 25px 0 25px 20px;
   font-weight: bold;
+}
+
+.content-wrap .comp-table tr td {
+  padding: 25px 0 25px 40px;
+}
+
+.content-wrap .comp-table tr td p {
+  margin-bottom: 10px;
 }
 
 .hero-area {
@@ -897,4 +905,82 @@ body {
 .portfolio .port-col li figure figcaption a span {
   font-size: 1.4rem;
   font-weight: normal;
+}
+
+.experience p {
+  line-height: 3rem;
+}
+
+.experience .det-btn {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 231px;
+  height: 61px;
+  margin: 0 auto;
+  border-radius: 28px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
+}
+
+.experience .det-btn .btn-inner {
+  background: #fff;
+  width: 225px;
+  height: 55px;
+  margin: 0 auto;
+  border-radius: 26px;
+}
+
+.experience .det-btn a {
+  text-align: center;
+  display: block;
+  padding: 0.8em;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  line-height: 4rem;
+  text-decoration: none;
+  background: #009944;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.select .det-btn {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 231px;
+  height: 61px;
+  margin: 0 auto;
+  border-radius: 28px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
+}
+
+.select .det-btn .btn-inner {
+  background: #fff;
+  width: 225px;
+  height: 55px;
+  margin: 0 auto;
+  border-radius: 26px;
+}
+
+.select .det-btn a {
+  text-align: center;
+  display: block;
+  padding: 0.8em;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  line-height: 4rem;
+  text-decoration: none;
+  background: #009944;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
