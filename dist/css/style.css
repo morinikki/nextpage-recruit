@@ -181,9 +181,11 @@ body {
   background: #ccc;
 }
 
-section {
+.sect-bg {
   width: 85%;
   margin: 0 auto;
+  padding: 80px 0 40px 0;
+  background: #f6f6f6;
 }
 
 .lower-visual {
@@ -194,7 +196,6 @@ section {
 
 .lower-visual .lv-img img {
   margin: 0 auto;
-  width: 100%;
 }
 
 .lower-visual .lv-tri {
@@ -273,6 +274,51 @@ section {
   border-bottom: 2px solid #00bbcc;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.content-catch {
+  text-align: center;
+}
+
+.content-catch h3 {
+  margin: 0 0 20px 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.content-catch h3 span {
+  color: #009944;
+}
+
+.content-catch p {
+  margin: 0 0 40px 0;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 80px 75px;
+  background: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.content-wrap .comp-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to right, #00bbcc, #99cc00);
+}
+
+.content-wrap .comp-table tr {
+  background: #fff;
+}
+
+.content-wrap .comp-table tr th {
+  text-align: left;
+  padding: 25px 0 25px 20px;
+  font-weight: bold;
 }
 
 .hero-area {
@@ -715,4 +761,37 @@ section {
 
 #contact-btn {
   margin-top: 80px;
+}
+
+#service-content {
+  width: 100%;
+}
+
+#service-content .service-list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#service-content .service-list li {
+  width: 45%;
+  margin: 0 0 0 10px;
+  padding: 25px 0 25px 0px;
+  font-weight: bold;
+}
+
+#service-content .service-list li::after {
+  content: "";
+  display: block;
+  margin: 25px 0 0 0;
+  height: 1px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to right, #00bbcc, #99cc00);
+}
+
+#service-content p {
+  font-size: 1.4rem;
 }

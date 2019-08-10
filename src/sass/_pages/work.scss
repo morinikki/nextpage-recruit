@@ -1,0 +1,28 @@
+#service-content {
+    width: 100%;
+    .service-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            width: 45%;
+            margin: 0 0 0 10px;
+            padding: 25px 0 25px 0px;
+            font-weight: bold;
+            &::after {
+                content: "";
+                display: block;
+                margin: 25px 0 0 0;
+                height: 1px;
+                width: 100%;
+                background: linear-gradient(to right,#00bbcc,#99cc00);
+            }
+        }
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}
+.portfolio {
+    
+}
