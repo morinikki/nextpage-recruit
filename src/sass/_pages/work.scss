@@ -24,5 +24,50 @@
     }
 }
 .portfolio {
-    
+    width: 85%;
+    margin: 80px auto;
+    .content-catch {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    .port-col {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            width: 33.3%;
+             margin: 40px 0;
+            figure {
+                position: relative;
+                .port-img {
+                    margin-bottom: 30px;
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        bottom: 54px;
+                        right: 40px;
+                        width: 350px;
+                        height: 188px;
+                        background: linear-gradient(to bottom,#00bbcc,#99cc00);
+                        z-index: -1;
+                    }
+                }
+                figcaption {
+                    a {
+                        margin: 40px 0;
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: #000;
+                        span {
+                            font-size: 1.4rem;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
