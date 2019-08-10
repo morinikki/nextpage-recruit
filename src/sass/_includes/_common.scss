@@ -30,6 +30,36 @@
         }
     }
 }
+.under-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+    background: #fff;
+    z-index: 999;
+    .header-logo {
+        margin-left: -158px;
+    }
+    .global-nav {
+        margin: 0 0 0 240px;
+        ul {
+            display: flex;
+            a {
+                margin: 0 0 0 40px;
+                font-size: 1.4rem;
+                letter-spacing: 0.2rem;
+                color: #000;
+                text-decoration: none;
+            }
+            .close {
+                display: none;
+            }
+        }
+        .btn-menu {
+            display: none;
+        }
+    }
+}
 
 .footer {
     .footer-corp {
@@ -119,6 +149,11 @@
             width: 100%;
         }
     }
+    .lv-gray {
+        position: absolute;
+        bottom: -167px;
+        right: 0;
+    }
     .lv-text {
         position: absolute;
         bottom: 120px;
@@ -142,7 +177,7 @@
 // 下層ページリンク
 .pagelink-wrap {
     width: 35%;
-    margin: 50px auto;
+    margin: 50px auto 200px;
     display: flex;
     justify-content: space-between;
     .pagelink {

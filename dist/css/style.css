@@ -105,6 +105,47 @@ body {
   display: none;
 }
 
+.under-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 40px 200px;
+  background: #fff;
+  z-index: 999;
+}
+
+.under-header .header-logo {
+  margin-left: -158px;
+}
+
+.under-header .global-nav {
+  margin: 0 0 0 240px;
+}
+
+.under-header .global-nav ul {
+  display: -webkit-box;
+  display: flex;
+}
+
+.under-header .global-nav ul a {
+  margin: 0 0 0 40px;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.under-header .global-nav ul .close {
+  display: none;
+}
+
+.under-header .global-nav .btn-menu {
+  display: none;
+}
+
 .footer .footer-corp {
   display: -webkit-box;
   display: flex;
@@ -209,6 +250,12 @@ body {
   width: 100%;
 }
 
+.lower-visual .lv-gray {
+  position: absolute;
+  bottom: -167px;
+  right: 0;
+}
+
 .lower-visual .lv-text {
   position: absolute;
   bottom: 120px;
@@ -232,7 +279,7 @@ body {
 
 .pagelink-wrap {
   width: 35%;
-  margin: 50px auto;
+  margin: 50px auto 200px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
