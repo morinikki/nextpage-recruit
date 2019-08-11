@@ -4,11 +4,18 @@ html(lang="ja")
         title 会社情報 | 株式会社 NEXPAGE
     body#company
         .wrap
-            include _includes/_header.pug
+            include _includes/_under-header.pug
             //- 
             .lower-visual
-                h2.lv-tit 会社情報
-                p.lv-cap ネクストページについてご紹介します。
+                .lv-img
+                    img(src="images/work/work_hero.jpg", alt="業務")
+                .lv-tri
+                    img(src="images/common/bg_triangle.png", alt="title")
+                .lv-gray
+                    img(src="images/common/bg_gray.png", alt="title")
+                .lv-text
+                    h2.lv-tit Company
+                    p.lv-cap 会社概要
             //- 
             .pagelink-wrap
                 .pagelink
@@ -17,13 +24,14 @@ html(lang="ja")
                 .pagelink
                     p
                         a(href="#comp-data") 会社概要
-            //- 
             section.comp-intro#comp-intro
-                .content-catch
-                    h3 ネクストページは神戸・東京・京都のホームページ制作会社です。
-                    p 私たちはホームページ制作のプロとしてお客様に提案を行います。ネクストページは、社員の半数以上が20代。若手が多く活躍している会社です。女性比率が約7割と、女性にも働きやすい環境。スタッフは現在26名。数年後の30名規模をマイルストーンとして、100名体制を目指しています。目標達成のため、社員が一丸となって進化し続けている会社です。柔軟で熱い気持ちを持った方。ご応募をお待ちしています。未経験からでもOK。経験豊富な先輩が、皆さんの成長をお手伝いします。私たちと一緒にこれからのネクストページを作っていきませんか
-                .comp-video
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KPRNFvdKg0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                h3 Production
+                .comp-wrap
+                    .comp-img
+                        img(src="images/company/company_production_keikun.jpg", alt="けいくん")
+                    .intro-text
+                        h3 ネクストページは神戸・東京・京都を中心にクオリティにこだわった制作を行っています。
+                        p 経営理念である「つくる、たのしむ、やくだつ」を、一緒に実現できる仲間を求めて、採用活動を行っています。私たちは将来にわたって、お客様から必要とされる会社でありたいと思っています。私たちの仕事には、様々な分野の専門家が力を合わせるチームプレイが必要不可欠。お客様に、より大きなご満足をご提供するために、チームワークを発揮できるよう、規模を重視した拡大路線をとっています。それぞれ、高い実力を持ったスペシャリストが、抜群のチームワークで仕事をすること。それが、私たちの仕事を進めるうえでの理想形と考えています。
             section.comp-adv#comp-adv
                 .content-catch
                     h3 ネクストページの3つの強み
