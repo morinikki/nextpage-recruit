@@ -1,0 +1,87 @@
+.years-select .selector select {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.exp-wrap {
+  margin: 200px auto 0;
+}
+
+.exp-wrap .exp-col {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.exp-wrap .exp-col .exp-info {
+  width: 45%;
+}
+
+.exp-wrap .exp-col .exp-info .exp-img {
+  position: relative;
+  z-index: 999;
+}
+
+.exp-wrap .exp-col .exp-info .exp-img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 360px;
+  height: 250px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  z-index: -1;
+}
+
+.exp-wrap .exp-col .exp-info em {
+  font-weight: bold;
+}
+
+.exp-wrap .exp-col .exp-info p {
+  margin: 10px 0;
+  line-height: 2.5rem;
+}
+
+.exp-wrap .exp-col .exp-text {
+  width: 55%;
+}
+
+.exp-wrap .exp-col .exp-text .ex-name {
+  margin: 30px 0;
+  font-size: 2.2rem;
+}
+
+.exp-wrap .exp-col .exp-text h4 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.exp-wrap .exp-col .exp-text h4::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to right, #00bbcc, #99cc00);
+}
+
+.exp-wrap .exp-col .exp-text .exp-inner p {
+  margin: 0 0 20px 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.exp-content {
+  margin: 0 auto 77px;
+}
