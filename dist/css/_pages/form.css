@@ -87,6 +87,25 @@ input, button, textarea, select {
   background: #f6f6f6;
 }
 
+.contact-form form table tr td label {
+  display: -webkit-box;
+  display: flex;
+}
+
+.contact-form form table tr td label .radio {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.contact-form form table tr td label p {
+  margin-right: 30px;
+}
+
 .contact-form form table tr td #input-tel {
   width: 250px;
 }

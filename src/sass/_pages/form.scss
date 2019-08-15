@@ -77,6 +77,20 @@ input, button, textarea, select {
                         height: 30px;
                         background: #f6f6f6;
                     }
+                    label {
+                        display: flex;
+                        .radio {
+                            margin-right: 20px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            border: 1px solid #000;
+                            transform: translateY(-2px);
+                        }
+                        p {
+                            margin-right: 30px;
+                        }
+                    }
                     #input-tel {
                         width: 250px;
                     }

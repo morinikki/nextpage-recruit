@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap" rel="stylesheet"/>
-    <title>お問い合わせ | 株式会社 NEXPAGE</title>
+    <title>エントリー | 株式会社 NEXPAGE</title>
   </head>
-  <body id="contact">
+  <body id="entry">
     <div class="wrap">
       <header class="under-header">
         <h1 class="header-logo"><a href="index.html"><img src="images/common/np_logo.svg" alt="logo" width="175px"/></a></h1>
@@ -36,18 +36,17 @@
         <div class="lv-tri"><img src="images/common/bg_triangle.png" alt="title"/></div>
         <div class="lv-gray"><img src="images/common/bg_gray.png" alt="title"/></div>
         <div class="lv-text">
-          <h2 class="lv-tit">Contact</h2>
-          <p class="lv-cap">お問い合わせ</p>
+          <h2 class="lv-tit">Entry</h2>
+          <p class="lv-cap">エントリー</p>
         </div>
       </div>
       <div class="contact-info">
-        <p>16時までにいただいたお問い合わせは、当日中にご返信いたします。</p>
-        <p>場合によってはお返事が遅くなってしまう場合もありますのでご了承ください。</p>
+        <p>インターンをご希望される方もこちらのフォームにご記入ください。</p>
       </div>
       <div class="sect-bg contact-wrap">
         <div class="content-wrap">
           <div class="content-catch">
-            <h3><span>お問い</span>合わせ</h3><small>※は必須項目です。</small>
+            <h3><span>エントリー</span></h3><small>※は必須項目です。</small>
           </div>
           <div class="form-signal">
             <ul>
@@ -90,9 +89,26 @@
                   </td>
                 </tr>
                 <tr>
-                  <th>お問い合わせ　※</th>
+                  <th>郵便番号　※</th>
                   <td>
-                    <input id="input-large" type="textarea" name="contact" cols="50" rows="5"/>
+                    <input type="text" name="address"/>
+                  </td>
+                </tr>
+                <tr>
+                  <th>住所　※</th>
+                  <td>
+                    <input type="text" name="address"/>
+                  </td>
+                </tr>
+                <tr>
+                  <th>実務経験　※</th>
+                  <td class="radio-td">
+                    <label>
+                      <input class="radio" type="radio" name="radio"/>
+                      <p>ある</p>
+                      <input class="radio" type="radio" name="radio"/>
+                      <p>ない</p>
+                    </label>
                   </td>
                 </tr>
               </table>
