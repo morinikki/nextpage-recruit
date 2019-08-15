@@ -1,0 +1,115 @@
+.contact-info {
+    position: relative;
+    text-align: center;
+    margin: 200px 0 0 0;
+    padding: 100px 0;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    z-index: 999;
+}
+
+.form-signal {
+    margin: 50px;
+    ul {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 0 auto;
+        z-index: 999;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 48%;
+            width: 1000px;
+            height: 5px;
+            background: linear-gradient(to right, #00bbcc, #99cc00);
+            z-index: -1;
+        }
+        li {
+            text-align: center;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background: #f6f6f6;
+            p {
+                margin: 30px 0 0 0;
+                font-weight: bold;
+            }
+            &:first-child {
+                color: #fff;
+                background: #919191;
+            }
+        }
+    }
+}
+
+// form
+input, button, textarea, select {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.contact-form {
+    margin: 0 auto;
+    width: 90%;
+    form {
+        table {
+            tr {
+                th {
+                    text-align: left;
+                    padding: 30px 0;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                }
+                td {
+                    text-align: left;
+                    padding-left: 80px;
+                    input {
+                        width: 600px;
+                        height: 30px;
+                        background: #f6f6f6;
+                    }
+                    #input-tel {
+                        width: 250px;
+                    }
+                    small {
+                        margin: 0 0 0 30px;
+                        font-size: 1.2rem;
+                    }
+                }
+                #input-large {
+                    margin: 40px 0 0 0;
+                    height: 200px;
+                }
+            }
+        }
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            margin: 50px auto;
+            width: 200px;
+            height: 60px;
+            border-radius: 10px;
+            background: linear-gradient(to bottom, #00bbcc, #99cc00);
+            box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
+            .submit-btn {
+                margin: 0 auto;
+                width: 194px;
+                height: 54px;
+                font-size: 1.4rem;
+                font-weight: bold;
+                letter-spacing: 0.4rem;
+                border-radius: 10px;
+                background: #fff;
+            }
+        }
+    }
+}

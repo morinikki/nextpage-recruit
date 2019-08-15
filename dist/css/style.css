@@ -221,6 +221,7 @@ body {
 .footer .footer-corp .det-btn a {
   text-align: center;
   display: block;
+  margin-left: 20px;
   padding: 0.8em;
   font-size: 1.3rem;
   font-weight: bold;
@@ -1109,4 +1110,132 @@ body {
 
 .exp-content {
   margin: 0 auto 77px;
+}
+
+.contact-info {
+  position: relative;
+  text-align: center;
+  margin: 200px 0 0 0;
+  padding: 100px 0;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  z-index: 999;
+}
+
+.form-signal {
+  margin: 50px;
+}
+
+.form-signal ul {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.form-signal ul::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 48%;
+  width: 1000px;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to right, #00bbcc, #99cc00);
+  z-index: -1;
+}
+
+.form-signal ul li {
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #f6f6f6;
+}
+
+.form-signal ul li p {
+  margin: 30px 0 0 0;
+  font-weight: bold;
+}
+
+.form-signal ul li:first-child {
+  color: #fff;
+  background: #919191;
+}
+
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contact-form form table tr th {
+  text-align: left;
+  padding: 30px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.contact-form form table tr td {
+  text-align: left;
+  padding-left: 80px;
+}
+
+.contact-form form table tr td input {
+  width: 600px;
+  height: 30px;
+  background: #f6f6f6;
+}
+
+.contact-form form table tr td #input-tel {
+  width: 250px;
+}
+
+.contact-form form table tr td small {
+  margin: 0 0 0 30px;
+  font-size: 1.2rem;
+}
+
+.contact-form form table tr #input-large {
+  margin: 40px 0 0 0;
+  height: 200px;
+}
+
+.contact-form form .contact-btn {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 50px auto;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
+}
+
+.contact-form form .contact-btn .submit-btn {
+  margin: 0 auto;
+  width: 194px;
+  height: 54px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  border-radius: 10px;
+  background: #fff;
 }
