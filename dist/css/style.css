@@ -1185,7 +1185,7 @@ input, button, textarea, select {
 
 .contact-form form table tr th {
   text-align: left;
-  padding: 30px 0;
+  padding: 40px 0;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -1201,23 +1201,45 @@ input, button, textarea, select {
   background: #f6f6f6;
 }
 
-.contact-form form table tr td label {
+.contact-form form table tr td .label-radio {
   display: -webkit-box;
   display: flex;
 }
 
-.contact-form form table tr td label .radio {
+.contact-form form table tr td .label-radio .radio {
   margin-right: 20px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid #000;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
-.contact-form form table tr td label p {
+.contact-form form table tr td .label-radio .radio:checked {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00bbcc;
+}
+
+.contact-form form table tr td .label-radio p {
   margin-right: 30px;
+}
+
+.contact-form form table tr td .label-check .checkbox {
+  margin: 0 20px 20px 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+
+.contact-form form table tr td .label-check .checkbox:checked {
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;
+  background: #00bbcc;
 }
 
 .contact-form form table tr td #input-tel {

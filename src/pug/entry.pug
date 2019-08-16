@@ -66,7 +66,75 @@ html(lang="ja")
                                 tr
                                     th 実務経験　※
                                     td.radio-td
-                                        label
+                                        label.label-radio
+                                            input.radio(type="radio",name="radio")
+                                            p ある
+                                            input.radio(type="radio",name="radio")
+                                            p ない
+                                tr
+                                    th 年齢 ※
+                                    td
+                                        input(type="text",name="years")
+                                tr
+                                    th 学校名
+                                    td
+                                        input(type="text",name="years")
+                                tr
+                                    th 学歴/職歴 ※
+                                    td
+                                        input(type="text",name="years")
+                                tr
+                                    th 実務経験　※
+                                    td.checkbox-td
+                                        label.label-check
+                                            p
+                                                input.checkbox(type="checkbox",name="job")
+                                                | Director/ディレクター
+                                        label.label-check
+                                            p
+                                                input.checkbox(type="checkbox",name="job")
+                                                | Designer/デザイナー
+                                        label.label-check
+                                            p
+                                                input.checkbox(type="checkbox",name="job")
+                                                | Engineer/エンジニア
+                                        label.label-check
+                                            p
+                                                input.checkbox(type="checkbox",name="job")
+                                                | まだ決まっていない（相談しながら決めたい）
+                                tr
+                                    th 希望勤務地 ※
+                                    td.checkbox-td
+                                        label.label-check
+                                            p
+                                                input.checkbox(type="checkbox",name="place")
+                                                | 神戸
+                                        label.label-check
+                                            p
+                                                input.checkbox(type="checkbox",name="place")
+                                                | 東京
+                                        label.label-check
+                                            p
+                                                input.checkbox(type="checkbox",name="place")
+                                                | 京都
+                                tr
+                                    th 資格・使用できるソフト/
+                                        br
+                                        | 使用言語 ※
+                                    td
+                                        input#input-large(type="text",name="software")
+                                tr
+                                    th 制作したサイト/URL
+                                    td
+                                        input(type="text",name="portfolio")
+                                tr
+                                    th インターンシップ希望期間
+                                    td
+                                        input(type="text",name="intern")
+                                tr
+                                    th ご自身のPC
+                                    td.radio-td
+                                        label.label-radio
                                             input.radio(type="radio",name="radio")
                                             p ある
                                             input.radio(type="radio",name="radio")
