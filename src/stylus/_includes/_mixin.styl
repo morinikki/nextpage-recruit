@@ -1,0 +1,15 @@
+// *mixin
+
+// cleafix
+cf()
+	&::after
+		content ''
+		display block
+		clear both
+
+// media query
+mq() {
+	@media screen and (max-width: SP_MAX) {
+		{block};
+	}
+}

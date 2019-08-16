@@ -190,6 +190,7 @@
 
     .lv-img {
         img {
+            width: 105%;
             margin: 0 auto;
         }
     }
@@ -201,14 +202,14 @@
 
         img {
             margin: 0 auto;
-            width: 100%;
+            width: 105%;
         }
     }
 
     .lv-gray {
         position: absolute;
         bottom: -167px;
-        right: 0;
+        right: -30px;
     }
 
     .lv-text {
@@ -219,15 +220,17 @@
         .lv-tit {
             font-size: 3rem;
             font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
             letter-spacing: 0.6rem;
             color: #fff;
         }
 
         .lv-cap {
             text-align: right;
-            margin: 10px 0 0 0;
+            margin: 10px -10px 0 0;
             font-size: 1.6rem;
             font-weight: bold;
+            letter-spacing: 1.4px;
             color: #fff;
         }
     }
@@ -236,13 +239,17 @@
 // 
 // 下層ページリンク
 .pagelink-wrap {
-    width: 48%;
+    width: 60%;
     margin: 50px auto 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     .pagelink {
         position: relative;
+        margin-right: 100px;
+        &:last-child {
+            margin-right: 0;
+        }
 
         &::after {
             content: "";
@@ -256,7 +263,7 @@
 
         p {
             a {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 font-weight: bold;
                 text-decoration: none;
                 letter-spacing: 0.3rem;
@@ -280,7 +287,7 @@
     }
 }
 
-// 
+//
 // table
 .content-catch {
     text-align: center;

@@ -275,6 +275,7 @@ body {
 }
 
 .lower-visual .lv-img img {
+  width: 105%;
   margin: 0 auto;
 }
 
@@ -286,13 +287,13 @@ body {
 
 .lower-visual .lv-tri img {
   margin: 0 auto;
-  width: 100%;
+  width: 105%;
 }
 
 .lower-visual .lv-gray {
   position: absolute;
   bottom: -167px;
-  right: 0;
+  right: -30px;
 }
 
 .lower-visual .lv-text {
@@ -304,29 +305,36 @@ body {
 .lower-visual .lv-text .lv-tit {
   font-size: 3rem;
   font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
   letter-spacing: 0.6rem;
   color: #fff;
 }
 
 .lower-visual .lv-text .lv-cap {
   text-align: right;
-  margin: 10px 0 0 0;
+  margin: 10px -10px 0 0;
   font-size: 1.6rem;
   font-weight: bold;
+  letter-spacing: 1.4px;
   color: #fff;
 }
 
 .pagelink-wrap {
-  width: 48%;
+  width: 60%;
   margin: 50px auto 200px;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .pagelink-wrap .pagelink {
   position: relative;
+  margin-right: 100px;
+}
+
+.pagelink-wrap .pagelink:last-child {
+  margin-right: 0;
 }
 
 .pagelink-wrap .pagelink::after {
@@ -341,7 +349,7 @@ body {
 }
 
 .pagelink-wrap .pagelink p a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 0.3rem;
@@ -648,7 +656,7 @@ body {
 }
 
 .top-content .concept .content-catch h2 {
-  padding: 140px 0 40px 0;
+  padding: 200px 0 40px 0;
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 0.3rem;

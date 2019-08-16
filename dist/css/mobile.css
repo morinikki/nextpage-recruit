@@ -1,0 +1,14 @@
+@charset "utf-8";
+@media screen and (max-width: 768px) {
+  #top {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 100%;
+  }
+}
+.hero-image {
+  width: 100%;
+}
