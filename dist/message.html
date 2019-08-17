@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap" rel="stylesheet"/>
     <title>メッセージ | 株式会社 NEXPAGE</title>
   </head>
   <body id="message">
     <div class="wrap">
-      <header class="header">
-        <h1 class="header-logo"><a href="#"><img src="images/common/np_logo.svg" alt="logo" width="175px"/></a></h1>
+      <header class="under-header">
+        <h1 class="header-logo"><a href="index.html"><img src="images/common/np_logo.svg" alt="logo" width="175px"/></a></h1>
         <nav class="global-nav">
           <ul>
+            <li class="btn"><a href="contact.html">お問い合わせ</a></li>
+            <li class="btn"><a href="entry.html">エントリー</a></li>
             <li><a href="company.html">会社情報</a></li>
             <li><a href="work.html">業務内容</a></li>
             <li><a href="intern.html">インターンシップ</a></li>
@@ -31,8 +34,13 @@
         </nav>
       </header>
       <div class="lower-visual">
-        <h2 class="lv-tit">メッセージ</h2>
-        <p class="lv-cap">実際の社員の声をお届けします。</p>
+        <div class="lv-img"><img src="images/work/work_hero.jpg" alt="業務"/></div>
+        <div class="lv-tri"><img src="images/common/bg_triangle.png" alt="title"/></div>
+        <div class="lv-gray"><img src="images/common/bg_gray.png" alt="title"/></div>
+        <div class="lv-text">
+          <h2 class="lv-tit">Message</h2>
+          <p class="lv-cap">メッセージ</p>
+        </div>
       </div>
       <div class="pagelink-wrap">
         <div class="pagelink">
@@ -45,61 +53,66 @@
           <p><a href="#presi-mess">代表からのメッセージ</a></p>
         </div>
       </div>
-      <section class="staff-slides" id="staff-slides">
-        <div class="staff-card">
-          <div class="staff-img"><img src="" alt=""/></div>
-          <div class="staff-pro">
-            <p>name</p>
-            <p>name</p>
-            <p>job</p>
-            <p>job</p>
+      <div class="staff-slides slider" id="slider">
+        <div><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></div>
+      </div>
+      <section class="sect-bg members-mess" id="member-mess">
+        <h3 id="message-h3"><span>社員</span>からのメッセージ</h3>
+        <div class="content-wrap message-wrap"><img class="message-tri" src="images/message/tri-message.png" alt="" width="45px" height="45px"/>
+          <div class="member-col" id="member_01">
+            <div class="member-face"><img src="images/message/staff-umeniki.png" alt="staff" width="235px"/></div>
+            <div class="member-pro">
+              <h4>MEMBER 01</h4>
+              <p class="member-job"><small>Engineer / エンジニア</small></p>
+              <p class="staff-name">梅澤　海斗</p>
+              <div class="member-text"><strong>とても、働きやすい環境です。</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="content-wrap message-wrap"><img class="message-tri" src="images/message/tri-message.png" alt="" width="45px" height="45px"/>
+          <div class="member-col" id="member_01">
+            <div class="member-face"><img src="images/message/staff-umeniki.png" alt="staff" width="235px"/></div>
+            <div class="member-pro">
+              <h4>MEMBER 01</h4>
+              <p class="member-job"><small>Engineer / エンジニア</small></p>
+              <p class="staff-name">梅澤　海斗</p>
+              <div class="member-text"><strong>とても、働きやすい環境です。</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-wrap message-wrap"><img class="message-tri" src="images/message/tri-message.png" alt="" width="45px" height="45px"/>
+          <div class="member-col" id="member_01">
+            <div class="member-face"><img src="images/message/staff-umeniki.png" alt="staff" width="235px"/></div>
+            <div class="member-pro">
+              <h4>MEMBER 01</h4>
+              <p class="member-job"><small>Engineer / エンジニア</small></p>
+              <p class="staff-name">梅澤　海斗</p>
+              <div class="member-text"><strong>とても、働きやすい環境です。</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="int-btn">
+          <div class="btn-inner"><a href="#">社員インタビューページへ</a></div>
         </div>
       </section>
-      <section class="members-mess" id="member-mess">
-        <h3>社員からのメッセージ</h3>
-        <div class="member-col" id="member_01">
-          <div class="member-face"><img src="" alt=""/></div>
-          <div class="member-pro">
-            <p>MEMBER1</p>
-            <p><small>Designer/デザイナー</small></p>
-            <p>name</p>
-            <div class="member-text">
-              <h4>title</h4>
-              <p>テキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
+      <section class="sect-bg presi-mess" id="presi-mess">
+        <div class="content-wrap">
+          <div class="content-catch">
+            <h3><span>代表</span>からのメッセージ</h3>
+          </div>
+          <div class="presi-img"><img src="images/message/staff-message.jpg" alt="president" width="940px"/></div>
+          <div class="presi-message"><img src="images/top/h2-concept-deco@2x.png" alt="deco" width="73px"/>
+            <h4>会社は夢をかなえる場所であって欲しい。</h4>
+            <p class="pre-q">あなたにとっての幸せな生き方とは？</p>
+            <p class="pre-mess-inner">私がもしその質問をされても、明確に答えることができません。価値観は日々変化していくし、すごく楽しいことをしていても、毎日同じことをしてると、すぐに飽きてしまうからです。ただ、前提条件としてなら挙げることができます。それは重要な順に、健康な体、生活できるお金、共に生きるパートナー、信頼できる仲間、社会に必要とされることです。幸せな生き方は人それぞれだと思います。ただ、この前提条件は、それほど変わらないのではないでしょうか。日本にはたくさん会社があって、神戸だけでも何万もの会社があります。どの会社を選んでも、その人が幸せであればいいのです。ネクストページは地方都市の小さな会社です。それでも、先に挙げた前提条件を適えられる、あたりまえの会社を目指しています。</p>
           </div>
         </div>
-        <div class="member-col" id="member_02">
-          <div class="member-face"><img src="" alt=""/></div>
-          <div class="member-pro">
-            <p>MEMBER1</p>
-            <p><small>Designer/デザイナー</small></p>
-            <p>name</p>
-            <div class="member-text">
-              <h4>title</h4>
-              <p>テキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </div>
-        </div>
-        <div class="member-col" id="member_03">
-          <div class="member-face"><img src="" alt=""/></div>
-          <div class="member-pro">
-            <p>MEMBER1</p>
-            <p><small>Designer/デザイナー</small></p>
-            <p>name</p>
-            <div class="member-text">
-              <h4>title</h4>
-              <p>テキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </div>
-        </div>
-        <div class="btn-int"><a href="#">社員インタビューページへ</a></div>
-      </section>
-      <section class="presi-mess" id="presi-mess">
-        <div class="presi-img"><img src="" alt=""/></div>
-        <h4>title</h4>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       </section>
       <footer class="footer">
         <div class="footer-corp">

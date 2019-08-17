@@ -1,0 +1,183 @@
+#message-h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+#message-h3 span {
+  color: #009944;
+}
+
+.message-wrap {
+  position: relative;
+  margin-bottom: 60px;
+  padding: 40px;
+}
+
+.message-wrap .message-tri {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.member-col {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.member-col .member-face {
+  margin: 20px 0 0 20px;
+}
+
+.member-col .member-pro {
+  width: 68%;
+}
+
+.member-col .member-pro h4 {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #009944;
+}
+
+.member-col .member-pro .member-job {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.member-col .member-pro .staff-name {
+  position: relative;
+  font-size: 2.6rem;
+}
+
+.member-col .member-pro .staff-name::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -40px;
+  width: 80%;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to right, #00bbcc, #99cc00);
+}
+
+.member-col .member-pro .member-text {
+  margin-top: 50px;
+}
+
+.member-col .member-pro .member-text strong {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.member-col .member-pro .member-text p {
+  margin: 26px 0;
+  line-height: 2rem;
+}
+
+.presi-mess .content-wrap {
+  width: 80%;
+}
+
+.presi-mess .presi-img {
+  margin: 0 auto;
+}
+
+.presi-mess .presi-message {
+  position: relative;
+}
+
+.presi-mess .presi-message img {
+  position: absolute;
+  top: -30px;
+}
+
+.presi-mess .presi-message h4 {
+  margin: 60px 0 60px 60px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.presi-mess .presi-message .pre-q {
+  margin: 0 0 30px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #828282;
+  letter-spacing: 0.4rem;
+}
+
+.presi-mess .presi-message .pre-q::after {
+  content: '';
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to right, #00bbcc, #99cc00);
+}
+
+.presi-mess .presi-message .pre-mess-inner {
+  line-height: 3rem;
+}
+
+#int-btn {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 231px;
+  height: 61px;
+  border-radius: 28px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
+}
+
+#int-btn .btn-inner {
+  background: #fff;
+  width: 225px;
+  height: 55px;
+  margin: 0 auto;
+  border-radius: 26px;
+}
+
+#int-btn a {
+  text-align: center;
+  display: block;
+  margin-left: 5px;
+  padding: 0.8em;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
+  text-decoration: none;
+  background: #009944;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#int-btn .btn-arrow {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  top: 25%;
+  left: 5%;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+}
+
+#int-btn .btn-arrow img {
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+}

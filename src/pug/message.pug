@@ -4,11 +4,18 @@ html(lang="ja")
         title メッセージ | 株式会社 NEXPAGE
     body#message
         .wrap
-            include _includes/_header.pug
+            include _includes/_under-header.pug
             //- 
             .lower-visual
-                h2.lv-tit メッセージ
-                p.lv-cap 実際の社員の声をお届けします。
+                .lv-img
+                    img(src="images/work/work_hero.jpg", alt="業務")
+                .lv-tri
+                    img(src="images/common/bg_triangle.png", alt="title")
+                .lv-gray
+                    img(src="images/common/bg_gray.png", alt="title")
+                .lv-text
+                    h2.lv-tit Message
+                    p.lv-cap メッセージ
             //- 
             .pagelink-wrap
                 .pagelink
@@ -21,59 +28,71 @@ html(lang="ja")
                     p
                         a(href="#presi-mess") 代表からのメッセージ
             //- 
-            section.staff-slides#staff-slides
-                .staff-card
-                    .staff-img
-                        img(src="", alt="")
-                    .staff-pro
-                        p name
-                        p name
-                        p job
-                        p job
+            .staff-slides.slider#slider
+                div
+                    img(src="images/message/staff-keikun.jpg", alt="keikun",width="333px")
             //- 
-            section.members-mess#member-mess
-                h3 社員からのメッセージ
-                .member-col#member_01
-                    .member-face
-                        img(src="", alt="")
-                    .member-pro
-                        p MEMBER1
-                        p
-                            small Designer/デザイナー
-                        p name
-                        .member-text
-                            h4 title
-                            p テキストテキストテキストテキストテキストテキストテキスト
-                .member-col#member_02
-                    .member-face
-                        img(src="", alt="")
-                    .member-pro
-                        p MEMBER1
-                        p
-                            small Designer/デザイナー
-                        p name
-                        .member-text
-                            h4 title
-                            p テキストテキストテキストテキストテキストテキストテキスト
-                .member-col#member_03
-                    .member-face
-                        img(src="", alt="")
-                    .member-pro
-                        p MEMBER1
-                        p
-                            small Designer/デザイナー
-                        p name
-                        .member-text
-                            h4 title
-                            p テキストテキストテキストテキストテキストテキストテキスト
-                .btn-int
-                    a(href="#") 社員インタビューページへ
+            section.sect-bg.members-mess#member-mess
+                h3#message-h3
+                    span 社員
+                    | からのメッセージ
+                .content-wrap.message-wrap
+                    img.message-tri(src="images/message/tri-message.png", alt="",width="45px",height="45px")
+                    .member-col#member_01
+                        .member-face
+                            img(src="images/message/staff-umeniki.png", alt="staff",width="235px")
+                        .member-pro
+                            h4 MEMBER 01
+                            p.member-job
+                                small Engineer / エンジニア
+                            p.staff-name 梅澤　海斗
+                            .member-text
+                                strong とても、働きやすい環境です。
+                                p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                .content-wrap.message-wrap
+                    img.message-tri(src="images/message/tri-message.png", alt="",width="45px",height="45px")
+                    .member-col#member_01
+                        .member-face
+                            img(src="images/message/staff-umeniki.png", alt="staff",width="235px")
+                        .member-pro
+                            h4 MEMBER 01
+                            p.member-job
+                                small Engineer / エンジニア
+                            p.staff-name 梅澤　海斗
+                            .member-text
+                                strong とても、働きやすい環境です。
+                                p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                .content-wrap.message-wrap
+                    img.message-tri(src="images/message/tri-message.png", alt="",width="45px",height="45px")
+                    .member-col#member_01
+                        .member-face
+                            img(src="images/message/staff-umeniki.png", alt="staff",width="235px")
+                        .member-pro
+                            h4 MEMBER 01
+                            p.member-job
+                                small Engineer / エンジニア
+                            p.staff-name 梅澤　海斗
+                            .member-text
+                                strong とても、働きやすい環境です。
+                                p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    //- 
+                #int-btn
+                    .btn-inner
+                        a(href="#") 社員インタビューページへ
             //- 
-            section.presi-mess#presi-mess
-                .presi-img
-                    img(src="", alt="")
-                h4 title
-                p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            section.sect-bg.presi-mess#presi-mess
+                .content-wrap
+                    .content-catch
+                        h3
+                            span 代表
+                            | からのメッセージ
+                    .presi-img
+                        img(src="images/message/staff-message.jpg", alt="president",width="940px")
+                    .presi-message
+                        img(src="images/top/h2-concept-deco@2x.png", alt="deco",width="73px")
+                        h4 会社は夢をかなえる場所であって欲しい。
+                        p.pre-q あなたにとっての幸せな生き方とは？
+                        p.pre-mess-inner 私がもしその質問をされても、明確に答えることができません。価値観は日々変化していくし、すごく楽しいことをしていても、毎日同じことをしてると、すぐに飽きてしまうからです。ただ、前提条件としてなら挙げることができます。それは重要な順に、健康な体、生活できるお金、共に生きるパートナー、信頼できる仲間、社会に必要とされることです。幸せな生き方は人それぞれだと思います。ただ、この前提条件は、それほど変わらないのではないでしょうか。日本にはたくさん会社があって、神戸だけでも何万もの会社があります。どの会社を選んでも、その人が幸せであればいいのです。ネクストページは地方都市の小さな会社です。それでも、先に挙げた前提条件を適えられる、あたりまえの会社を目指しています。
             //- 
             include _includes/_footer.pug
             //- 

@@ -1,0 +1,1 @@
+$(function(){$("#slider8").bxSlider({auto:!0,minSlides:3,maxSlides:3,speed:8e3,ticker:!0})});
