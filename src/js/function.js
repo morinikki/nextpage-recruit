@@ -28,7 +28,7 @@ $(window).scroll(function() {
 
 $(window).scroll(function() {
 	if($(this).scrollTop() > 500) {
-		$(".header").css("background","rgba(255,255,255, .8)");
+		$(".header").css("background","rgba(255,255,255, .5)");
 		$(".header").css("box-shadow","0px 2px 5px 2px rgba(140, 140, 140, 0.4)");
 	} else {
 		$(".header").css("background","none");
