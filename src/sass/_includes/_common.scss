@@ -5,14 +5,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 200px;
+    width: 100%;
     z-index: 999;
+    transition: 0.3s;
 
     .header-logo {
-        margin-left: -158px;
+        padding: 20px;
         a {
             display: inline-block;
             width: 175px;
+            transition: 0.3s;
             picture {
                 img {
                     width: 100%;
@@ -22,7 +24,7 @@
     }
 
     .global-nav {
-        margin: 0 0 0 240px;
+        margin: 0 60px 0 0;
 
         ul {
             display: flex;
@@ -33,6 +35,7 @@
                 letter-spacing: 0.2rem;
                 color: #fff;
                 text-decoration: none;
+                transition: 0.3s;
             }
 
             .close {

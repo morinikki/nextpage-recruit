@@ -72,17 +72,21 @@ body {
           justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
-  padding: 40px 200px;
+  width: 100%;
   z-index: 999;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header .header-logo {
-  margin-left: -158px;
+  padding: 20px;
 }
 
 .header .header-logo a {
   display: inline-block;
   width: 175px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header .header-logo a picture img {
@@ -90,7 +94,7 @@ body {
 }
 
 .header .global-nav {
-  margin: 0 0 0 240px;
+  margin: 0 60px 0 0;
 }
 
 .header .global-nav ul {
@@ -104,6 +108,8 @@ body {
   letter-spacing: 0.2rem;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header .global-nav ul .close {
@@ -904,6 +910,7 @@ body {
   height: 60px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(150, 234, 16, 0.9)), to(rgba(79, 220, 220, 0.9)));
   background: linear-gradient(to bottom, rgba(150, 234, 16, 0.9), rgba(79, 220, 220, 0.9));
+  box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
   border-radius: 30px;
 }
 
