@@ -464,6 +464,12 @@ body {
   flex-wrap: wrap;
 }
 
+.top-back {
+  float: right;
+  margin-top: 30px;
+  margin-right: 110px;
+}
+
 .hero-area {
   position: relative;
   width: 100%;
