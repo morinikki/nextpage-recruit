@@ -36,7 +36,7 @@ $(window).scroll(function() {
 	}
 	if($(this).scrollTop() > 500) {
 		$("#menu li a").css("margin-left","50px");
-		$("#menu li a").css("font-size","1.2rem");
+		$("#menu li a").css("font-size","1.3rem");
 		$("#menu li a").css("font-weight","bold");
 		$("#menu li a").css("color","#000");
 	} else {

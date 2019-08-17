@@ -1,7 +1,7 @@
 .hero-area {
     position: relative;
     width: 100%;
-    height: 743px;
+    height: 765px;
     .hero-image {
         float: right;
         position: relative;
@@ -34,11 +34,14 @@
     }
     .mv-box {
         position: absolute;
-        top: 310px;
+        top: 330px;
         width: 635px;
-        height: 400px;
+        height: 430px;
         margin-top: 100px;
-        background: linear-gradient(to bottom,#00bbcc,#99cc00) bottom left;
+        // background: linear-gradient(to bottom,#00bbcc,#99cc00);
+        background: linear-gradient(135deg, #00bbcc, #99cc00);
+        background-size: 300% 300%;
+        animation: grad-wave 10s ease 0s infinite normal forwards;
     }
 }
 .tag-text {
@@ -66,10 +69,12 @@
             background: #c6c5c5;
         }
         h2 {
+            position: relative;
             font-size: 3rem;
             line-height: 5rem;
             letter-spacing: 0.7rem;
             font-weight: bold;
+            z-index: 990;
             span {
                 background: linear-gradient(to bottom,#00bbcc,#99cc00);
                 -webkit-background-clip: text;
@@ -358,13 +363,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
+    width: 180px;
     height: 60px;
     background: linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9));
     box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
     border-radius: 30px;
     a {
         font-size: 1.4rem;
+        font-weight: bold;
         font-family: 'Noto Sans', sans-serif;
         text-decoration: none;
         letter-spacing: 1.2px;
