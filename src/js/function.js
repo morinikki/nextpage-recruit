@@ -11,3 +11,16 @@ $(function () {
 		return false;
 	});
 });
+
+$(window).scroll(function() {
+	if($(this).scrollTop() > 500) {
+		$("#entry-btn").css("opacity","1");
+	} else {
+		$("#entry-btn").css("opacity","0");
+	}
+	if($(this).scrollTop() > 500) {
+		$("#contact-btn").css("opacity","1");
+	} else {
+		$("#contact-btn").css("opacity","0");
+	}
+});

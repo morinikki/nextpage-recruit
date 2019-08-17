@@ -349,8 +349,10 @@
 }
 
 #entry-btn,#contact-btn {
+    opacity: 0;
+    transition: 0.2s;
     position: fixed;
-    top: 70%;
+    top: 45%;
     right: 20px;
     z-index: 950;
     display: flex;
@@ -358,7 +360,7 @@
     align-items: center;
     width: 210px;
     height: 60px;
-    background: linear-gradient(to bottom,#00bbcc,#99cc00);
+    background: linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9));
     border-radius: 30px;
     a {
         font-size: 1.4rem;
