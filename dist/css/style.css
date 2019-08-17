@@ -103,7 +103,8 @@ body {
 }
 
 .header .header-logo {
-  padding: 20px;
+  padding: 30px 30px 15px;
+  margin: 0 0 20px;
 }
 
 .header .header-logo a {
@@ -151,13 +152,13 @@ body {
           justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
-  padding: 40px 200px;
+  padding: 40px 30px;
   background: #fff;
   z-index: 999;
 }
 
 .under-header .header-logo {
-  margin-left: -158px;
+  margin-left: 10px;
 }
 
 .under-header .global-nav ul {
@@ -167,6 +168,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
+  margin-right: 20px;
 }
 
 .under-header .global-nav ul .btn {
@@ -176,19 +178,22 @@ body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  width: 140px;
-  height: 41px;
+  position: relative;
+  left: -30px;
+  width: 150px;
+  height: 46px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to bottom, #00bbcc, #99cc00);
   border-radius: 30px;
 }
 
 .under-header .global-nav ul .btn a {
+  font-size: 1.3rem;
   color: #fff;
 }
 
 .under-header .global-nav ul li {
-  margin: 0 0 0 28px;
+  margin: 0 0 0 35px;
 }
 
 .under-header .global-nav ul li a {
@@ -328,26 +333,35 @@ body {
   margin: 0 auto;
 }
 
-.lower-visual .lv-img img {
+.lower-visual .lv-img {
   width: 105%;
+}
+
+.lower-visual .lv-img img {
+  width: 100%;
   margin: 0 auto;
 }
 
 .lower-visual .lv-tri {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
+  width: 44.5%;
 }
 
 .lower-visual .lv-tri img {
-  margin: 0 auto;
-  width: 105%;
+  margin: 0 auto 0;
+  width: 100%;
 }
 
 .lower-visual .lv-gray {
   position: absolute;
-  bottom: -167px;
-  right: -30px;
+  bottom: -183px;
+  right: -28px;
+}
+
+.lower-visual .lv-gray img {
+  width: 110%;
 }
 
 .lower-visual .lv-text {
@@ -375,7 +389,7 @@ body {
 
 .pagelink-wrap {
   width: 60%;
-  margin: 50px auto 200px;
+  margin: 70px auto 200px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
