@@ -423,6 +423,23 @@ body {
   margin-bottom: 10px;
 }
 
+.content-wrap .comp-table tr td p small {
+  font-size: 1.2rem;
+}
+
+.flow-list {
+  margin: 40px auto;
+  width: 90%;
+}
+
+.flow-list ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .hero-area {
   position: relative;
   width: 100%;
