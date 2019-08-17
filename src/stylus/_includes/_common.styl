@@ -1,0 +1,69 @@
+// *common
+
+
+// #header
+.header
+	+mq()
+		position static
+		width 100%
+		padding 0
+
+		.header-logo
+			margin-left 20px
+			a
+				width 100px
+
+		.global-nav
+			width 55px
+			height 55px
+			margin 0 0 0 20px
+			background: linear-gradient(to bottom, #00bbcc, #99cc00);
+			ul
+				display none
+				width 70%
+
+				li
+					margin 10px
+					a
+						width 100%
+						margin 0
+						padding 10px
+						font-size 1.6rem
+						color #000
+
+
+
+// *footer
+.footer
+	+mq()
+		.footer-corp
+			flex-wrap wrap
+			width 100%
+			padding 20px 0
+			.footer-logo
+				display block
+				position relative
+				width 90%
+				margin 10px auto 0
+				img
+					width 110px
+				p
+					position absolute
+					top 13px
+					left auto
+					right 0
+			.det-btn
+				order -1
+				margin 0 auto
+				width 200px
+				height 56px
+				border-radius 10px
+				.btn-inner
+					width 196px
+					height 52px
+					border-radius 8px
+					a
+						margin-top -3px
+
+		#copyrights
+			font-size 1.2rem

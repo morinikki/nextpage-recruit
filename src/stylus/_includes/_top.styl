@@ -1,0 +1,264 @@
+// *home
+
+#entry-btn,#contact-btn
+	+mq()
+		display none
+
+
+.wrap
+	+mq()
+		width 100%
+		img
+			width 100%
+
+.hero-area
+	+mq()
+		width 100%
+		height 240px
+
+		.hero-image
+			margin-top 20px
+			text-align right
+			img
+				width 90%
+
+		.mv-catch
+			top 140px
+			left auto
+			right 20px
+			width 65%
+			padding 20px
+
+			.main-catch
+				font-size 2rem
+				text-align left
+				line-height 1.2
+
+			.sub-catch
+				margin-top 10px
+				font-size 1rem
+				text-align left
+
+		.mv-box
+			width 100%
+			height 160px
+			margin-top 140px
+			top 0
+
+.top-content
+	+mq()
+		flex-wrap wrap
+		width 100%
+		overflow hidden
+
+		// Philosophy
+		.phil-col
+			padding 60px 20px
+
+			.phil
+				font-size 3.2rem
+
+			.text-deco
+				margin 30px 0 0
+
+			h2
+				margin-top 30px
+				font-size 2.2rem
+				line-height 1.6
+				.pc-br
+					display none
+
+			.p-text
+				width 100%
+				margin-top 30px
+				font-size 1.2rem
+				line-height 1.8
+
+			.p-box
+				bottom 0
+
+			.p-image
+				position static
+				margin-top 30px
+				img
+					position relative
+					z-index 910
+
+
+		// 会社情報
+		.info-col
+			h3
+				margin 60px auto 0
+				font-size 2.6rem
+				letter-spacing: 0.5rem;
+
+			ul
+				flex-wrap wrap
+				margin-top 40px
+				li
+					margin-bottom 10px
+					padding 10px
+					text-align center
+					&:last-child
+						margin-bottom 0
+					img
+						display block
+						width 90%
+						margin 0 auto 10px
+					p
+						display inline
+						position static
+						top auto
+						left auto
+						width 100%
+						font-size 1.5rem
+						line-height 2.2rem
+						-ms-transform translate(0,0)
+						-webkit-transform translate(0,0)
+						transform translate(0,0)
+						border-bottom solid 2px #009944;
+						color #000
+					.info-deco
+						width 120px
+						height 120px
+					#info-deco01
+						top 40px
+						left -10px
+					#info-deco02
+						top 20px
+						left auto
+						right -10px
+					#info-deco03
+						top 50px
+						left -10px
+						right auto
+
+
+		// もっと見るbtn / 詳しく見るbtn
+		.det-btn
+			margin 40px auto 60px
+			width 200px
+			height 56px
+			.btn-inner
+				width 194px
+				height 50px
+				a
+					margin-top -3px
+
+
+		// CONCEPT
+		.concept
+			width 100%
+			height 100%
+			padding 40px 0 60px
+			.content-catch
+				h2
+					padding 40px 0
+					font-size 1.6rem
+					letter-spacing 1.4px
+					background-size 25%
+					background-position center
+					span
+						font-size 2rem
+				p
+					width 80%
+					margin 0 auto
+					font-size 1.4rem
+					line-height 1.5
+				h3
+					margin 30px 0 0
+					font-size 1.8rem
+			.concept-inner
+				width 100%
+				ul
+					flex-wrap wrap
+					margin-top 40px
+					padding 0 20px
+					li
+						width 80%
+						margin 0 auto
+						margin-bottom 20px
+						&:last-child
+							margin-bottom 0
+						.bg-sankaku
+							display none
+						.concept-text
+							left 15px
+							bottom 20px
+							font-size 1.5rem
+
+
+		// 業務内容
+		.business-content
+			.business-catch
+				padding 60px 0 0
+				h2
+					margin 0
+					font-size 2.6rem
+					letter-spacing: 0.5rem;
+				p
+					width 75%
+					margin 30px auto 0
+					font-size 1.4rem
+					text-align left
+					line-height 1.4
+			.bc-img
+				width 90%
+				margin 30px auto 0
+				.bc-shadow
+					width 100%
+					height 100%
+					top 8px
+					left 8px
+
+
+		// 各ページリンク
+		.lower-links
+			padding 60px 0
+			.link-col
+				display flex
+				justify-content center
+				align-items center
+				position relative
+				width 100%
+				margin 0 0 30px 0
+				&:last-child
+					margin-bottom 0
+				.link-text
+					position absolute
+					top 0
+					bottom 0
+					left 0
+					right 0
+					width 85%
+					height 85px
+					margin auto
+					padding 25px 0
+					text-align center
+					background rgba(255,255,255, .8)
+					h3
+						margin 0
+						font-size 1.8rem
+						color #009944
+					.link-deco
+						display none
+						width 12px
+						height 3px
+						margin 10px auto 0
+						background linear-gradient(to bottom,#00bbcc,#99cc00)
+					p
+						margin 10px 0 0
+						font-size 1.2rem
+						color #009944
+					.link-det
+						margin 30px 0 0
+						a
+							font-size 1.2rem
+							color: #009944;
+
+				.link-img
+					width 100%
+					padding 2px
+					box-shadow none
+					background linear-gradient(to bottom,#00bbcc,#99cc00)
+					box-sizing border-box

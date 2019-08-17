@@ -80,6 +80,15 @@ body {
   margin-left: -158px;
 }
 
+.header .header-logo a {
+  display: inline-block;
+  width: 175px;
+}
+
+.header .header-logo a img {
+  width: 100%;
+}
+
 .header .global-nav {
   margin: 0 0 0 240px;
 }
@@ -187,13 +196,26 @@ body {
 .footer .footer-corp {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
   width: 95%;
   margin: 0 auto;
   padding: 30px 0;
+}
+
+.footer .footer-corp .footer-logo {
+  width: 180px;
+}
+
+.footer .footer-corp .footer-logo img {
+  width: 100%;
+}
+
+.footer .footer-corp .footer-logo p {
+  position: relative;
+  top: -12px;
+  left: 56px;
+  font-size: 1.2rem;
 }
 
 .footer .footer-corp .det-btn {
@@ -204,6 +226,7 @@ body {
           align-items: center;
   width: 231px;
   height: 61px;
+  margin-left: 50px;
   border-radius: 28px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to bottom, #00bbcc, #99cc00);
@@ -249,6 +272,7 @@ body {
 }
 
 .footer .footer-corp .det-btn .btn-arrow img {
+  width: 20px;
   -webkit-transform: translateX(35%);
           transform: translateX(35%);
 }
@@ -665,7 +689,7 @@ body {
   background-position: 32% 75%;
 }
 
-.top-content .concept .content-catch h2 .catch-color {
+.top-content .concept .content-catch h2 span {
   color: #009944;
 }
 
