@@ -32,6 +32,9 @@ gulp.task('watch', () => {
 	gulp.watch(['./src/sass/**'], () => {
 		gulp.start(['sass']);
 	});
+	gulp.watch(['./src/js/**'], () => {
+		gulp.start(['js']);
+	});
 });
 
 // Browser display

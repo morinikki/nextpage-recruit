@@ -369,7 +369,7 @@
   .top-content .lower-links .link-col .link-text h3 {
     margin: 0;
     font-size: 1.8rem;
-    color: #094;
+    color: #000;
   }
   .top-content .lower-links .link-col .link-text .link-deco {
     display: none;
@@ -381,14 +381,14 @@
   .top-content .lower-links .link-col .link-text p {
     margin: 10px 0 0;
     font-size: 1.2rem;
-    color: #094;
+    color: #000;
   }
   .top-content .lower-links .link-col .link-text .link-det {
     margin: 30px 0 0;
   }
   .top-content .lower-links .link-col .link-text .link-det a {
     font-size: 1.2rem;
-    color: #094;
+    color: #000;
   }
   .top-content .lower-links .link-col .link-img {
     width: 100%;
