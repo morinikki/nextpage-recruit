@@ -6,44 +6,73 @@
 
 
 .wrap
+	position relative
 	+mq()
 		width 100%
 		img
 			width 100%
 
-.hero-area
-	+mq()
-		width 100%
-		height 240px
-
-		.hero-image
-			margin-top 20px
-			text-align right
-			img
-				width 90%
-
-		.mv-catch
-			top 140px
-			left auto
-			right 20px
-			width 65%
-			padding 20px
-
-			.main-catch
-				font-size 2rem
-				text-align left
-				line-height 1.2
-
-			.sub-catch
-				margin-top 10px
-				font-size 1rem
-				text-align left
-
-		.mv-box
+		.hero-area
+			position relative
 			width 100%
-			height 160px
-			margin-top 140px
-			top 0
+			height 100%
+
+			.hero-image
+				display block
+				text-align right
+				img
+					display block
+					width auto
+					height calc(100vh - 20px)
+
+			.mv-catch
+				top 0
+				bottom 0
+				left 0
+				right 0
+				width 65%
+				padding 20px
+				margin 70% auto 0
+				background none
+
+				.main-catch
+					font-size 2.2rem
+					text-align center
+					line-height 1.2
+					color #fff
+
+				.sub-catch
+					margin-top 20px
+					font-size 1.2rem
+					text-align center
+					color #fff
+
+			.mv-box
+				width 100%
+				height 160px
+				margin-top 140px
+				top 0
+
+		.tag-text
+			display block
+			position relative
+			width 100%
+			height 100vh
+			background #eee
+			p
+				position absolute
+				bottom 1px
+				z-index 920
+				width 130px
+				padding 10px 10px 10px 20px
+				font-size 1.2rem
+				font-weight bold
+				line-height 1.6
+				letter-spacing 1.2px
+				background linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9))
+				color #fff
+
+
 
 .top-content
 	+mq()
@@ -52,37 +81,39 @@
 		overflow hidden
 
 		// Philosophy
-		.phil-col
-			padding 60px 20px
+		.company-info
+			margin 0
+			.phil-col
+				padding 60px 20px
 
-			.phil
-				font-size 3.2rem
+				.phil
+					font-size 3.2rem
 
-			.text-deco
-				margin 30px 0 0
+				.text-deco
+					margin 30px 0 0
 
-			h2
-				margin-top 30px
-				font-size 2.2rem
-				line-height 1.6
-				.pc-br
-					display none
+				h2
+					margin-top 30px
+					font-size 2.2rem
+					line-height 1.6
+					.pc-br
+						display none
 
-			.p-text
-				width 100%
-				margin-top 30px
-				font-size 1.2rem
-				line-height 1.8
+				.p-text
+					width 100%
+					margin-top 30px
+					font-size 1.2rem
+					line-height 1.8
 
-			.p-box
-				bottom 0
+				.p-box
+					bottom 0
 
-			.p-image
-				position static
-				margin-top 30px
-				img
-					position relative
-					z-index 910
+				.p-image
+					position static
+					margin-top 30px
+					img
+						position relative
+						z-index 910
 
 
 		// 会社情報

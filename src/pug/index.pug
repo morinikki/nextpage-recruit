@@ -8,13 +8,18 @@ html(lang="ja")
         .wrap
             include _includes/_header.pug
             .hero-area
-                .hero-image
+                picture.hero-image
+                    source(media="(max-width: 768px)" srcset="images/top/top_main-visual_sp.jpg")
                     img(src="images/top/top_main-visual.jpg")
                 .mv-catch
                     p.main-catch Creating leads to results
                     p.sub-catch 結果につながるものづくりを
                 .mv-box
                 .scroll-arrow
+            .tag-text
+                p NEXTPAGE
+                    br
+                    | 新卒採用ページ
             main.top-content
                 section.company-info
                     .phil-col

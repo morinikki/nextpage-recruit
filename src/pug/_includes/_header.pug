@@ -1,7 +1,9 @@
 header.header
     h1.header-logo
         a(href="#")
-            img(src="images/common/np_logo.svg", alt="logo")
+            picture
+                source(media="(max-width: 768px)" srcset="images/top/top_np_logo_sp.svg")
+                img(src="images/common/np_logo.svg", alt="logo")
     nav.global-nav
         ul
             li

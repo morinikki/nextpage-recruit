@@ -48,6 +48,10 @@
   background: linear-gradient(to bottom, #00bbcc, #99cc00) bottom left;
 }
 
+.tag-text {
+  display: none;
+}
+
 .company-info {
   margin-top: 60px;
 }

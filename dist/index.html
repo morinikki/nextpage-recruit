@@ -16,7 +16,10 @@
   <body id="top">
     <div class="wrap">
       <header class="header">
-        <h1 class="header-logo"><a href="#"><img src="images/common/np_logo.svg" alt="logo"/></a></h1>
+        <h1 class="header-logo"><a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/top/top_np_logo_sp.svg"/><img src="images/common/np_logo.svg" alt="logo"/>
+            </picture></a></h1>
         <nav class="global-nav">
           <ul>
             <li><a href="company.html">会社情報</a></li>
@@ -34,13 +37,18 @@
         </nav>
       </header>
       <div class="hero-area">
-        <div class="hero-image"><img src="images/top/top_main-visual.jpg"/></div>
+        <picture class="hero-image">
+          <source media="(max-width: 768px)" srcset="images/top/top_main-visual_sp.jpg"/><img src="images/top/top_main-visual.jpg"/>
+        </picture>
         <div class="mv-catch">
           <p class="main-catch">Creating leads to results</p>
           <p class="sub-catch">結果につながるものづくりを</p>
         </div>
         <div class="mv-box"></div>
         <div class="scroll-arrow"></div>
+      </div>
+      <div class="tag-text">
+        <p>NEXTPAGE<br/>新卒採用ページ</p>
       </div>
       <main class="top-content">
         <section class="company-info">

@@ -85,7 +85,7 @@ body {
   width: 175px;
 }
 
-.header .header-logo a img {
+.header .header-logo a picture img {
   width: 100%;
 }
 
@@ -512,6 +512,10 @@ body {
   margin-top: 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00)) bottom left;
   background: linear-gradient(to bottom, #00bbcc, #99cc00) bottom left;
+}
+
+.tag-text {
+  display: none;
 }
 
 .company-info {
