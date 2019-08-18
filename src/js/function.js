@@ -60,3 +60,17 @@ $(function () {
 		$('.btn-menu span').toggleClass('open');
 	});
 });
+
+// *slick-slider
+$(function(){
+	$('.slider').slick({
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slidesToShow: 3,
+		centerMode: true,
+		centerPadding: '200px',
+		focusOnSelect: true,
+		arrows: true,
+		dots:true,
+	});
+});

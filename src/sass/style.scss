@@ -6,6 +6,10 @@
 @import "_includes/base";
 @import "_includes/common";
 
+// *slick
+@import "_slick/slick.scss";
+@import "_slick/slick-theme.scss";
+
 // *pages
 @import "_pages/top.scss";
 @import "_pages/work.scss";

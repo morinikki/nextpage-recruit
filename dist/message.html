@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/mobile.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap" rel="stylesheet"/>
-    <script type="text/javascript" src="js/function.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/function.js"></script>
     <title>メッセージ | 株式会社 NEXPAGE</title>
   </head>
   <body id="message">
@@ -55,9 +56,78 @@
           <p><a href="#presi-mess">代表からのメッセージ</a></p>
         </div>
       </div>
-      <div class="staff-slides slider" id="slider">
-        <div><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></div>
-      </div>
+      <section class="staff-intro">
+        <h3 id="message-h3">スタッフ<span>紹介</span></h3>
+        <p class="lead">ネクストページには個性豊かな社員が毎日楽しく働いています。</p>
+        <div class="staff-slides">
+          <ul class="slider">
+            <li class="slide">
+              <p class="list-img"><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></p>
+              <div class="list-group">
+                <h4>西川桂似<br/><span>nishikawa kei</span></h4>
+                <p class="catch">神戸生まれ、神戸育ち、神戸在住。</p>
+                <p class="w-position">デザイナー / フロントエンドエンジニア</p>
+              </div>
+            </li>
+            <li class="slide">
+              <p class="list-img"><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></p>
+              <div class="list-group">
+                <h4>西川 桂似<br/><span>nishikawa kei</span></h4>
+                <p class="catch">神戸生まれ、神戸育ち、神戸在住。</p>
+                <p class="w-position">デザイナー / フロントエンドエンジニア</p>
+              </div>
+            </li>
+            <li class="slide">
+              <p class="list-img"><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></p>
+              <div class="list-group">
+                <h4>西川桂似<br/><span>nishikawa kei</span></h4>
+                <p class="catch">神戸生まれ、神戸育ち、神戸在住。</p>
+                <p class="w-position">デザイナー / フロントエンドエンジニア</p>
+              </div>
+            </li>
+            <li class="slide">
+              <p class="list-img"><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></p>
+              <div class="list-group">
+                <h4>西川桂似<br/><span>nishikawa kei</span></h4>
+                <p class="catch">神戸生まれ、神戸育ち、神戸在住。</p>
+                <p class="w-position">デザイナー / フロントエンドエンジニア</p>
+              </div>
+            </li>
+            <li class="slide">
+              <p class="list-img"><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></p>
+              <div class="list-group">
+                <h4>西川桂似<br/><span>nishikawa kei</span></h4>
+                <p class="catch">神戸生まれ、神戸育ち、神戸在住。</p>
+                <p class="w-position">デザイナー / フロントエンドエンジニア</p>
+              </div>
+            </li>
+            <li class="slide">
+              <p class="list-img"><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></p>
+              <div class="list-group">
+                <h4>西川桂似<br/><span>nishikawa kei</span></h4>
+                <p class="catch">神戸生まれ、神戸育ち、神戸在住。</p>
+                <p class="w-position">デザイナー / フロントエンドエンジニア</p>
+              </div>
+            </li>
+            <li class="slide">
+              <p class="list-img"><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></p>
+              <div class="list-group">
+                <h4>西川桂似<br/><span>nishikawa kei</span></h4>
+                <p class="catch">神戸生まれ、神戸育ち、神戸在住。</p>
+                <p class="w-position">デザイナー / フロントエンドエンジニア</p>
+              </div>
+            </li>
+            <li class="slide">
+              <p class="list-img"><img src="images/message/staff-keikun.jpg" alt="keikun" width="333px"/></p>
+              <div class="list-group">
+                <h4>西川桂似<br/><span>nishikawa kei</span></h4>
+                <p class="catch">神戸生まれ、神戸育ち、神戸在住。</p>
+                <p class="w-position">デザイナー / フロントエンドエンジニア</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="sect-bg members-mess" id="member-mess">
         <h3 id="message-h3"><span>社員</span>からのメッセージ</h3>
         <div class="content-wrap message-wrap"><img class="message-tri" src="images/message/tri-message.png" alt="" width="45px" height="45px"/>
@@ -116,7 +186,10 @@
           </div>
         </div>
       </section>
-      <div class="top-back"><a href="#"><img src="images/common/btn_page-top.svg" alt="top" width="68px"/></a></div>
+      <div class="top-back"><a href="#">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/common/btn_page-top_sp.svg"/><img src="images/common/btn_page-top.svg" alt="top" width="68px"/>
+          </picture></a></div>
       <footer class="footer">
         <div class="footer-corp">
           <h1 class="footer-logo"><img src="images/common/np_logo.svg" alt="logo"/>
