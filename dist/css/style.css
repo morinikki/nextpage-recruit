@@ -1021,11 +1021,12 @@ body {
   -webkit-box-pack: justify;
           justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 
 .portfolio .port-col li {
   width: 33.3%;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .portfolio .port-col li figure {
@@ -1034,16 +1035,22 @@ body {
 
 .portfolio .port-col li figure .port-img {
   margin-bottom: 30px;
+  width: 85%;
+}
+
+.portfolio .port-col li figure .port-img img {
+  width: 100%;
+  height: auto;
 }
 
 .portfolio .port-col li figure .port-img::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: 54px;
-  right: 43px;
-  width: 350px;
-  height: 188px;
+  top: 15px;
+  left: 15px;
+  width: 85%;
+  height: 72%;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to bottom, #00bbcc, #99cc00);
   z-index: -1;
@@ -1051,7 +1058,7 @@ body {
 
 .portfolio .port-col li figure figcaption a {
   display: inline-block;
-  margin: 40px 0;
+  margin: 10px 0 0;
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -1062,7 +1069,7 @@ body {
 .portfolio .port-col li figure figcaption a span {
   display: inline-block;
   margin-top: 5px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: normal;
   font-family: 'Noto Sans', sans-serif;
   letter-spacing: 0.5px;
