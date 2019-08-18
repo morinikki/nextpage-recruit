@@ -51,3 +51,12 @@ $(window).scroll(function() {
 // 		$(".header-logo a").css("width","175px");
 // 	}
 // });
+
+// *humberger-menu
+$(function () {
+	$('.btn-menu').on('click', function () {
+		$('#menu').toggleClass('open');
+		$('.btn-menu').toggleClass('open');
+		$('.btn-menu span').toggleClass('open');
+	});
+});

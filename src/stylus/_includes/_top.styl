@@ -34,18 +34,31 @@
 				padding 20px
 				margin 70% auto 0
 				background none
+				&::before
+					content ''
+					display block
+					position absolute
+					top 5px
+					right 10px
+					width 45px
+					height 45px
+					background linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9))
 
 				.main-catch
+					position relative
 					font-size 2.2rem
 					text-align center
 					line-height 1.2
 					color #fff
+					z-index 910
 
 				.sub-catch
+					position relative
 					margin-top 20px
 					font-size 1.2rem
 					text-align center
 					color #fff
+					z-index 910
 
 			.mv-box
 				width 100%
