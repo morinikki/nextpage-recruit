@@ -7,12 +7,12 @@
         li {
             width: 45%;
             margin: 0 0 0 10px;
-            padding: 25px 0 25px 0px;
+            padding: 12px 0 24px 0;
             font-weight: bold;
             &::after {
                 content: "";
                 display: block;
-                margin: 25px 0 0 0;
+                margin: 30px 0 0 0;
                 height: 1px;
                 width: 100%;
                 background: linear-gradient(to right,#00bbcc,#99cc00);
@@ -21,6 +21,7 @@
     }
     p {
         font-size: 1.4rem;
+        margin-left: 8px;
     }
 }
 .portfolio {
@@ -47,7 +48,7 @@
                         display: block;
                         position: absolute;
                         bottom: 54px;
-                        right: 40px;
+                        right: 43px;
                         width: 350px;
                         height: 188px;
                         background: linear-gradient(to bottom,#00bbcc,#99cc00);
@@ -60,10 +61,16 @@
                         font-size: 1.8rem;
                         font-weight: bold;
                         text-decoration: none;
+                        letter-spacing: 1px;
                         color: #000;
                         span {
+                            display: inline-block;
+                            margin-top: 5px;
                             font-size: 1.4rem;
                             font-weight: normal;
+                            font-family: 'Noto Sans', sans-serif;
+                            letter-spacing: 0.5px;
+                            color: #828282;
                         }
                     }
                 }
