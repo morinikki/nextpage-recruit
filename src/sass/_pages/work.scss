@@ -78,6 +78,14 @@
                             font-family: 'Noto Sans', sans-serif;
                             letter-spacing: 0.5px;
                             color: #828282;
+                            &:hover {
+                                color: #00bbcc;
+                                transition: .2s;
+                            }
+                        }
+                        &:hover {
+                            color: #00bbcc;
+                            transition: .2s;
                         }
                     }
                 }

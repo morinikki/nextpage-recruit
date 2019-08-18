@@ -102,6 +102,18 @@
   color: #828282;
 }
 
+.portfolio .port-col li figure figcaption a span:hover {
+  color: #00bbcc;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.portfolio .port-col li figure figcaption a:hover {
+  color: #00bbcc;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 .experience p {
   line-height: 3rem;
 }
