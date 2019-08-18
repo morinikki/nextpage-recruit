@@ -7,7 +7,8 @@ html(lang="ja")
             include _includes/_under-header.pug
             //- 
             .lower-visual
-                .lv-img
+                picture.lv-img
+                    source(media="(max-width: 768px)" srcset="images/common/under_visual_sp.jpg")
                     img(src="images/work/work_hero.jpg", alt="業務")
                 .lv-tri
                     img(src="images/common/bg_triangle.png", alt="title")

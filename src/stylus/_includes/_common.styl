@@ -34,6 +34,109 @@
 						color #000
 
 
+// #under-header
+.under-header
+	+mq()
+		width 100%
+		padding 0
+		img
+			width 100%
+		.header-logo
+			width 85px
+			margin 0 0 0 15px
+
+		.global-nav
+			width 60px
+			height 60px
+			background linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9))
+			ul
+				display none
+
+.sect-bg
+	+mq()
+		padding 60px 0
+
+// #underPage main-visual
+.lower-visual
+	+mq()
+		.lv-img
+			position relative
+			width 100%
+			z-index 900
+		.lv-tri
+			display none
+		.lv-gray
+			display none
+		.lv-text
+			left 25px
+			bottom 30px
+			z-index 910
+			.lv-tit
+				font-size 2.2rem
+			.lv-cap
+				font-size 1.2rem
+				margin 10px -10px 0 0
+
+
+// #underPage link-area
+.pagelink-wrap
+	+mq()
+		width 100%
+		margin 40px 0
+		flex-wrap wrap
+		.pagelink
+			width 60%
+			margin-right 0
+			&::after
+				height 1px
+				margin 8px 0 20px
+				padding-right 0
+
+			p
+				a
+					font-size 1.3rem
+					&::after
+						top 0
+						right 5px
+						width 4px
+						height 4px
+
+// #table
+.content-wrap
+	+mq()
+		.comp-table
+			margin 30px 0 20px
+			background none
+			&::before
+					content ''
+					display block
+					width 100%
+					height 1px
+					margin-bottom 10px
+					background linear-gradient(to right, #00bbcc, #99cc00)
+			tr
+				display flex
+				flex-wrap wrap
+				padding 12px 0
+				&::after
+					content ''
+					display block
+					width 100%
+					height 1px
+					margin-top 22px
+					background linear-gradient(to right, #00bbcc, #99cc00)
+				th
+					width 100%
+					padding 0
+					font-size 1.3rem
+				td
+					width 100%
+					margin-top 10px
+					padding 0
+					font-size 1.2rem
+					line-height 1.3
+
+
 // *footer
 .footer
 	+mq()
@@ -68,3 +171,9 @@
 
 		#copyrights
 			font-size 1.2rem
+
+.top-back
+	+mq()
+		float none
+		width 85px
+		margin 0 auto

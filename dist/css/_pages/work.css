@@ -76,6 +76,7 @@
 }
 
 .portfolio .port-col li figure figcaption a {
+  display: inline-block;
   margin: 40px 0;
   font-size: 1.8rem;
   font-weight: bold;

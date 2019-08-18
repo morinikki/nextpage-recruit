@@ -1,0 +1,72 @@
+// *work（事業内容）
+
+#work-content
+	+mq()
+		width 100%
+		padding 80px 0 0 0
+		.content-wrap
+			width 80%
+			margin 0 auto
+			padding 20px
+
+			.content-catch
+				h3
+					margin-top 30px
+					font-size 2.2rem
+				p
+					width 90%
+					margin 0 auto
+					font-size 1.2rem
+					line-height 1.4
+
+#service-content
+	+mq()
+		.service-list
+			li
+				flex-basis 100%
+				margin 0
+				padding 25px 0 0
+				font-size 1.3rem
+				&::after
+					margin 20px 0 0 0
+		p
+			font-size 1rem
+			margin 10px 0 0 0
+			padding-bottom 20px
+			line-height 1.2
+
+.portfolio
+	+mq()
+		margin 60px auto 40px
+		.content-catch
+			h3
+				font-size 2.2rem
+			p
+				width 90%
+				margin 0 auto
+				font-size 1.2rem
+				line-height 1.4
+		.port-col
+			justify-content center
+			margin-top 30px
+			li
+				width 85%
+				margin 0 10px 40px 0
+				&:last-child
+					margin-bottom 0
+				figure
+					display block
+					.port-img
+						margin 0
+						&::after
+							top 10px
+							left 10px
+							width 100%
+							height 68%
+					figcaption
+						a
+							margin 30px 0 0
+							font-size 1.4rem
+							span
+								margin-top 2px
+								font-size 1rem
