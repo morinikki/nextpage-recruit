@@ -77,12 +77,13 @@
     display: none;
   }
   .lower-visual .lv-text {
-    left: 25px;
+    left: 15px;
     bottom: 30px;
     z-index: 910;
   }
   .lower-visual .lv-text .lv-tit {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
   }
   .lower-visual .lv-text .lv-cap {
     font-size: 1.2rem;
@@ -602,5 +603,136 @@
   .portfolio .port-col li figure figcaption a span {
     margin-top: 2px;
     font-size: 1rem;
+  }
+}
+#learn .sp-br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #learn {
+    width: 100%;
+  }
+  #learn .content-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+  #learn .content-wrap .content-catch h3 {
+    margin-top: 30px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  #learn .content-wrap .content-catch h3 .sp-br {
+    display: block;
+  }
+  #learn .content-wrap .content-catch p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  #learn .content-wrap .comp-table tr {
+    padding: 15px 0 12px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #detail {
+    width: 100%;
+    padding: 0;
+  }
+  #detail .content-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+  #detail .content-wrap .content-catch h3 {
+    margin-top: 30px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  #detail .content-wrap .content-catch h3 .sp-br {
+    display: block;
+  }
+  #detail .content-wrap .content-catch p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 768px) {
+  #experience {
+    width: 100%;
+    padding: 60px 0 0;
+  }
+  #experience .content-wrap {
+    width: 80%;
+    padding: 20px 20px 50px;
+  }
+  #experience .content-wrap .content-catch h3 {
+    margin-top: 30px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  #experience .content-wrap .content-catch h3 .sp-br {
+    display: block;
+  }
+  #experience .content-wrap .content-catch p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  #experience .content-wrap .content-catch p .pc-br {
+    display: none;
+  }
+  #experience .content-wrap .det-btn {
+    width: 165px;
+    height: 46px;
+    margin: 20px auto 0;
+  }
+  #experience .content-wrap .det-btn .btn-inner {
+    width: 161px;
+    height: 42px;
+  }
+  #experience .content-wrap .det-btn .btn-inner a {
+    margin-top: -8px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #select {
+    width: 100%;
+    padding: 60px 0;
+  }
+  #select .content-wrap {
+    width: 80%;
+    padding: 20px 20px 50px;
+  }
+  #select .content-wrap .content-catch h3 {
+    margin-top: 30px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  #select .content-wrap .content-catch h3 .sp-br {
+    display: block;
+  }
+  #select .content-wrap .content-catch p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  #select .content-wrap .content-catch p .pc-br {
+    display: none;
+  }
+  #select .content-wrap .det-btn {
+    width: 165px;
+    height: 46px;
+    margin: 20px auto 0;
+  }
+  #select .content-wrap .det-btn .btn-inner {
+    width: 161px;
+    height: 42px;
+  }
+  #select .content-wrap .det-btn .btn-inner a {
+    margin-top: -8px;
+    font-size: 1.2rem;
   }
 }
