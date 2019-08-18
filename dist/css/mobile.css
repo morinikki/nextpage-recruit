@@ -32,7 +32,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    padding-top: 40%;
+    padding-top: 35%;
     background: rgba(255,255,255,0.8);
     transition: 0.3s;
   }
@@ -104,11 +104,99 @@
     margin: 0 0 0 15px;
   }
   .under-header .global-nav {
+    top: 0;
+    right: 0;
     width: 60px;
     height: 60px;
     background: linear-gradient(to bottom, rgba(150,234,16,0.9), rgba(79,220,220,0.9));
   }
   .under-header .global-nav ul {
+    display: none;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 35%;
+    background: rgba(255,255,255,0.8);
+    z-index: 1000;
+  }
+  .under-header .global-nav #menu {
+    transition: 0.3s;
+  }
+  .under-header .global-nav #menu.open {
+    display: block;
+  }
+  .under-header .global-nav #menu .btn {
+    display: none;
+  }
+  .under-header .global-nav #menu li {
+    margin: 0 0 40px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  .under-header .global-nav #menu li:last-child {
+    margin-bottom: 0;
+  }
+  .under-header .global-nav #menu li a {
+    color: #000;
+  }
+  .under-header .global-nav #menu .sns {
+    display: table;
+    width: 50px;
+    height: 50px;
+    margin: 30px auto;
+    background: none;
+    border: solid 1px #9c0;
+    border-radius: 30px;
+  }
+  .under-header .global-nav #menu .sns a {
+    display: table-cell;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+  .under-header .global-nav #menu .sns a img {
+    width: auto;
+    height: 100%;
+  }
+  .under-header .global-nav .btn-menu::before,
+  .under-header .global-nav .btn-menu::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    margin: 0 auto;
+    transforrm: translate(-50%, -50%);
+    background: #fff;
+  }
+  .under-header .global-nav .btn-menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+  }
+  .under-header .global-nav .btn-menu::before {
+    top: 20px;
+  }
+  .under-header .global-nav .btn-menu::after {
+    bottom: 20px;
+  }
+  .under-header .global-nav .btn-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 0 auto;
+    background: #fff;
+  }
+  .under-header .global-nav .btn-menu span.open {
     display: none;
   }
 }
@@ -655,6 +743,7 @@
     display: block;
   }
   .portfolio .port-col li figure .port-img {
+    width: 100%;
     margin: 0;
   }
   .portfolio .port-col li figure .port-img::after {
