@@ -11,6 +11,7 @@
   }
   .header .header-logo {
     margin: 0;
+    padding: 0;
   }
   .header .header-logo a {
     width: 30px;
