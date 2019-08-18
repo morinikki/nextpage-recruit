@@ -1166,16 +1166,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.years-select .selector select {
+#year {
   margin: 0;
   padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .exp-wrap {
@@ -1212,12 +1205,16 @@ body {
 }
 
 .exp-wrap .exp-col .exp-info em {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .exp-wrap .exp-col .exp-info p {
   margin: 10px 0;
-  line-height: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 .exp-wrap .exp-col .exp-text {
@@ -1247,7 +1244,8 @@ body {
 .exp-wrap .exp-col .exp-text .exp-inner p {
   margin: 0 0 20px 0;
   font-size: 1.4rem;
-  line-height: 2rem;
+  text-indent: 1em;
+  line-height: 1.6;
 }
 
 .exp-content {
