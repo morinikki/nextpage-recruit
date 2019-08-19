@@ -1,0 +1,124 @@
+// *message（メッセージ）
+
+#message-h3
+	+mq()
+		font-size 2.2rem
+
+// スタッフ紹介
+.staff-intro
+	.lead
+		width 65%
+		margin 30px auto 0
+		font-size 1.2rem
+		line-height 1.4
+
+
+// #slider
+.staff-slides
+	+mq()
+		display none
+		.slinck-list
+			padding 0
+			.slide
+				width 100%
+				.slide
+					width 100%
+					margin 0
+			.slick-slide
+				transform scale(1)
+
+
+// 社員からのメッセージ
+.members-mess
+	+mq()
+		width 100%
+		margin-top 60px
+		padding 60px 0 0 0
+		.content-wrap
+			width 80%
+			padding 20px
+			margin-bottom 60px
+			&:last-child
+				margin-bottom 0
+			img
+				width 50px
+				height 50px
+			.member-col
+				flex-wrap wrap
+				.member-face
+					width 70%
+					margin 0 auto
+					img
+						width 100%
+						height auto
+				.member-pro
+					width 100%
+					margin-top 20px
+					h4
+						margin 0
+						font-size 1rem
+					.member-job
+						margin 30px 0 0 0
+					.staff-name
+						margin 10px 0 0 0
+						&::after
+							width 50%
+							right -20px
+							bottom 1px
+					.member-text
+						margin 30px 0 0 0
+						padding-bottom 10px
+						strong
+							margin 0
+							font-size 1.6rem
+							line-height 1.4
+						p
+							margin 20px 0 0 0
+							font-size 1.2rem
+							line-height 1.6
+
+		#int-btn
+			margin-top 50px
+
+
+// 代表からのメッセージ
+.presi-mess
+	+mq()
+		width 100%
+		padding-bottom 60px
+		.content-wrap
+			width 80%
+			padding 20px
+			.content-catch
+				h3
+					margin-top 20px
+					font-size 2rem
+			.presi-img
+				img
+					width 100%
+					height auto
+			.presi-message
+				text-align center
+				img
+					top -10px
+					left -10px
+					width 50px
+				h4
+					margin 30px 0 0 0
+					font-size 1.6rem
+					text-align left
+					line-height 1.4
+				.pre-q
+					margin 30px 0 0 0
+					font-size 1.4rem
+					text-align left
+					letter-spacing 1px
+					&::after
+						margin-top 8px
+			.pre-mess-inner
+				margin 20px 0 0 0
+				padding-bottom 20px
+				font-size 1.2rem
+				text-align left
+				line-height 1.6
+

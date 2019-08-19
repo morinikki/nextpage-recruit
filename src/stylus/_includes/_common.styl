@@ -50,7 +50,23 @@
 						font-size 1.5rem
 						color #000
 				.sns
-					display none
+					display table
+					width 50px
+					height 50px
+					margin 30px auto
+					background none
+					border solid 1px #99cc00
+					border-radius 30px
+					a
+						display table-cell
+						width 20px
+						height 20px
+						margin 0 auto
+						vertical-align middle
+						img
+							width auto
+							height 100%
+
 			.btn-menu::before, .btn-menu::after
 				content ''
 				display block
@@ -67,9 +83,10 @@
 					top 17px
 				&::after
 					bottom 17px
+					width 15px
 				span
 					display block
-					width 30px
+					width 23px
 					height 3px
 					background #fff
 					&.open

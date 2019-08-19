@@ -58,7 +58,24 @@
     color: #000;
   }
   .header .global-nav #menu .sns {
-    display: none;
+    display: table;
+    width: 50px;
+    height: 50px;
+    margin: 30px auto;
+    background: none;
+    border: solid 1px #9c0;
+    border-radius: 30px;
+  }
+  .header .global-nav #menu .sns a {
+    display: table-cell;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+  .header .global-nav #menu .sns a img {
+    width: auto;
+    height: 100%;
   }
   .header .global-nav .btn-menu::before,
   .header .global-nav .btn-menu::after {
@@ -80,10 +97,11 @@
   }
   .header .global-nav .btn-menu::after {
     bottom: 17px;
+    width: 15px;
   }
   .header .global-nav .btn-menu span {
     display: block;
-    width: 30px;
+    width: 23px;
     height: 3px;
     background: #fff;
   }
@@ -890,5 +908,148 @@
   #select .content-wrap .det-btn .btn-inner a {
     margin-top: -8px;
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #message-h3 {
+    font-size: 2.2rem;
+  }
+}
+.staff-intro .lead {
+  width: 65%;
+  margin: 30px auto 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+@media screen and (max-width: 768px) {
+  .staff-slides {
+    display: none;
+  }
+  .staff-slides .slinck-list {
+    padding: 0;
+  }
+  .staff-slides .slinck-list .slide {
+    width: 100%;
+  }
+  .staff-slides .slinck-list .slide .slide {
+    width: 100%;
+    margin: 0;
+  }
+  .staff-slides .slinck-list .slick-slide {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .members-mess {
+    width: 100%;
+    margin-top: 60px;
+    padding: 60px 0 0 0;
+  }
+  .members-mess .content-wrap {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+  .members-mess .content-wrap:last-child {
+    margin-bottom: 0;
+  }
+  .members-mess .content-wrap img {
+    width: 50px;
+    height: 50px;
+  }
+  .members-mess .content-wrap .member-col {
+    flex-wrap: wrap;
+  }
+  .members-mess .content-wrap .member-col .member-face {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .members-mess .content-wrap .member-col .member-face img {
+    width: 100%;
+    height: auto;
+  }
+  .members-mess .content-wrap .member-col .member-pro {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .members-mess .content-wrap .member-col .member-pro h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .members-mess .content-wrap .member-col .member-pro .member-job {
+    margin: 30px 0 0 0;
+  }
+  .members-mess .content-wrap .member-col .member-pro .staff-name {
+    margin: 10px 0 0 0;
+  }
+  .members-mess .content-wrap .member-col .member-pro .staff-name::after {
+    width: 50%;
+    right: -20px;
+    bottom: 1px;
+  }
+  .members-mess .content-wrap .member-col .member-pro .member-text {
+    margin: 30px 0 0 0;
+    padding-bottom: 10px;
+  }
+  .members-mess .content-wrap .member-col .member-pro .member-text strong {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .members-mess .content-wrap .member-col .member-pro .member-text p {
+    margin: 20px 0 0 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  .members-mess #int-btn {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .presi-mess {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .presi-mess .content-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+  .presi-mess .content-wrap .content-catch h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  .presi-mess .content-wrap .presi-img img {
+    width: 100%;
+    height: auto;
+  }
+  .presi-mess .content-wrap .presi-message {
+    text-align: center;
+  }
+  .presi-mess .content-wrap .presi-message img {
+    top: -10px;
+    left: -10px;
+    width: 50px;
+  }
+  .presi-mess .content-wrap .presi-message h4 {
+    margin: 30px 0 0 0;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .presi-mess .content-wrap .presi-message .pre-q {
+    margin: 30px 0 0 0;
+    font-size: 1.4rem;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  .presi-mess .content-wrap .presi-message .pre-q::after {
+    margin-top: 8px;
+  }
+  .presi-mess .content-wrap .pre-mess-inner {
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.6;
   }
 }

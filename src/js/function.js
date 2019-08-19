@@ -72,5 +72,19 @@ $(function(){
 		focusOnSelect: true,
 		arrows: true,
 		dots:true,
+		// レスポンシブ
+		// responsive: [{
+		// 	breakpoint: 1000,
+		// 		 settings: {
+		// 			slidesToShow: 3,
+		// 			centerPadding: '50px',
+		// 	}
+		// },{
+		// 	breakpoint: 768,
+		// 		 settings: {
+		// 			slidesToShow: 1,
+		// 		}
+		// 	}
+		// ]
 	});
 });
