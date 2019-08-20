@@ -77,6 +77,24 @@ table {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 html {
   height: 100%;
   font-size: 62.5%;
@@ -816,6 +834,18 @@ body {
   position: relative;
   width: 100%;
   height: 765px;
+  -webkit-animation: fadeIn 3s ease 0s 1 normal forwards;
+          animation: fadeIn 3s ease 0s 1 normal forwards;
+}
+
+.hero-area #mv-slider {
+  position: relative;
+}
+
+.hero-area #mv-slider img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .hero-area .hero-image {
@@ -874,7 +904,7 @@ body {
 
 .top-content .phil-col {
   position: relative;
-  padding: 120px 140px 120px;
+  padding: 120px 140px 150px;
   background: #eee;
 }
 
