@@ -124,15 +124,18 @@
 }
 
 .footer {
+    position: relative;
+    height: 100%;
     .footer-corp {
         display: flex;
         align-items: center;
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
         padding: 30px 0;
 
         .footer-logo {
             width: 180px;
+            margin-left: 4%;
             img {
                 width: 100%;
             }
@@ -195,6 +198,13 @@
                 }
             }
         }
+
+        // topback-btn
+        .top-back {
+            position: absolute;
+            top: -20px;
+            right: 108px;
+        }
     }
 
     #copyrights {
@@ -209,8 +219,32 @@
 .sect-bg {
     width: 85%;
     margin: 0 auto;
-    padding: 80px 0 40px 0;
+    padding: 40px 0;
     background: #f6f6f6;
+}
+.work-content {
+    padding-top: 80px;
+}
+.service-content {
+    padding-top: 80px;
+}
+.learn {
+    padding-top: 80px;
+}
+.select {
+    padding-bottom: 80px;
+}
+#de-flow {
+    padding-top: 80px;
+}
+#de-skill {
+    padding-bottom: 80px;
+}
+#member-mess {
+    padding-top: 80px;
+}
+#presi-mess {
+    padding-bottom: 80px;
 }
 
 // 下層メインビジュアル
@@ -221,7 +255,7 @@
 
     .lv-img {
         display: block;
-        width: 105%;
+        width: 100%;
         img {
             width: 100%;
             margin: 0 auto;
@@ -232,7 +266,7 @@
         position: absolute;
         top: 2px;
         left: 0;
-        width: 44.5%;
+        width: 45.9%;
 
         img {
             margin: 0 auto 0;
@@ -242,10 +276,12 @@
 
     .lv-gray {
         position: absolute;
-        bottom: -183px;
-        right: -28px;
+        bottom: -163px;
+        right: -30px;
+        width: 56.2%;
         img {
-            width: 110%;
+            width: 100%;
+            height: auto;
         }
     }
 
@@ -277,7 +313,7 @@
 // 下層ページリンク
 .pagelink-wrap {
     width: 60%;
-    margin: 70px auto 200px;
+    margin: 70px auto 150px;
     display: flex;
     justify-content: center;
 
@@ -395,11 +431,4 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-}
-
-// topback-btn
-.top-back {
-    float: right;
-    margin-top: 30px;
-    margin-right: 110px;
 }

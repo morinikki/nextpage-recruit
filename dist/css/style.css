@@ -541,18 +541,24 @@ body {
   display: none;
 }
 
+.footer {
+  position: relative;
+  height: 100%;
+}
+
 .footer .footer-corp {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   padding: 30px 0;
 }
 
 .footer .footer-corp .footer-logo {
   width: 180px;
+  margin-left: 4%;
 }
 
 .footer .footer-corp .footer-logo img {
@@ -625,6 +631,12 @@ body {
           transform: translateX(35%);
 }
 
+.footer .footer-corp .top-back {
+  position: absolute;
+  top: -20px;
+  right: 108px;
+}
+
 .footer #copyrights {
   text-align: center;
   padding: 10px 0;
@@ -636,8 +648,40 @@ body {
 .sect-bg {
   width: 85%;
   margin: 0 auto;
-  padding: 80px 0 40px 0;
+  padding: 40px 0;
   background: #f6f6f6;
+}
+
+.work-content {
+  padding-top: 80px;
+}
+
+.service-content {
+  padding-top: 80px;
+}
+
+.learn {
+  padding-top: 80px;
+}
+
+.select {
+  padding-bottom: 80px;
+}
+
+#de-flow {
+  padding-top: 80px;
+}
+
+#de-skill {
+  padding-bottom: 80px;
+}
+
+#member-mess {
+  padding-top: 80px;
+}
+
+#presi-mess {
+  padding-bottom: 80px;
 }
 
 .lower-visual {
@@ -648,7 +692,7 @@ body {
 
 .lower-visual .lv-img {
   display: block;
-  width: 105%;
+  width: 100%;
 }
 
 .lower-visual .lv-img img {
@@ -660,7 +704,7 @@ body {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 44.5%;
+  width: 45.9%;
 }
 
 .lower-visual .lv-tri img {
@@ -670,12 +714,14 @@ body {
 
 .lower-visual .lv-gray {
   position: absolute;
-  bottom: -183px;
-  right: -28px;
+  bottom: -163px;
+  right: -30px;
+  width: 56.2%;
 }
 
 .lower-visual .lv-gray img {
-  width: 110%;
+  width: 100%;
+  height: auto;
 }
 
 .lower-visual .lv-text {
@@ -703,7 +749,7 @@ body {
 
 .pagelink-wrap {
   width: 60%;
-  margin: 70px auto 200px;
+  margin: 70px auto 150px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -822,12 +868,6 @@ body {
   -webkit-box-pack: justify;
           justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.top-back {
-  float: right;
-  margin-top: 30px;
-  margin-right: 110px;
 }
 
 .hero-area {
