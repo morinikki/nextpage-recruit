@@ -9,3 +9,20 @@ body {
     min-height: 100%;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+}
+.sa.show {
+    opacity: 1;
+	transform: none;
+}
+.sa--up {
+    transform: translate(0, 100px);
+}
+.sa--rl {
+    transform: translate(100px, 0);
+}
+.sa--lr {
+    transform: translate(-100px, 0);
+}
