@@ -1,11 +1,18 @@
 .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    width: 60%;
+    margin: 50px auto 150px;
     text-align: center;
-    margin: 200px 0 0 0;
-    padding: 100px 0;
-    font-size: 1.8rem;
-    line-height: 4rem;
-    z-index: 999;
+    z-index: 920;
+    p {
+        display: inline;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        border-bottom: 2px solid #009944;
+    }
 }
 
 .form-signal {

@@ -37,7 +37,7 @@
   display: flex;
 }
 
-.header .global-nav ul a {
+.header .global-nav ul li a {
   margin: 0 0 0 40px;
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
@@ -71,6 +71,10 @@
   margin-left: 10px;
 }
 
+.under-header .header-logo:hover {
+  opacity: 0.5;
+}
+
 .under-header .global-nav ul {
   display: -webkit-box;
   display: flex;
@@ -89,12 +93,27 @@
   -webkit-box-align: center;
           align-items: center;
   position: relative;
-  left: -30px;
+  left: -40px;
   width: 150px;
   height: 46px;
+  padding-top: 2px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  box-sizing: border-box;
   border-radius: 30px;
+}
+
+.under-header .global-nav ul .btn:hover {
+  background: none;
+  border: 2px solid  #99cc00;
+}
+
+.under-header .global-nav ul .btn:hover a {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .under-header .global-nav ul .btn a {
@@ -102,22 +121,45 @@
   color: #fff;
 }
 
+.under-header .global-nav ul .bt-contact {
+  margin-right: 30px;
+}
+
 .under-header .global-nav ul li {
-  margin: 0 0 0 35px;
+  margin: 0;
 }
 
 .under-header .global-nav ul li a {
+  display: block;
+  padding: 10px;
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   color: #000;
   text-decoration: none;
 }
 
+.under-header .global-nav ul .menu-txt {
+  margin-right: 25px;
+}
+
+.under-header .global-nav ul .menu-txt:hover > a {
+  font-weight: bold;
+  color: #009944;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .under-header .global-nav ul .sns {
   width: 40px;
   height: 40px;
+}
+
+.under-header .global-nav ul .sns:hover {
   background: #f6f6f6;
+  box-sizing: border-box;
   border-radius: 30px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .under-header .global-nav ul .sns a {
@@ -127,7 +169,11 @@
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  margin-top: 12px;
+  margin-top: 4px;
+}
+
+.under-header .global-nav ul .fb {
+  margin-right: 30px;
 }
 
 .under-header .global-nav ul .close {
