@@ -911,6 +911,60 @@
   }
 }
 @media screen and (max-width: 768px) {
+  #require #de-flow {
+    width: 100%;
+  }
+  #require #de-flow .content-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+  #require #de-flow .content-wrap .content-catch h3 {
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+  #require #de-flow .content-wrap .flow-list {
+    width: 80%;
+    margin: 30px auto 20px;
+  }
+  #require #de-flow .content-wrap .flow-list ul {
+    flex-wrap: wrap;
+  }
+  #require #de-flow .content-wrap .flow-list ul li {
+    flex-basis: 45%;
+  }
+  #require #de-flow .content-wrap .flow-list ul li img {
+    width: 100%;
+    height: auto;
+  }
+  #require #de-flow .content-wrap .comp-table {
+    margin: 0;
+  }
+  #require #de-content {
+    width: 100%;
+    padding: 0;
+  }
+  #require #de-content .content-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+  #require #de-content .content-wrap .content-catch h3 {
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+  #require #de-skill {
+    width: 100%;
+    padding: 60px 0;
+  }
+  #require #de-skill .content-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+  #require #de-skill .content-wrap .content-catch h3 {
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
   #message-h3 {
     font-size: 2.2rem;
   }
