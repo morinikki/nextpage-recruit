@@ -53,7 +53,7 @@
 .top-content {
     .phil-col {
         position: relative;
-        padding: 80px 140px 200px;
+        padding: 120px 140px 120px;
         background: #eee;
         .phil {
             font-size: 6rem;
@@ -83,7 +83,7 @@
         }
         .p-text {
             position: relative;
-            margin: 86px 0 0 0;
+            margin: 80px 0 0 0;
             width: 500px;
             font-size: 1.6rem;
             letter-spacing: 1.2px;
@@ -92,10 +92,10 @@
         }
         .p-box {
             position: absolute;
-            top: 380px;
+            top: 460px;
             left: 265px;
             width: 605px;
-            height: 307px;
+            height: 310px;
             z-index: 900;
             background: linear-gradient(to bottom,#00bbcc,#99cc00);
         }
