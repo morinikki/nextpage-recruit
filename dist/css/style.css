@@ -416,7 +416,7 @@ body {
 }
 
 .header .header-logo {
-  padding: 30px 30px 15px;
+  padding: 40px 40px 15px;
   margin: 0 0 20px;
 }
 
@@ -820,6 +820,20 @@ body {
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to right, #00bbcc, #99cc00);
+}
+
+.pagelink-wrap .pagelink:hover > p {
+  position: relative;
+  top: -10px;
+}
+
+.pagelink-wrap .pagelink:hover > p a {
+  color: #828282;
+}
+
+.pagelink-wrap .pagelink p {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .pagelink-wrap .pagelink p a {

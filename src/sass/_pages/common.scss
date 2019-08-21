@@ -10,7 +10,7 @@
     transition: 0.3s;
 
     .header-logo {
-        padding: 30px 30px 15px;
+        padding: 40px 40px 15px;
         margin: 0 0 20px;
         a {
             display: inline-block;
@@ -370,7 +370,16 @@
             background: linear-gradient(to right, #00bbcc, #99cc00);
         }
 
+        &:hover > p {
+            position: relative;
+            top: -10px;
+            a {
+                color: #828282;
+            }
+        }
+
         p {
+            transition: 0.2s;
             a {
                 font-size: 1.6rem;
                 font-weight: bold;
