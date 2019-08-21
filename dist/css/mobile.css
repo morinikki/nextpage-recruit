@@ -349,15 +349,11 @@
   .footer .footer-corp .det-btn .btn-inner a {
     margin-top: -3px;
   }
+  .footer .footer-corp .top-back {
+    top: 0;
+  }
   .footer #copyrights {
     font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .top-back {
-    float: none;
-    width: 85px;
-    margin: 0 auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -380,6 +376,7 @@
     position: relative;
     width: 100%;
     height: 100%;
+    animation: none;
   }
   .wrap .hero-area .hero-image {
     display: block;
