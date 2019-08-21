@@ -37,6 +37,10 @@
   display: flex;
 }
 
+.header .global-nav ul li:hover > .under-link {
+  display: block;
+}
+
 .header .global-nav ul li a {
   margin: 0 0 0 40px;
   font-size: 1.4rem;
@@ -45,6 +49,40 @@
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.header .global-nav ul li .under-link {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .global-nav ul li .under-link:hover a {
+  font-weight: bold;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header .global-nav ul li .under-link a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 110%;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.header .global-nav ul li .under-link a::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 5px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .header .global-nav ul .close {
@@ -75,7 +113,7 @@
   opacity: 0.5;
 }
 
-.under-header .global-nav ul {
+.under-header .global-nav #menu {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -85,7 +123,7 @@
   margin-right: 20px;
 }
 
-.under-header .global-nav ul .btn {
+.under-header .global-nav #menu .btn {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -103,12 +141,12 @@
   border-radius: 30px;
 }
 
-.under-header .global-nav ul .btn:hover {
+.under-header .global-nav #menu .btn:hover {
   background: none;
   border: 2px solid  #99cc00;
 }
 
-.under-header .global-nav ul .btn:hover a {
+.under-header .global-nav #menu .btn:hover a {
   font-weight: bold;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to bottom, #00bbcc, #99cc00);
@@ -116,20 +154,20 @@
   -webkit-text-fill-color: transparent;
 }
 
-.under-header .global-nav ul .btn a {
+.under-header .global-nav #menu .btn a {
   font-size: 1.3rem;
   color: #fff;
 }
 
-.under-header .global-nav ul .bt-contact {
+.under-header .global-nav #menu .bt-contact {
   margin-right: 30px;
 }
 
-.under-header .global-nav ul li {
+.under-header .global-nav #menu li {
   margin: 0;
 }
 
-.under-header .global-nav ul li a {
+.under-header .global-nav #menu li a {
   display: block;
   padding: 10px;
   font-size: 1.4rem;
@@ -138,23 +176,61 @@
   text-decoration: none;
 }
 
-.under-header .global-nav ul .menu-txt {
+.under-header .global-nav #menu .menu-txt {
   margin-right: 25px;
 }
 
-.under-header .global-nav ul .menu-txt:hover > a {
+.under-header .global-nav #menu .menu-txt:hover > a {
   font-weight: bold;
   color: #009944;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.under-header .global-nav ul .sns {
+.under-header .global-nav #menu .menu-txt:hover > .under-link {
+  display: block;
+}
+
+.under-header .global-nav #menu .menu-txt .under-link {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.under-header .global-nav #menu .menu-txt .under-link:hover a {
+  font-weight: bold;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.under-header .global-nav #menu .menu-txt .under-link a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 120%;
+  margin-top: -5px;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.under-header .global-nav #menu .menu-txt .under-link a::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 5px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.under-header .global-nav #menu .sns {
   width: 40px;
   height: 40px;
 }
 
-.under-header .global-nav ul .sns:hover {
+.under-header .global-nav #menu .sns:hover {
   background: #f6f6f6;
   box-sizing: border-box;
   border-radius: 30px;
@@ -162,7 +238,7 @@
           transform: scale(1.1);
 }
 
-.under-header .global-nav ul .sns a {
+.under-header .global-nav #menu .sns a {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -172,11 +248,11 @@
   margin-top: 4px;
 }
 
-.under-header .global-nav ul .fb {
+.under-header .global-nav #menu .fb {
   margin-right: 30px;
 }
 
-.under-header .global-nav ul .close {
+.under-header .global-nav #menu .close {
   display: none;
 }
 

@@ -109,7 +109,7 @@ $(window).scroll(function() {
 // *humberger-menu
 $(function () {
 	$('.btn-menu').on('click', function () {
-		$('#menu').toggleClass('open');
+		$('#tp-menu, #menu').toggleClass('open');
 		$('.btn-menu').toggleClass('open');
 		$('.btn-menu span').toggleClass('open');
 	});

@@ -32,7 +32,7 @@
 				padding-top 35%
 				background rgba(255,255,255, .8)
 				transition 0.3s
-			#menu
+			#tp-menu
 				transition 0.3s
 				&.open
 					display block
@@ -110,7 +110,7 @@
 			height 60px
 			background linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9))
 			ul
-				display none
+				display block
 				flex-wrap wrap
 				position fixed
 				top 0
@@ -118,37 +118,51 @@
 				width 100%
 				height 100vh
 				margin 0
-				padding-top 35%
+				padding-top 10%
 				background rgba(255,255,255, .8)
 				z-index 1000
 			#menu
+				position relative
+				display none
 				transition 0.3s
+				z-index 1000
 				&.open
 					display block
 
 				.btn
-					display none
-				li
-					margin 0 0 40px 0
+					display block
+					left auto
+					width 130px
+					height 40px
+					margin 0 auto 0
+					text-align center
+					a
+						display inline-block
+						position relative
+						top 2px
+						padding 10px
+						font-size 1.2rem
+						color #fff
+				.bt-entry
+					margin-top 15px
+				.menu-txt
+					margin 20px 0
 					font-weight bold
 					text-align center
-					&:last-child
-						margin-bottom 0
 					a
+						font-size 1.3rem
 						color #000
 				.sns
-					display table
-					width 50px
-					height 50px
-					margin 30px auto
+					width 45px
+					height 45px
+					margin 20px auto
 					background none
 					border solid 1px #99cc00
 					border-radius 30px
 					a
-						display table-cell
 						width 20px
 						height 20px
-						margin 0 auto
+						margin 4px auto 0
 						vertical-align middle
 						img
 							width auto
@@ -173,7 +187,7 @@
 				&::before
 					top 20px
 				&::after
-					bottom 20px
+					bottom 19px
 				span
 					display block
 					width 30px
@@ -302,7 +316,11 @@
 						margin-top -3px
 
 			.top-back
-				top 0
+				top -25px
+				right 0
+				left 0
+				margin 0 auto
+				width 80px
 
 		#copyrights
 			font-size 1.2rem

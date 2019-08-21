@@ -36,28 +36,28 @@
     background: rgba(255,255,255,0.8);
     transition: 0.3s;
   }
-  .header .global-nav #menu {
+  .header .global-nav #tp-menu {
     transition: 0.3s;
   }
-  .header .global-nav #menu.open {
+  .header .global-nav #tp-menu.open {
     display: block;
   }
-  .header .global-nav #menu li {
+  .header .global-nav #tp-menu li {
     margin-bottom: 40px;
     font-weight: bold;
     text-align: center;
   }
-  .header .global-nav #menu li:last-child {
+  .header .global-nav #tp-menu li:last-child {
     margin-bottom: 0;
   }
-  .header .global-nav #menu li a {
+  .header .global-nav #tp-menu li a {
     width: 100%;
     margin: 0;
     padding: 10px;
     font-size: 1.5rem;
     color: #000;
   }
-  .header .global-nav #menu .sns {
+  .header .global-nav #tp-menu .sns {
     display: table;
     width: 50px;
     height: 50px;
@@ -66,14 +66,14 @@
     border: solid 1px #9c0;
     border-radius: 30px;
   }
-  .header .global-nav #menu .sns a {
+  .header .global-nav #tp-menu .sns a {
     display: table-cell;
     width: 20px;
     height: 20px;
     margin: 0 auto;
     vertical-align: middle;
   }
-  .header .global-nav #menu .sns a img {
+  .header .global-nav #tp-menu .sns a img {
     width: auto;
     height: 100%;
   }
@@ -129,7 +129,7 @@
     background: linear-gradient(to bottom, rgba(150,234,16,0.9), rgba(79,220,220,0.9));
   }
   .under-header .global-nav ul {
-    display: none;
+    display: block;
     flex-wrap: wrap;
     position: fixed;
     top: 0;
@@ -137,44 +137,59 @@
     width: 100%;
     height: 100vh;
     margin: 0;
-    padding-top: 35%;
+    padding-top: 10%;
     background: rgba(255,255,255,0.8);
     z-index: 1000;
   }
   .under-header .global-nav #menu {
+    position: relative;
+    display: none;
     transition: 0.3s;
+    z-index: 1000;
   }
   .under-header .global-nav #menu.open {
     display: block;
   }
   .under-header .global-nav #menu .btn {
-    display: none;
+    display: block;
+    left: auto;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto 0;
+    text-align: center;
   }
-  .under-header .global-nav #menu li {
-    margin: 0 0 40px 0;
+  .under-header .global-nav #menu .btn a {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .under-header .global-nav #menu .bt-entry {
+    margin-top: 15px;
+  }
+  .under-header .global-nav #menu .menu-txt {
+    margin: 20px 0;
     font-weight: bold;
     text-align: center;
   }
-  .under-header .global-nav #menu li:last-child {
-    margin-bottom: 0;
-  }
-  .under-header .global-nav #menu li a {
+  .under-header .global-nav #menu .menu-txt a {
+    font-size: 1.3rem;
     color: #000;
   }
   .under-header .global-nav #menu .sns {
-    display: table;
-    width: 50px;
-    height: 50px;
-    margin: 30px auto;
+    width: 45px;
+    height: 45px;
+    margin: 20px auto;
     background: none;
     border: solid 1px #9c0;
     border-radius: 30px;
   }
   .under-header .global-nav #menu .sns a {
-    display: table-cell;
     width: 20px;
     height: 20px;
-    margin: 0 auto;
+    margin: 4px auto 0;
     vertical-align: middle;
   }
   .under-header .global-nav #menu .sns a img {
@@ -205,7 +220,7 @@
     top: 20px;
   }
   .under-header .global-nav .btn-menu::after {
-    bottom: 20px;
+    bottom: 19px;
   }
   .under-header .global-nav .btn-menu span {
     display: block;
@@ -350,7 +365,11 @@
     margin-top: -3px;
   }
   .footer .footer-corp .top-back {
-    top: 0;
+    top: -25px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 80px;
   }
   .footer #copyrights {
     font-size: 1.2rem;
@@ -483,7 +502,7 @@
     line-height: 1.8;
   }
   .top-content .company-info .phil-col .p-box {
-    bottom: 0;
+    top: 360px;
   }
   .top-content .company-info .phil-col .p-image {
     position: static;
@@ -634,7 +653,7 @@
     left: 8px;
   }
   .top-content .lower-links {
-    padding: 60px 0;
+    padding: 60px 0 80px;
   }
   .top-content .lower-links .link-col {
     display: flex;

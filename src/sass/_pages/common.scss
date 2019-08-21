@@ -31,6 +31,9 @@
             display: flex;
 
             li {
+                &:hover > .under-link{
+                    display: block;
+                }
                 a {
                     margin: 0 0 0 40px;
                     font-size: 1.4rem;
@@ -38,6 +41,36 @@
                     color: #fff;
                     text-decoration: none;
                     transition: 0.3s;
+                }
+                .under-link {
+                    position: relative;
+                    display: none;
+                    transition: 0.3s;
+                    &:hover {
+                        a {
+                            font-weight: bold;
+                            transform: scale(1.1);
+                        }
+                    }
+                    a {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 10px;
+                        width: 110%;
+                        margin-top: 5px;
+                        padding: 10px;
+                        font-size: 1.3rem;
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 4px;
+                            height: 4px;
+                            margin-right: 5px;
+                            border-left: 2px solid #fff;
+                            border-bottom: 2px solid #fff;
+                        }
+                    }
                 }
             }
             .close {
@@ -68,7 +101,7 @@
 
     .global-nav {
 
-        ul {
+        #menu {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -124,6 +157,39 @@
                     font-weight: bold;
                     color: #009944;
                     transform: scale(1.1);
+                }
+                &:hover > .under-link {
+                    display: block;
+                }
+                .under-link {
+                    position: relative;
+                    display: none;
+                    transition: 0.3s;
+                    &:hover {
+                        a {
+                            font-weight: bold;
+                            transform: scale(1.1);
+                        }
+                    }
+                    a {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 10px;
+                        width: 120%;
+                        margin-top: -5px;
+                        padding: 10px;
+                        font-size: 1.3rem;
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 4px;
+                            height: 4px;
+                            margin-right: 5px;
+                            border-left: 2px solid #000;
+                            border-bottom: 2px solid #000;
+                        }
+                    }
                 }
             }
 
@@ -345,7 +411,7 @@
     }
 }
 
-// 
+//
 // 下層ページリンク
 .pagelink-wrap {
     width: 60%;
@@ -465,7 +531,7 @@
     }
 }
 
-// 
+//
 
 // flow
 .flow-list {
