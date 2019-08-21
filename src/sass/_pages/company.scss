@@ -1,0 +1,127 @@
+.comp-intro {
+    h3 {
+        font-size: 8rem;
+        font-weight: bold;
+        font-family: 'Noto Sans', sans-serif;
+        letter-spacing: 1rem;
+        color: #eeeeee;
+        margin-left: 100px;
+
+        &::after {
+            content: "";
+            display: block;
+            margin: 0 0 0 620px;
+            height: 2px;
+            width: 54%;
+            background: linear-gradient(to right, #00bbcc, #99cc00);
+        }
+    }
+
+    .comp-wrap {
+        position: relative;
+        display: flex;
+
+        .comp-img {
+            margin: 80px 0 0 170px;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 120px;
+                left: 100px;
+                width: 30%;
+                height: 300px;
+                background: linear-gradient(to bottom, #00bbcc, #99cc00);
+                z-index: -1;
+            }
+        }
+
+        .intro-text {
+
+            h4 {
+                font-size: 2.4rem;
+                font-weight: bold;
+                width: 77%;
+                margin: 60px 0 0 74px;
+                letter-spacing: 0.7rem;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    margin: 40px 0 0 0;
+                    height: 6px;
+                    width: 4%;
+                    background: #d6d5d5;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+                width: 75%;
+                margin: 60px 0 0 74px;
+                letter-spacing: 0.3rem;
+                line-height: 25px
+            }
+        }
+    }
+}
+
+.comp-adv {
+    margin-top: 100px;
+
+    h3 {
+        &::after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            height: 2px;
+            width: 55%;
+            background: linear-gradient(to left, #00bbcc, #99cc00);
+        }
+
+        span {
+            color: #009944;
+        }
+    }
+
+    .comp-table {
+        tr {
+            &::after {
+                content: "";
+                display: block;
+                margin: 0 auto;
+                height: 2px;
+                width: 55%;
+                background: linear-gradient(to left, #00bbcc, #99cc00);
+            }
+
+            th {
+                font-size: 1.8rem;
+
+                span {
+                    background: linear-gradient(to bottom, #00bbcc, #99cc00);
+                    border-radius: 50%;
+                    color: #fff;
+                }
+            }
+
+            td {
+                width: 30%;
+
+                p {
+                    font-size: 1.5rem;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+.comp-data {
+    h3 {
+        span {
+            color: #009944;
+        }
+    }
+}
