@@ -38,34 +38,52 @@
 					display block
 
 				li
+					position relative
 					margin-bottom 40px
 					font-weight bold
-					text-align center
+					text-align left
 					&:last-child
 						margin-bottom 0
 					a
 						width 100%
 						margin 0
 						padding 10px
-						font-size 1.5rem
+						font-size 1.4rem
 						color #000
+					.under-link
+						display block
+						a
+							position relative
+							margin-top 0
+							font-size 1.2rem
+							color: #828282
+							&::before
+								border-left: 2px solid #828282
+								border-bottom: 2px solid #828282
+				.menu-txt
+					padding-left 15%
 				.sns
 					display table
-					width 50px
-					height 50px
-					margin 30px auto
+					width 45px
+					height 45px
+					text-align center
 					background none
 					border solid 1px #99cc00
 					border-radius 30px
 					a
 						display table-cell
-						width 20px
-						height 20px
+						width 18px
+						height 18px
 						margin 0 auto
 						vertical-align middle
 						img
 							width auto
 							height 100%
+				.fb, .twit
+					float left
+					margin-top -10px
+				.fb
+					margin -10px 20px 0 17%
 
 			.btn-menu::before, .btn-menu::after
 				content ''
@@ -104,13 +122,10 @@
 			margin 0 0 0 15px
 
 		.global-nav
-			top 0
-			right 0
-			width 60px
-			height 60px
-			background linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9))
-			ul
-				display block
+			#menu
+				display none
+				justify-content center
+				align-items flex-start
 				flex-wrap wrap
 				position fixed
 				top 0
@@ -118,55 +133,64 @@
 				width 100%
 				height 100vh
 				margin 0
-				padding-top 10%
 				background rgba(255,255,255, .8)
-				z-index 1000
-			#menu
-				position relative
-				display none
 				transition 0.3s
 				z-index 1000
 				&.open
-					display block
+					display flex
 
 				.btn
 					display block
 					left auto
-					width 130px
-					height 40px
-					margin 0 auto 0
-					text-align center
-					a
-						display inline-block
-						position relative
-						top 2px
-						padding 10px
-						font-size 1.2rem
-						color #fff
-				.bt-entry
-					margin-top 15px
+					width 35%
+					height auto
+					margin-top 15%
+					span
+						display block
+						width 100px
+						height 40px
+						margin 0 auto
+						text-align center
+						a
+							display inline-block
+							margin-top 4px
+							font-size 1rem
+							color #fff
+				.bt-contact
+					margin-right 20px
 				.menu-txt
-					margin 20px 0
+					width 100%
+					padding-left 15%
 					font-weight bold
-					text-align center
+					text-align left
 					a
 						font-size 1.3rem
 						color #000
+					.under-link
+						display block
+						position relative
+						a
+							position relative
 				.sns
-					width 45px
-					height 45px
-					margin 20px auto
-					background none
-					border solid 1px #99cc00
-					border-radius 30px
-					a
-						width 20px
-						height 20px
-						margin 4px auto 0
-						vertical-align middle
-						img
-							width auto
-							height 100%
+					width 20%
+					span
+						display block
+						width 40px
+						height 40px
+						margin 0 auto
+						background none
+						border solid 1px #99cc00
+						border-radius 30px
+						a
+							width 18px
+							height 18px
+							margin 2px auto 0
+							vertical-align middle
+							img
+								width auto
+								height 100%
+				.fb
+					margin-right 0
 			.btn-menu::before, .btn-menu::after
 				content ''
 				display block
@@ -181,8 +205,9 @@
 			.btn-menu
 				display block
 				position relative
-				width 100%
-				height 100%
+				width 60px
+				height 60px
+				background linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9))
 				z-index 1100
 				&::before
 					top 20px
