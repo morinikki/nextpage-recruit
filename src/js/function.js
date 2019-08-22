@@ -2,21 +2,19 @@ var device;
 
 // *smooth scroll
 $(function () {
-    
+	var ua = navigator.userAgent;
+	if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+		// スマートフォン用コード
+		device = 'mobile';
+	} else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+		// タブレット用コード
+		device = 'tablet';
+	} else {
+		// PC用コード
+		device = 'pc';
+	}
 
-    var ua = navigator.userAgent;
-    if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-        // スマートフォン用コード
-        device = 'mobile';
-    } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-        // タブレット用コード
-        device = 'tablet';
-    } else {
-        // PC用コード
-        device = 'pc';
-    }
-
-    console.log(device);
+	console.log(device);
 
 	$('a[href^="#"]').click(function () {
 		var speed = 800;
@@ -27,9 +25,7 @@ $(function () {
 			scrollTop: position
 		}, speed, "swing");
 		return false;
-    });
-    
-    
+	});
 });
 
 // *fadeIn-animation
@@ -60,12 +56,16 @@ $(function () {
 // *main-visual-slider
 $(function () {
 	var page=0;
-	var lastPage =parseInt($("#mv-slider img").length-1);
+	var lastPage = parseInt($("#mv-slider img").length-1);
 		$("#mv-slider img").css("display","none");
 		$("#mv-slider img").eq(page).css("display","block");
+		// $("#mv-slider source").css("display","none");
+		// $("#mv-slider source").eq(page).css("display","block");
 	function changePage(){
 		$("#mv-slider img").fadeOut(1000);
 		$("#mv-slider img").eq(page).fadeIn(1000);
+		// $("#mv-slider source").fadeOut(1000);
+		// $("#mv-slider source").eq(page).fadeIn(1000);
 	};
 	var Timer;
 	function startTimer(){
@@ -101,46 +101,46 @@ $(window).scroll(function() {
 
 // TOPページのヘッダー
 $(window).scroll(function() {
-    console.log(device);
-    if (device == 'pc' ) {
-        if($(this).scrollTop() > 500) {
-            $("#tp-header").addClass("sticky");
+	console.log(device);
+	if (device == 'pc' ) {
+		if($(this).scrollTop() > 500) {
+			$("#tp-header").addClass("sticky");
 
-            /*
-            .header.sticky {
+			/*
+			.header.sticky {
 
-            }
-            .header.sticky li a {
-                
-            }
-            .header.sticky {
-                
-            }
-            */
+			}
+			.header.sticky li a {
+				
+			}
+			.header.sticky {
+				
+			}
+			*/
 
-            $("#tp-header").css("background","rgba(255,255,255, .5)");
-            $("#tp-header").css("box-shadow","0px 2px 5px 2px rgba(140, 140, 140, 0.4)");
-            
-            $("#tp-menu li a").css("margin-left","50px");
-            $("#tp-menu li a").css("font-size","1.3rem");
-            $("#tp-menu li a").css("font-weight","bold");
-            $("#tp-menu li a").css("color","#000");
-            
-            $(".header-logo a").css("width","150px");
-        } else {
-            $("#tp-header").removeClass("sticky");
+			$("#tp-header").css("background","rgba(255,255,255, .5)");
+			$("#tp-header").css("box-shadow","0px 2px 5px 2px rgba(140, 140, 140, 0.4)");
+			
+			$("#tp-menu li a").css("margin-left","50px");
+			$("#tp-menu li a").css("font-size","1.3rem");
+			$("#tp-menu li a").css("font-weight","bold");
+			$("#tp-menu li a").css("color","#000");
+			
+			$(".header-logo a").css("width","150px");
+		} else {
+			$("#tp-header").removeClass("sticky");
 
-            $("#tp-header").css("background","none");
-            $("#tp-header").css("box-shadow","none");
-            
-            $("#tp-menu li a").css("margin-left","40px");
-            $("#tp-menu li a").css("font-size","1.4rem");
-            $("#tp-menu li a").css("font-weight","normal");
-            $("#tp-menu li a").css("color","#fff");
-            
-            $(".header-logo a").css("width","175px");
-        }
-    }
+			$("#tp-header").css("background","none");
+			$("#tp-header").css("box-shadow","none");
+			
+			$("#tp-menu li a").css("margin-left","40px");
+			$("#tp-menu li a").css("font-size","1.4rem");
+			$("#tp-menu li a").css("font-weight","normal");
+			$("#tp-menu li a").css("color","#fff");
+			
+			$(".header-logo a").css("width","175px");
+		}
+	}
 });
 
 // *humberger-menu

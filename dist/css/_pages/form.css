@@ -19,6 +19,10 @@
   border-bottom: 2px solid #009944;
 }
 
+.contact-wrap {
+  padding: 80px 0;
+}
+
 .form-signal {
   margin: 50px;
 }

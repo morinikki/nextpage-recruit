@@ -1,9 +1,21 @@
 //年度セレクター
 .years-select {
     .selector {
+        position: relative;
+        display: block;
+        width: 130px;
+        margin: 60px auto;
+        text-align: center;
+        background: #fafafa;
+        border: solid 1px #ccc;
+        border-radius: 40px;
+        z-index: 1000;
         #year {
+            display: inline-block;
+            width: 100%;
             margin: 0;
-            padding: 0;
+            padding: 10px;
+            font-size: 1.5rem;
             background: transparent;
             border: none;
             border-radius: 0;

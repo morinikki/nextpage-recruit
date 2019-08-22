@@ -559,6 +559,7 @@ body {
 
 .under-header .global-nav #menu .btn a {
   font-size: 1.3rem;
+  font-family: 'Noto Sans', sans-serif;
   color: #fff;
 }
 
@@ -1682,9 +1683,24 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.years-select .selector {
+  position: relative;
+  display: block;
+  width: 130px;
+  margin: 60px auto;
+  text-align: center;
+  background: #fafafa;
+  border: solid 1px #ccc;
+  border-radius: 40px;
+  z-index: 1000;
+}
+
 .years-select .selector #year {
+  display: inline-block;
+  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  font-size: 1.5rem;
   background: transparent;
   border: none;
   border-radius: 0;
@@ -1794,6 +1810,10 @@ body {
   font-size: 1.6rem;
   line-height: 1.8;
   border-bottom: 2px solid #009944;
+}
+
+.contact-wrap {
+  padding: 80px 0;
 }
 
 .form-signal {

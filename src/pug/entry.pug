@@ -3,7 +3,7 @@ html(lang="ja")
     include _includes/_head.pug
         title エントリー | 株式会社 NEXPAGE
     body#entry
-        .wrap
+        #form.wrap
             include _includes/_under-header.pug
             //- 
             .lower-visual
@@ -40,29 +40,29 @@ html(lang="ja")
                             table
                                 tr
                                     th お名前（漢字）※
-                                    td
+                                    td#td-100
                                         input(type="text",name="name")
                                 tr
                                     th お名前（ふりがな）※
-                                    td
+                                    td#td-100
                                         input(type="text",name="name")
                                 tr
                                     th E-mail　※
-                                    td
+                                    td#td-100
                                         input(type="text",name="mail")
                                 tr
                                     th 電話番号
-                                    td
+                                    td#td-100
                                         input#input-tel(type="text",name="tel")
                                         |
                                         small ※半角英数字でご入力ください
                                 tr
                                     th 郵便番号　※
-                                    td
+                                    td#td-100
                                         input(type="text",name="address")
                                 tr
                                     th 住所　※
-                                    td
+                                    td#td-100
                                         input(type="text",name="address")
                                 tr
                                     th 実務経験　※
@@ -74,19 +74,19 @@ html(lang="ja")
                                             p ない
                                 tr
                                     th 年齢 ※
-                                    td
+                                    td#td-100
                                         input(type="text",name="years")
                                 tr
                                     th 学校名
-                                    td
+                                    td#td-100
                                         input(type="text",name="years")
                                 tr
                                     th 学歴/職歴 ※
-                                    td
+                                    td#td-100
                                         input(type="text",name="years")
                                 tr
                                     th 実務経験　※
-                                    td.checkbox-td
+                                    td#checkbox-td
                                         label.label-check
                                             p
                                                 input.checkbox(type="checkbox",name="job")
@@ -122,15 +122,15 @@ html(lang="ja")
                                     th 資格・使用できるソフト/
                                         br
                                         | 使用言語 ※
-                                    td
+                                    td#td-100
                                         input#input-large(type="text",name="software")
                                 tr
                                     th 制作したサイト/URL
-                                    td
+                                    td#td-100
                                         input(type="text",name="portfolio")
                                 tr
                                     th インターンシップ希望期間
-                                    td
+                                    td#td-100
                                         input(type="text",name="intern")
                                 tr
                                     th ご自身のPC

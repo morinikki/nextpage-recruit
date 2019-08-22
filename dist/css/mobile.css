@@ -109,7 +109,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #094;
   }
   .header .global-nav .btn-menu {
     display: block;
@@ -128,7 +128,7 @@
     display: block;
     width: 23px;
     height: 3px;
-    background: #fff;
+    background: #094;
   }
   .header .global-nav .btn-menu span.open {
     display: none;
@@ -431,6 +431,11 @@
     height: 100%;
     animation: none;
   }
+  .wrap .hero-area source {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .wrap .hero-area .hero-image {
     display: block;
     text-align: right;
@@ -657,9 +662,9 @@
     display: none;
   }
   .top-content .concept .concept-inner ul li .concept-text {
-    left: 15px;
-    bottom: 20px;
-    font-size: 1.5rem;
+    left: 10px;
+    bottom: 15px;
+    font-size: 1rem;
   }
   .top-content .business-content .business-catch {
     padding: 60px 0 0;
@@ -742,6 +747,83 @@
     padding: 2px;
     box-shadow: none;
     background: linear-gradient(to bottom, #0bc, #9c0);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  #form {
+    width: 100%;
+  }
+  #form .contact-info {
+    margin: 50px auto;
+  }
+  #form .contact-wrap {
+    width: 100%;
+  }
+  #form .contact-wrap .content-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+  #form .contact-wrap .content-wrap .content-catch {
+    padding-top: 30px;
+  }
+  #form .contact-wrap .content-wrap .form-signal {
+    width: 100%;
+    margin: 30px auto 20px;
+  }
+  #form .contact-wrap .content-wrap .form-signal ul {
+    justify-content: center;
+    width: 100%;
+  }
+  #form .contact-wrap .content-wrap .form-signal ul::before {
+    top: 28px;
+    width: 260px;
+  }
+  #form .contact-wrap .content-wrap .form-signal ul li {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  #form .contact-wrap .content-wrap .form-signal ul li p {
+    margin: 12px auto 0;
+  }
+  #form .contact-wrap .content-wrap .contact-form {
+    display: block;
+    width: 100%;
+  }
+  #form .contact-wrap .content-wrap .contact-form form table {
+    display: block;
+    width: 260px;
+    margin: 0 auto;
+  }
+  #form .contact-wrap .content-wrap .contact-form form table tr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    margin-top: 40px;
+  }
+  #form .contact-wrap .content-wrap .contact-form form table tr th {
+    flex-basis: 100%;
+    padding: 0;
+  }
+  #form .contact-wrap .content-wrap .contact-form form table tr td {
+    flex-basis: 260px;
+    margin-top: 10px;
+    padding: 0;
+  }
+  #form .contact-wrap .content-wrap .contact-form form table tr #td-100 input {
+    display: inline-block;
+    width: 260px;
+  }
+  #form .contact-wrap .content-wrap .contact-form form table tr #td-100 small {
+    display: inline-block;
+    margin: 10px 0 0 0;
+  }
+  #form .contact-wrap .content-wrap .contact-form form table tr #checkbox-td .lavel-check p .checkbox {
+    width: 20px;
+    height: 20px;
+    line-height: 2px;
     box-sizing: border-box;
   }
 }

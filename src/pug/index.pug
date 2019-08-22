@@ -9,7 +9,9 @@ html(lang="ja")
             include _includes/_header.pug
             .hero-area
                 picture.hero-image#mv-slider
-                    source(media="(max-width: 768px)" srcset="images/top/top_main-visual_sp.jpg")
+                    source(media="(max-width: 768px)" srcset="images/top/top_main-visual_sp_01.jpg")
+                    source(media="(max-width: 768px)" srcset="images/top/top_main-visual_sp_02.jpg")
+                    source(media="(max-width: 768px)" srcset="images/top/top_main-visual_sp_03.jpg")
                     img(src="images/top/top_main-visual_01.jpg")
                     img(src="images/top/top_main-visual_02.jpg")
                     img(src="images/top/top_main-visual_03.jpg")
@@ -53,6 +55,7 @@ html(lang="ja")
                                     | 仕事がしたい
                                 .info-deco#info-deco02
                             li
+                                picture
                                 img(src="images/top/top_company03.png", alt="company")
                                 p webサービスを見て
                                     br
@@ -76,19 +79,25 @@ html(lang="ja")
                         ul
                             li
                                 p.concept-img
-                                    img(src="images/top/top_concept_creat.jpg", alt="クリエイティブ")
+                                    picture
+                                        source(media="(max-width: 768px)" srcset="images/top/top_concept_creat_sp.jpg")
+                                        img(src="images/top/top_concept_creat.jpg", alt="クリエイティブ")
                                 .bg-sankaku
                                     .inner
                                 p.concept-text クリエイティブ
                             li
                                 p.concept-img
-                                    img(src="images/top/top_concept_employee.jpg", alt="社員")
+                                    picture
+                                        source(media="(max-width: 768px)" srcset="images/top/top_concept_employee_sp.jpg")
+                                        img(src="images/top/top_concept_employee.jpg", alt="社員")
                                 .bg-sankaku
                                     .inner
                                 p.concept-text 社員重視
                             li
                                 p.concept-img
-                                    img(src="images/top/top_concept_think.jpg", alt="拡大思考")
+                                    picture
+                                        source(media="(max-width: 768px)" srcset="images/top/top_concept_think_sp.jpg")
+                                        img(src="images/top/top_concept_think.jpg", alt="拡大思考")
                                 .bg-sankaku
                                     .inner
                                 p.concept-text 拡大思考
