@@ -43,9 +43,10 @@
     display: block;
   }
   .header .global-nav #tp-menu li {
+    position: relative;
     margin-bottom: 40px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
   }
   .header .global-nav #tp-menu li:last-child {
     margin-bottom: 0;
@@ -54,28 +55,52 @@
     width: 100%;
     margin: 0;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #000;
+  }
+  .header .global-nav #tp-menu li .under-link {
+    display: block;
+  }
+  .header .global-nav #tp-menu li .under-link a {
+    position: relative;
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #828282;
+  }
+  .header .global-nav #tp-menu li .under-link a::before {
+    border-left: 2px solid #828282;
+    border-bottom: 2px solid #828282;
+  }
+  .header .global-nav #tp-menu .menu-txt {
+    padding-left: 15%;
   }
   .header .global-nav #tp-menu .sns {
     display: table;
-    width: 50px;
-    height: 50px;
-    margin: 30px auto;
+    width: 45px;
+    height: 45px;
+    text-align: center;
     background: none;
     border: solid 1px #9c0;
     border-radius: 30px;
   }
   .header .global-nav #tp-menu .sns a {
     display: table-cell;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin: 0 auto;
     vertical-align: middle;
   }
   .header .global-nav #tp-menu .sns a img {
     width: auto;
     height: 100%;
+  }
+  .header .global-nav #tp-menu .fb,
+  .header .global-nav #tp-menu .twit {
+    float: left;
+    margin-top: -10px;
+  }
+  .header .global-nav #tp-menu .fb {
+    margin: -10px 20px 0 17%;
   }
   .header .global-nav .btn-menu::before,
   .header .global-nav .btn-menu::after {
@@ -121,15 +146,10 @@
     width: 85px;
     margin: 0 0 0 15px;
   }
-  .under-header .global-nav {
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(to bottom, rgba(150,234,16,0.9), rgba(79,220,220,0.9));
-  }
-  .under-header .global-nav ul {
-    display: block;
+  .under-header .global-nav #menu {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     position: fixed;
     top: 0;
@@ -137,64 +157,77 @@
     width: 100%;
     height: 100vh;
     margin: 0;
-    padding-top: 10%;
     background: rgba(255,255,255,0.8);
-    z-index: 1000;
-  }
-  .under-header .global-nav #menu {
-    position: relative;
-    display: none;
     transition: 0.3s;
     z-index: 1000;
   }
   .under-header .global-nav #menu.open {
-    display: block;
+    display: flex;
   }
   .under-header .global-nav #menu .btn {
     display: block;
     left: auto;
-    width: 130px;
+    width: 35%;
+    height: auto;
+    margin-top: 15%;
+  }
+  .under-header .global-nav #menu .btn span {
+    display: block;
+    width: 100px;
     height: 40px;
-    margin: 0 auto 0;
+    margin: 0 auto;
     text-align: center;
   }
-  .under-header .global-nav #menu .btn a {
+  .under-header .global-nav #menu .btn span a {
     display: inline-block;
-    position: relative;
-    top: 2px;
-    padding: 10px;
-    font-size: 1.2rem;
+    margin-top: 4px;
+    font-size: 1rem;
     color: #fff;
   }
-  .under-header .global-nav #menu .bt-entry {
-    margin-top: 15px;
+  .under-header .global-nav #menu .bt-contact {
+    margin-right: 20px;
   }
   .under-header .global-nav #menu .menu-txt {
-    margin: 20px 0;
+    width: 100%;
+    padding-left: 15%;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
   }
   .under-header .global-nav #menu .menu-txt a {
     font-size: 1.3rem;
     color: #000;
   }
+  .under-header .global-nav #menu .menu-txt .under-link {
+    display: block;
+    position: relative;
+  }
+  .under-header .global-nav #menu .menu-txt .under-link a {
+    position: relative;
+  }
   .under-header .global-nav #menu .sns {
-    width: 45px;
-    height: 45px;
-    margin: 20px auto;
+    width: 20%;
+  }
+  .under-header .global-nav #menu .sns span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
     background: none;
     border: solid 1px #9c0;
     border-radius: 30px;
   }
-  .under-header .global-nav #menu .sns a {
-    width: 20px;
-    height: 20px;
-    margin: 4px auto 0;
+  .under-header .global-nav #menu .sns span a {
+    width: 18px;
+    height: 18px;
+    margin: 2px auto 0;
     vertical-align: middle;
   }
-  .under-header .global-nav #menu .sns a img {
+  .under-header .global-nav #menu .sns span a img {
     width: auto;
     height: 100%;
+  }
+  .under-header .global-nav #menu .fb {
+    margin-right: 0;
   }
   .under-header .global-nav .btn-menu::before,
   .under-header .global-nav .btn-menu::after {
@@ -212,8 +245,9 @@
   .under-header .global-nav .btn-menu {
     display: block;
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(150,234,16,0.9), rgba(79,220,220,0.9));
     z-index: 1100;
   }
   .under-header .global-nav .btn-menu::before {

@@ -80,31 +80,31 @@ $(window).scroll(function() {
 });
 
 // TOPページのヘッダー
-// $(window).scroll(function() {
-// 	if($(this).scrollTop() > 500) {
-// 		$("#tp-header").css("background","rgba(255,255,255, .5)");
-// 		$("#tp-header").css("box-shadow","0px 2px 5px 2px rgba(140, 140, 140, 0.4)");
-// 	} else {
-// 		$("#tp-header").css("background","none");
-// 		$("#tp-header").css("box-shadow","none");
-// 	}
-// 	if($(this).scrollTop() > 500) {
-// 		$("#tp-menu li a").css("margin-left","50px");
-// 		$("#tp-menu li a").css("font-size","1.3rem");
-// 		$("#tp-menu li a").css("font-weight","bold");
-// 		$("#tp-menu li a").css("color","#000");
-// 	} else {
-// 		$("#tp-menu li a").css("margin-left","40px");
-// 		$("#tp-menu li a").css("font-size","1.4rem");
-// 		$("#tp-menu li a").css("font-weight","normal");
-// 		$("#tp-menu li a").css("color","#fff");
-// 	}
-// 	if($(this).scrollTop() > 500) {
-// 		$(".header-logo a").css("width","150px");
-// 	} else {
-// 		$(".header-logo a").css("width","175px");
-// 	}
-// });
+$(window).scroll(function() {
+	if($(this).scrollTop() > 500) {
+		$("#tp-header").css("background","rgba(255,255,255, .5)");
+		$("#tp-header").css("box-shadow","0px 2px 5px 2px rgba(140, 140, 140, 0.4)");
+	} else {
+		$("#tp-header").css("background","none");
+		$("#tp-header").css("box-shadow","none");
+	}
+	if($(this).scrollTop() > 500) {
+		$("#tp-menu li a").css("margin-left","50px");
+		$("#tp-menu li a").css("font-size","1.3rem");
+		$("#tp-menu li a").css("font-weight","bold");
+		$("#tp-menu li a").css("color","#000");
+	} else {
+		$("#tp-menu li a").css("margin-left","40px");
+		$("#tp-menu li a").css("font-size","1.4rem");
+		$("#tp-menu li a").css("font-weight","normal");
+		$("#tp-menu li a").css("color","#fff");
+	}
+	if($(this).scrollTop() > 500) {
+		$(".header-logo a").css("width","150px");
+	} else {
+		$(".header-logo a").css("width","175px");
+	}
+});
 
 // *humberger-menu
 $(function () {
