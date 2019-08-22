@@ -26,45 +26,61 @@ html(lang="ja")
                     p
                         a(href="#comp-data") 会社概要
             section.comp-intro#comp-intro
-                h3 Production
+                h3#production Production
                 .comp-wrap
                     .comp-img
-                        img(src="images/company/company_production_keikun.jpg", alt="けいくん")
+                        .comp-kei
+                            img(src="images/company/company_production_keikun.jpg", alt="けいくん")
                     .intro-text
                         h3 ネクストページは神戸・東京・京都を中心にクオリティにこだわった制作を行っています。
                         p 経営理念である「つくる、たのしむ、やくだつ」を、一緒に実現できる仲間を求めて、採用活動を行っています。私たちは将来にわたって、お客様から必要とされる会社でありたいと思っています。私たちの仕事には、様々な分野の専門家が力を合わせるチームプレイが必要不可欠。お客様に、より大きなご満足をご提供するために、チームワークを発揮できるよう、規模を重視した拡大路線をとっています。それぞれ、高い実力を持ったスペシャリストが、抜群のチームワークで仕事をすること。それが、私たちの仕事を進めるうえでの理想形と考えています。
-            section.comp-adv#comp-adv
-                .content-catch
-                    h3 ネクストページの3つの強み
-                table.comp-table
-                    tr
-                        th
-                            span 1
-                            | クリエイティブ
-                        td
-                            p お客様の要望を聞き、ゼロからものを生み出す仕事。
-                            p 関西トップレベルの制作能力を擁し、誰でも知っている大手企業から、地元企業まで、幅広いホームページを手がけています。
-                            p ホームページはデザインだけでなく、コンテンツ、テクノロジー、マーケティングなど、様々な要素の集合体。映画のような総合芸術に近い、奥の深い仕事。
-                    tr
-                        th
-                            span 2
-                            | 社員重視
-                        td
-                            p 業績がよければ社員に大きく還元します。がんばって、結果を出せば、たくさん賞与がもらえるのが魅力。
-                            p 忘年会などの社内イベントや勉強のための社外セミナーは会社持ち。
-                            p 制作の仕事は長時間労働になりがち。仕事のために体を壊しては元も子もありません。立ち会議や、クリエイターズタイムなど、早く帰るために工夫をしています。
-                            p 今年度年間休日129日予定。プライベートや家族との時間が充実することで、もっと仕事が楽しくなると考えます。
-                    tr
-                        th
-                            span 3
-                            | 拡大思考
-                        td
-                            p 増員、拠点を増やすことはもちろん、ホームページ制作の実績を活かした多角化を進めています。
-                            p 海外で働いてみたい人も募集します。
+                .shape
+                        img(src="images/common/shape_deco.svg", alt="", width="30px")
+            section.sect-bg.comp-adv#comp-adv
+                .content-wrap
+                    .content-catch
+                        h3 ネクストページの3つの
+                            span 強み
+                    table.comp-table
+                        tr
+                            th
+                                span 1
+                                | 創造思考
+                                .comp-icon
+                                    img(src="images/company/icon_strengts_creative.png", alt="icon")
+                            td
+                                ul
+                                    li お客様の要望を聞き、ゼロからものを生み出す仕事。
+                                    li 関西トップレベルの制作能力を擁し、誰でも知っている大手企業から、地元企業まで、幅広いホームページを手がけています。
+                                    li ホームページはデザインだけでなく、コンテンツ、テクノロジー、マーケティングなど、様々な要素の集合体。映画のような総合芸術に近い、奥の深い仕事。
+                        tr
+                            th
+                                span 2
+                                | 社員重視
+                                .comp-icon
+                                    img(src="images/company/icon_strengths_employee.png", alt="icon")
+                            td
+                                ul
+                                    li 業績がよければ社員に大きく還元します。がんばって、結果を出せば、たくさん賞与がもらえるのが魅力。
+                                    li 忘年会などの社内イベントや勉強のための社外セミナーは会社持ち。
+                                    li 制作の仕事は長時間労働になりがち。仕事のために体を壊しては元も子もありません。立ち会議や、クリエイターズタイムなど、早く帰るために工夫をしています。
+                                    li 今年度年間休日129日予定。プライベートや家族との時間が充実することで、もっと仕事が楽しくなると考えます。
+                        tr
+                            th
+                                span 3
+                                | 拡大思考
+                                .comp-icon
+                                    img(src="images/company/icon_strengts_think.png", alt="icon")
+                            td
+                                ul
+                                    li 増員、拠点を増やすことはもちろん、ホームページ制作の実績を活かした多角化を進めています。
+                                    li 海外で働いてみたい人も募集します。
             section.sect-bg.comp-data#comp-data
                 .content-wrap
                     .content-catch
-                        h3 会社概要
+                        h3 
+                            span 会社
+                            | 概要
                     .data-col
                         ul.data-ul
                             li
@@ -90,7 +106,8 @@ html(lang="ja")
                                 p.data-inner-p
                                     ul.data-inner
                                         li
-                                            p [Webサイト制作]
+                                            p 
+                                                span [Webサイト制作]
                                                 br
                                                 | Webデザイン
                                                 br
@@ -108,7 +125,8 @@ html(lang="ja")
                                                 br
                                                 | Movable Type
                                         li
-                                            p [マルチプラットフォーム]
+                                            p 
+                                                span [マルチプラットフォーム]
                                                 br
                                                 | PC
                                                 br
@@ -130,7 +148,8 @@ html(lang="ja")
                                                 br
                                                 | ビデオ撮影・編集
                                         li
-                                            p [DTP]
+                                            p 
+                                                span [DTP]
                                                 br
                                                 | 各種ツール
                                                 br
