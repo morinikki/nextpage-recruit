@@ -598,8 +598,6 @@ body {
 .under-header .global-nav #menu .menu-txt .under-link {
   position: relative;
   display: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .under-header .global-nav #menu .menu-txt .under-link:hover a {
@@ -617,6 +615,8 @@ body {
   margin-top: -5px;
   padding: 10px;
   font-size: 1.3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .under-header .global-nav #menu .menu-txt .under-link a::before {
@@ -837,9 +837,9 @@ body {
 
 .lower-visual .lv-gray {
   position: absolute;
-  bottom: -163px;
-  right: -30px;
-  width: 56.2%;
+  bottom: -157px;
+  right: 0;
+  width: 54.2%;
 }
 
 .lower-visual .lv-gray img {
@@ -977,12 +977,14 @@ body {
 }
 
 .content-wrap .comp-table tr th {
+  width: 20%;
   text-align: left;
   padding: 30px 0 27px 20px;
   font-weight: bold;
 }
 
 .content-wrap .comp-table tr td {
+  width: 80%;
   padding: 30px 0 27px 40px;
   color: #2c2c2c;
 }
@@ -1536,15 +1538,33 @@ body {
 .portfolio .port-col {
   display: -webkit-box;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 60px;
+  width: 100%;
+  margin-top: 80px;
 }
 
 .portfolio .port-col li {
-  width: 33.3%;
-  margin: 20px 0;
+  width: 26%;
+  margin-bottom: 40px;
+  padding: 0 30px;
+}
+
+.portfolio .port-col li:hover .port-img {
+  opacity: 0.8;
+}
+
+.portfolio .port-col li:hover figcaption a {
+  color: #00bbcc;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.portfolio .port-col li:hover figcaption a span {
+  color: #00bbcc;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .portfolio .port-col li figure {
@@ -1553,7 +1573,9 @@ body {
 
 .portfolio .port-col li figure .port-img {
   margin-bottom: 30px;
-  width: 85%;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .portfolio .port-col li figure .port-img img {
@@ -1565,9 +1587,9 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 15px;
-  width: 85%;
+  width: 100%;
   height: 72%;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to bottom, #00bbcc, #99cc00);
@@ -1576,7 +1598,7 @@ body {
 
 .portfolio .port-col li figure figcaption a {
   display: inline-block;
-  margin: 10px 0 0;
+  margin: 0;
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -1586,24 +1608,12 @@ body {
 
 .portfolio .port-col li figure figcaption a span {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 3px;
   font-size: 1.2rem;
   font-weight: normal;
   font-family: 'Noto Sans', sans-serif;
   letter-spacing: 0.5px;
   color: #828282;
-}
-
-.portfolio .port-col li figure figcaption a span:hover {
-  color: #00bbcc;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.portfolio .port-col li figure figcaption a:hover {
-  color: #00bbcc;
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
 .experience p {
@@ -2216,7 +2226,7 @@ input, button, textarea, select {
 
 .staff-intro .lead {
   margin-top: 20px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #828282;
 }

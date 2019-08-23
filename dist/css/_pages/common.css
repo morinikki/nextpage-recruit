@@ -195,8 +195,6 @@
 .under-header .global-nav #menu .menu-txt .under-link {
   position: relative;
   display: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .under-header .global-nav #menu .menu-txt .under-link:hover a {
@@ -214,6 +212,8 @@
   margin-top: -5px;
   padding: 10px;
   font-size: 1.3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .under-header .global-nav #menu .menu-txt .under-link a::before {
@@ -434,9 +434,9 @@
 
 .lower-visual .lv-gray {
   position: absolute;
-  bottom: -163px;
-  right: -30px;
-  width: 56.2%;
+  bottom: -157px;
+  right: 0;
+  width: 54.2%;
 }
 
 .lower-visual .lv-gray img {
@@ -574,12 +574,14 @@
 }
 
 .content-wrap .comp-table tr th {
+  width: 20%;
   text-align: left;
   padding: 30px 0 27px 20px;
   font-weight: bold;
 }
 
 .content-wrap .comp-table tr td {
+  width: 80%;
   padding: 30px 0 27px 40px;
   color: #2c2c2c;
 }

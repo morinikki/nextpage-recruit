@@ -1211,11 +1211,13 @@
     font-size: 2.2rem;
   }
 }
-.staff-intro .lead {
-  width: 65%;
-  margin: 30px auto 0;
-  font-size: 1.2rem;
-  line-height: 1.4;
+@media screen and (max-width: 768px) {
+  .staff-intro .lead {
+    width: 65%;
+    margin: 30px auto 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
 }
 @media screen and (max-width: 768px) {
   .staff-slides {

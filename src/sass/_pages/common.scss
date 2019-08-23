@@ -165,7 +165,6 @@
                 .under-link {
                     position: relative;
                     display: none;
-                    transition: 0.3s;
                     &:hover {
                         a {
                             font-weight: bold;
@@ -181,6 +180,7 @@
                         margin-top: -5px;
                         padding: 10px;
                         font-size: 1.3rem;
+                        transition: 0.3s;
                         &::before {
                             content: '';
                             display: inline-block;
@@ -379,9 +379,9 @@
 
     .lv-gray {
         position: absolute;
-        bottom: -163px;
-        right: -30px;
-        width: 56.2%;
+        bottom: -157px;
+        right: 0;
+        width: 54.2%;
         img {
             width: 100%;
             height: auto;
@@ -512,12 +512,14 @@
             background: #fff;
 
             th {
+                width: 20%;
                 text-align: left;
                 padding: 30px 0 27px 20px;
                 font-weight: bold;
             }
 
             td {
+                width: 80%;
                 padding: 30px 0 27px 40px;
                 color: rgb(44, 44, 44);
                 p {
