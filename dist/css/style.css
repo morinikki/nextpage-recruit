@@ -1898,19 +1898,53 @@ body {
 .years-select .selector {
   position: relative;
   display: block;
-  width: 130px;
+  width: 150px;
   margin: 60px auto;
   text-align: center;
   background: #fafafa;
   border: solid 1px #ccc;
+  box-sizing: border-box;
   border-radius: 40px;
   z-index: 900;
 }
 
-.years-select .selector #year {
+.years-select .selector .selector-wrap {
+  position: relative;
+}
+
+.years-select .selector .selector-wrap::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  z-index: 1000;
+}
+
+.years-select .selector .selector-wrap::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: #00bbcc;
+  border-radius: 0 20px 20px 0;
+  z-index: 900;
+}
+
+.years-select .selector .selector-wrap #year {
   display: inline-block;
+  position: relative;
   width: 100%;
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 10px;
   font-size: 1.5rem;
   background: transparent;
@@ -1920,6 +1954,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  z-index: 1000;
 }
 
 .exp-wrap {

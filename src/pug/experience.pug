@@ -20,12 +20,13 @@ html(lang="ja")
             //- 
             .years-select
                 form(action="#", method="GET").selector
-                    select(name="year")#year
-                        option(value="2018年度") 2018年度
-                        option(value="2017年度") 2017年度
-                        option(value="2016年度") 2016年度
-                        option(value="2015年度") 2015年度
-                        option(value="2014年度") 2014年度
+                    div.selector-wrap
+                        select(name="year")#year
+                            option(value="2018年度") 2018年度
+                            option(value="2017年度") 2017年度
+                            option(value="2016年度") 2016年度
+                            option(value="2015年度") 2015年度
+                            option(value="2014年度") 2014年度
             //- 
             .sect-bg.exp-wrap
                 .content-wrap.exp-content
