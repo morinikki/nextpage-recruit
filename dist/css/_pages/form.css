@@ -89,6 +89,7 @@ input, button, textarea, select {
   padding: 40px 0;
   font-size: 1.4rem;
   font-weight: bold;
+  line-height: 1.6;
 }
 
 .contact-form form table tr td {
@@ -108,7 +109,7 @@ input, button, textarea, select {
 }
 
 .contact-form form table tr td .label-radio .radio {
-  margin-right: 20px;
+  margin-right: 10px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -141,6 +142,10 @@ input, button, textarea, select {
   height: 20px;
   border-radius: 10%;
   background: #00bbcc;
+}
+
+.contact-form form table tr td .label-check .sp-br {
+  display: none;
 }
 
 .contact-form form table tr td #input-tel {
@@ -178,6 +183,6 @@ input, button, textarea, select {
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 0.4rem;
-  border-radius: 10px;
+  border-radius: 8px;
   background: #fff;
 }

@@ -4,33 +4,47 @@
 #form
 	+mq()
 		width 100%
-		input
-			// width 100%
 		.contact-info
+			width 70%
 			margin 50px auto
+			p
+				font-size 1.2rem
 		.contact-wrap
 			width 100%
+			padding 60px 0 80px
 			.content-wrap
 				width 80%
 				padding 20px
 				.content-catch
 					padding-top 30px
+					h3
+						margin 0
+						font-size 2.2rem
+					small
+						display inline-block
+						margin-top 10px
+						font-size 1.2rem
 				.form-signal
 					width 100%
-					margin 30px auto 20px
+					margin 30px auto 10px
 					ul
 						justify-content center
 						width 100%
 						&::before
-							top 28px
+							top 25px
 							width 260px
+							height 2px
 						li
-							width 40px
-							height 40px
+							width 30px
+							height 30px
+							margin-right 15px
 							padding 10px
 							border-radius 30px
+							&:last-child
+								margin-right 0
 							p
-								margin 12px auto 0
+								margin 9px auto 0
+								font-size 1.2rem
 				.contact-form
 					display block
 					width 100%
@@ -51,6 +65,7 @@
 									flex-basis 260px
 									margin-top 10px
 									padding 0
+									line-height 1.4
 								#td-100
 									input
 										display inline-block
@@ -58,6 +73,8 @@
 									small
 										display inline-block
 										margin 10px 0 0 0
+								#input-large
+									margin 0
 								#checkbox-td
 									.lavel-check
 										p
@@ -66,3 +83,13 @@
 												height 20px
 												line-height 2px
 												box-sizing border-box
+									.label-span
+										display block
+										margin-left 30px
+						.contact-btn
+							width 180px
+							height 55px
+							.submit-btn
+								width 176px
+								height 51px
+								font-size 1.1rem

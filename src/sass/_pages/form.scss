@@ -78,6 +78,7 @@ input, button, textarea, select {
                     padding: 40px 0;
                     font-size: 1.4rem;
                     font-weight: bold;
+                    line-height: 1.6;
                 }
                 td {
                     text-align: left;
@@ -90,7 +91,7 @@ input, button, textarea, select {
                     .label-radio {
                         display: flex;
                         .radio {
-                            margin-right: 20px;
+                            margin-right: 10px;
                             width: 20px;
                             height: 20px;
                             border-radius: 50%;
@@ -119,6 +120,9 @@ input, button, textarea, select {
                                 border-radius: 10%;
                                 background: #00bbcc;
                             }
+                        }
+                        .sp-br {
+                            display: none;
                         }
                     }
                     #input-tel {
@@ -151,7 +155,7 @@ input, button, textarea, select {
                 font-size: 1.4rem;
                 font-weight: bold;
                 letter-spacing: 0.4rem;
-                border-radius: 10px;
+                border-radius: 8px;
                 background: #fff;
             }
         }

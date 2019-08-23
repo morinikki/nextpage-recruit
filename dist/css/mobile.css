@@ -755,10 +755,15 @@
     width: 100%;
   }
   #form .contact-info {
+    width: 70%;
     margin: 50px auto;
+  }
+  #form .contact-info p {
+    font-size: 1.2rem;
   }
   #form .contact-wrap {
     width: 100%;
+    padding: 60px 0 80px;
   }
   #form .contact-wrap .content-wrap {
     width: 80%;
@@ -767,26 +772,41 @@
   #form .contact-wrap .content-wrap .content-catch {
     padding-top: 30px;
   }
+  #form .contact-wrap .content-wrap .content-catch h3 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  #form .contact-wrap .content-wrap .content-catch small {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
   #form .contact-wrap .content-wrap .form-signal {
     width: 100%;
-    margin: 30px auto 20px;
+    margin: 30px auto 10px;
   }
   #form .contact-wrap .content-wrap .form-signal ul {
     justify-content: center;
     width: 100%;
   }
   #form .contact-wrap .content-wrap .form-signal ul::before {
-    top: 28px;
+    top: 25px;
     width: 260px;
+    height: 2px;
   }
   #form .contact-wrap .content-wrap .form-signal ul li {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
     padding: 10px;
     border-radius: 30px;
   }
+  #form .contact-wrap .content-wrap .form-signal ul li:last-child {
+    margin-right: 0;
+  }
   #form .contact-wrap .content-wrap .form-signal ul li p {
-    margin: 12px auto 0;
+    margin: 9px auto 0;
+    font-size: 1.2rem;
   }
   #form .contact-wrap .content-wrap .contact-form {
     display: block;
@@ -811,6 +831,7 @@
     flex-basis: 260px;
     margin-top: 10px;
     padding: 0;
+    line-height: 1.4;
   }
   #form .contact-wrap .content-wrap .contact-form form table tr #td-100 input {
     display: inline-block;
@@ -820,11 +841,27 @@
     display: inline-block;
     margin: 10px 0 0 0;
   }
+  #form .contact-wrap .content-wrap .contact-form form table tr #input-large {
+    margin: 0;
+  }
   #form .contact-wrap .content-wrap .contact-form form table tr #checkbox-td .lavel-check p .checkbox {
     width: 20px;
     height: 20px;
     line-height: 2px;
     box-sizing: border-box;
+  }
+  #form .contact-wrap .content-wrap .contact-form form table tr #checkbox-td .label-span {
+    display: block;
+    margin-left: 30px;
+  }
+  #form .contact-wrap .content-wrap .contact-form form .contact-btn {
+    width: 180px;
+    height: 55px;
+  }
+  #form .contact-wrap .content-wrap .contact-form form .contact-btn .submit-btn {
+    width: 176px;
+    height: 51px;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -881,6 +918,7 @@
   .portfolio .port-col {
     justify-content: center;
     margin-top: 30px;
+    padding-bottom: 60px;
   }
   .portfolio .port-col li {
     width: 85%;
@@ -1006,7 +1044,7 @@
 @media screen and (max-width: 768px) {
   #select {
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 0 80px;
   }
   #select .content-wrap {
     width: 80%;
@@ -1055,6 +1093,7 @@
   #experience .exp-wrap {
     width: 100%;
     margin: 0;
+    padding: 80px 0;
   }
   #experience .exp-wrap .exp-content {
     width: 80%;
@@ -1110,7 +1149,7 @@
   }
   #experience .exp-wrap .exp-content .exp-col .exp-text .exp-inner p {
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.6;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1156,7 +1195,7 @@
   }
   #require #de-skill {
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 0 80px;
   }
   #require #de-skill .content-wrap {
     width: 80%;
