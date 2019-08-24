@@ -1,0 +1,84 @@
+// question（質問コーナー）
+
+
+.question-content
+	+mq()
+		width 100%
+		padding-bottom 80px
+		.content-wrap
+			width 80%
+			padding 20px
+			.member-list
+				padding-top 40px
+				li
+					flex-wrap wrap
+					width 100%
+					padding 0
+					.list-img
+						width 60%
+						margin 0 auto
+					.list-group
+						width 100%
+						margin-top 30px
+						.number
+							font-size 1.2rem
+						h3
+							margin-top 20px
+							font-size 2rem
+							line-height 1.4
+						.w-position
+							font-size 1.3rem
+						.intro
+							margin-top 30px
+							font-size 1.2rem
+							line-height 1.4
+			.slide-dots
+				margin-top 20px
+				li
+					width 20px
+			.chat-space
+				margin -10px
+				padding-bottom 30px
+				.chat-space-inner
+					height 400px
+					border-radius 8px
+					ul
+						padding 10px
+						.employee, .questioner
+							.callout
+								width 60%
+								padding 10px
+								margin 0
+								font-size 1rem
+								border-radius 8px
+								&::after
+									top 15px
+									border-top 5px solid transparent
+									border-bottom: 5px solid transparent
+						.employee
+							img
+								width 40px
+								height 40px
+							.callout
+								margin-left 15px
+								&::after
+									left -10px
+									border-right 20px solid #fff
+						.questioner
+							padding-right 10px
+							.callout
+								margin 0 0 0 auto
+								&::after
+									right -10px
+									border-left 20px solid #fff
+
+					.btn-arrow
+						width 30px
+						height 30px
+						.inner
+							width 30px
+							height 30px
+							&::after
+								top 11px
+								width 5px
+								height 5px

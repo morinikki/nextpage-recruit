@@ -2691,13 +2691,16 @@ input, button, textarea, select {
 }
 
 .question-content .question-wrap .chat-space .chat-space-inner {
+  position: relative;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: 600px;
   background: -webkit-gradient(linear, left top, left bottom, from(#bbeae3), to(#cae583));
   background: linear-gradient(to bottom, #bbeae3, #cae583);
   border-radius: 10px;
+  overflow: scroll;
 }
 
 .question-content .question-wrap .chat-space .chat-space-inner ul {
@@ -2750,7 +2753,9 @@ input, button, textarea, select {
 }
 
 .question-content .question-wrap .chat-space .chat-space-inner ul .questioner .callout {
+  position: relative;
   margin: 0 0 0 auto;
+  z-index: 900;
 }
 
 .question-content .question-wrap .chat-space .chat-space-inner ul .questioner .callout::after {
@@ -2759,13 +2764,19 @@ input, button, textarea, select {
 }
 
 .question-content .question-wrap .chat-space .chat-space-inner .btn-arrow {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 15px;
   width: 50px;
   height: 50px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   padding: 1px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
   background: linear-gradient(to bottom, #00bbcc, #99cc00);
   border-radius: 30px;
+  z-index: 1000;
 }
 
 .question-content .question-wrap .chat-space .chat-space-inner .btn-arrow:hover {
