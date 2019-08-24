@@ -865,6 +865,161 @@
   }
 }
 @media screen and (max-width: 768px) {
+  #comp-intro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 80px;
+  }
+  #comp-intro video {
+    width: 100%;
+  }
+  #comp-intro #production {
+    margin-left: 20px;
+    font-size: 3rem;
+  }
+  #comp-intro #production::after {
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+  }
+  #comp-intro .comp-wrap {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  #comp-intro .comp-wrap .comp-img {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #comp-intro .comp-wrap .comp-img .comp-kei::after {
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: auto;
+    right: 10px;
+  }
+  #comp-intro .comp-wrap .intro-text {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #comp-intro .comp-wrap .intro-text h3 {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+  #comp-intro .comp-wrap .intro-text h3::after {
+    bottom: -30px;
+  }
+  #comp-intro .comp-wrap .intro-text p {
+    margin: 60px 0 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  #comp-intro .shape {
+    right: 10px;
+    bottom: 50px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .comp-adv {
+    width: 100%;
+  }
+  .comp-adv .content-wrap {
+    width: 80%;
+    padding: 20px;
+  }
+  .comp-adv .content-wrap .content-catch {
+    margin-top: 30px;
+  }
+  .comp-adv .content-wrap .content-catch h3 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .comp-adv .content-wrap .content-catch h3 .sp-br {
+    display: block;
+  }
+  .comp-adv .content-wrap .comp-table {
+    margin: 20px 0 0;
+    padding-bottom: 20px;
+  }
+  .comp-adv .content-wrap .comp-table tr th {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .comp-adv .content-wrap .comp-table tr th span::after {
+    top: -7px;
+    left: -12px;
+    width: 35px;
+    height: 35px;
+  }
+  .comp-adv .content-wrap .comp-table tr th .comp-icon {
+    height: 30%;
+    margin: 30px auto 0;
+  }
+  .comp-adv .content-wrap .comp-table tr th .comp-icon img {
+    width: auto;
+    heigt: 100%;
+  }
+  .comp-adv .content-wrap .comp-table tr td {
+    width: 100%;
+    margin: 20px 0 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #comp-data {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 80px;
+    background: #f6f6f6;
+  }
+  #comp-data .content-wrap {
+    width: 80%;
+    padding: 20px;
+    background: #fff;
+  }
+  #comp-data .content-wrap .content-catch {
+    margin-top: 30px;
+  }
+  #comp-data .content-wrap .content-catch h3 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  #comp-data .content-wrap .data-col {
+    margin-top: 30px;
+  }
+  #comp-data .content-wrap .data-col li {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 25px;
+    font-size: 1.4rem;
+  }
+  #comp-data .content-wrap .data-col li::before {
+    left: 0;
+  }
+  #comp-data .content-wrap .data-col li h4 {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  #comp-data .content-wrap .data-col li p {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+  #comp-data .content-wrap .data-col li .data-inner {
+    margin-top: 20px;
+  }
+  #comp-data .content-wrap .data-col li .data-inner .list-item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  #comp-data .content-wrap .data-col li .data-inner .list-item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
   #work-content {
     width: 100%;
     padding: 80px 0 0 0;

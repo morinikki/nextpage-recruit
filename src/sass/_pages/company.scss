@@ -9,6 +9,7 @@
     }
     #production {
         position: relative;
+        width: 100%;
         margin: 0 0 50px 0;
         font-size: 8rem;
         font-weight: bold;
@@ -81,6 +82,9 @@
         .content-catch {
             h3 {
                 margin: 0 0 80px 0;
+                .sp-br {
+                    display: none;
+                }
             }
         }
         .comp-table {
@@ -133,7 +137,7 @@
     }
     .content-catch {
         h3 {
-            margin: 0 0 80px 0;
+            margin: 0 0 40px 0;
         }
     }
     background: url(/images/company/bg_company_keikun.jpg) no-repeat;

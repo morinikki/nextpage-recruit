@@ -12,6 +12,7 @@
 
 .comp-intro #production {
   position: relative;
+  width: 100%;
   margin: 0 0 50px 0;
   font-size: 8rem;
   font-weight: bold;
@@ -97,6 +98,10 @@
   margin: 0 0 80px 0;
 }
 
+.comp-adv .content-wrap .content-catch h3 .sp-br {
+  display: none;
+}
+
 .comp-adv .content-wrap .comp-table tr th {
   text-align: center;
   width: 30%;
@@ -149,7 +154,7 @@
 }
 
 .comp-data .content-catch h3 {
-  margin: 0 0 80px 0;
+  margin: 0 0 40px 0;
 }
 
 .comp-data .data-col {
