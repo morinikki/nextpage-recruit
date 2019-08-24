@@ -13,12 +13,15 @@
         z-index: 900;
         .selector-wrap {
             position: relative;
+            &:hover {
+                opacity: 0.8;
+            }
             &::before {
                 content: '';
                 display: block;
                 position: absolute;
                 top: 14px;
-                right: 15px;
+                right: 16px;
                 width: 8px;
                 height: 8px;
                 border-top: solid 2px #fff;

@@ -15,12 +15,16 @@
   position: relative;
 }
 
+.years-select .selector .selector-wrap:hover {
+  opacity: 0.8;
+}
+
 .years-select .selector .selector-wrap::before {
   content: '';
   display: block;
   position: absolute;
   top: 14px;
-  right: 15px;
+  right: 16px;
   width: 8px;
   height: 8px;
   border-top: solid 2px #fff;
