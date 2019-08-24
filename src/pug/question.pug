@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+html(lang="ja")
+    include _includes/_head.pug
+        title 会社情報 | 株式会社 NEXPAGE
+    body#question
+        .wrap
+            include _includes/_under-header.pug
+            //- 
+            .lower-visual
+                picture.lv-img
+                    source(media="(max-width: 768px)" srcset="images/common/under_visual_sp_01.jpg")
+                    img(src="images/common/under_visual_01.jpg", alt="業務")
+                .lv-tri
+                    img(src="images/common/bg_triangle.png", alt="title")
+                .lv-gray
+                    img(src="images/common/bg_gray.png", alt="title")
+                .lv-text
+                    h2.lv-tit Question
+                    p.lv-cap 質問コーナー
+            //- 
+            .pagelink-wrap
+                .pagelink
+                    p
+                        a(href="#rookie-slider") 新入社員に聞く！
+                .pagelink
+                    p
+                        a(href="#veteran-slider") ベテラン社員に聞く！
+            section.sect-bg.question-content
+                .content-wrap.question-wrap.question-rookie
+                    ul.slider.member-list#rookie-slider
+                        li.slide
+                            p.list-img
+                                img(src="https://placehold.jp/150x150.png" alt="")
+                            .list-group
+                                p.number 新入社員代表
+                                h3 梅澤 快斗（うめちゃん）
+                                p.w-position Enginner / エンジニア
+                                p.intro ここに一言メッセージが入ります。ここに一言メッセージが入ります。
+                        li.slide
+                            p.list-img
+                                img(src="https://placehold.jp/150x150.png" alt="")
+                            .list-group
+                                p.number 新入社員代表
+                                h3 梅澤 快斗（うめちゃん）
+                                p.w-position Enginner / エンジニア
+                                p.intro ここに一言メッセージが入ります。ここに一言メッセージが入ります。
+                        li.slide
+                            p.list-img
+                                img(src="https://placehold.jp/150x150.png" alt="")
+                            .list-group
+                                p.number 新入社員代表
+                                h3 梅澤 快斗（うめちゃん）
+                                p.w-position Enginner / エンジニア
+                                p.intro ここに一言メッセージが入ります。ここに一言メッセージが入ります。
+                    .chat-space
+                        .chat-space-inner
+                            ul
+                                li.employee
+                                    img(src="images/" alt="")
+                                    p.callout こんにちは！
+                                        br
+                                        | わからないところあったら、なんでも聞いてくださいね！
+                                li.questioner
+                                    p.callout こんにちは！
+                                        br
+                                        | では、よろしくお願いします。
+                                li.employee
+                                    img(src="images/" alt="")
+                                    p.callout そうですね、やっぱり一番は…
+                                        br
+                                        | 「ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                        br
+                                        | ですかね！
+                                li.questioner
+                                    p.callout なるほど…、
+                                        br
+                                        | ありがとうございます！
+                                li.questioner
+                                    p.callout 次に
+                                        span
+                                        | 仕事にはどれくらいで慣れましたか？
+                                        | あと、やっぱり
+                                        span
+                                        | 一人暮らしって大変ですか？
+                                li.employee
+                                    img(src="images/" alt="")
+                                    p.callout そうですね、やっぱり一番は…
+                                        br
+                                        | 「ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                        br
+                                        | ですかね！
+                            .btn-arrow
+                                .inner
+                        .btn-nav
+                .content-wrap.question-wrap.question-veteran
+                    ul.slider.member-list#veteran-slider
+                        li.slide
+                            p.list-img
+                                img(src="https://placehold.jp/150x150.png" alt="")
+                            .list-group
+                                p.number ベテラン社員代表
+                                h3 西川 桂似（にしかわくん）
+                                p.w-position Designer・Enginner / デザイナー・エンジニア
+                                p.intro ここに一言メッセージが入ります。ここに一言メッセージが入ります。
+                        li.slide
+                            p.list-img
+                                img(src="https://placehold.jp/150x150.png" alt="")
+                            .list-group
+                                p.number ベテラン社員代表
+                                h3 西川 桂似（にしかわくん）
+                                p.w-position Designer・Enginner / デザイナー・エンジニア
+                                p.intro ここに一言メッセージが入ります。ここに一言メッセージが入ります。
+                        li.slide
+                            p.list-img
+                                img(src="https://placehold.jp/150x150.png" alt="")
+                            .list-group
+                                p.number ベテラン社員代表
+                                h3 西川 桂似（にしかわくん）
+                                p.w-position Designer・Enginner / デザイナー・エンジニア
+                                p.intro ここに一言メッセージが入ります。ここに一言メッセージが入ります。
+                    .chat-space
+                        .chat-space-inner
+                            ul
+                                li.employee
+                                    img(src="images/" alt="")
+                                    p.callout こんにちは！
+                                        br
+                                        | わからないところあったら、なんでも聞いてくださいね！
+                                li.questioner
+                                    p.callout こんにちは！
+                                        br
+                                        | では、よろしくお願いします。
+                                li.employee
+                                    img(src="images/" alt="")
+                                    p.callout そうですね、やっぱり一番は…
+                                        br
+                                        | 「ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                        br
+                                        | ですかね！
+                                li.questioner
+                                    p.callout なるほど…、
+                                        br
+                                        | ありがとうございます！
+                                li.questioner
+                                    p.callout 次に
+                                        span
+                                        | 仕事にはどれくらいで慣れましたか？
+                                        | あと、やっぱり
+                                        span
+                                        | 一人暮らしって大変ですか？
+                                li.employee
+                                    img(src="images/" alt="")
+                                    p.callout そうですね、やっぱり一番は…
+                                        br
+                                        | 「ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                                        br
+                                        | ですかね！
+                            .btn-arrow
+                                .inner
+                        .btn-nav
+            //- 
+            include _includes/_footer.pug
+            //- 

@@ -154,7 +154,7 @@ $(function () {
 
 // *slick-slider
 $(function(){
-	$('.slider').slick({
+	$('#message-slider').slick({
 		autoplay: true,
 		autoplaySpeed: 3000,
 		slidesToShow: 3,
@@ -177,5 +177,25 @@ $(function(){
 		// 		}
 		// 	}
 		// ]
+	});
+	$('#rookie-slider').slick({
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slidesToShow: 1,
+		// centerMode: true,
+		focusOnSelect: true,
+		arrows: true,
+		dots: true,
+		dotsClass: 'slide-dots'
+	});
+	$('#veteran-slider').slick({
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slidesToShow: 1,
+		// centerMode: true,
+		focusOnSelect: true,
+		arrows: true,
+		dots: true,
+		dotsClass: 'slide-dots'
 	});
 });

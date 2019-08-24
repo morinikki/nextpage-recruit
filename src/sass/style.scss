@@ -1,19 +1,21 @@
 @charset "utf-8";
 
+// *slick
+@import "_slick/slick";
+@import "_slick/slick-theme";
+
 // *includes
 @import "_includes/reset";
+@import "_includes/mixin";
 @import "_includes/keyframe";
 @import "_includes/base";
 
-// *slick
-@import "_slick/slick.scss";
-@import "_slick/slick-theme.scss";
-
 // *pages
 @import "_pages/common";
-@import "_pages/top.scss";
-@import "_pages/work.scss";
-@import "_pages/company.scss";
-@import "_pages/experience.scss";
-@import "_pages/form.scss";
-@import "_pages/message.scss";
+@import "_pages/top";
+@import "_pages/work";
+@import "_pages/company";
+@import "_pages/experience";
+@import "_pages/form";
+@import "_pages/message";
+@import "_pages/question";

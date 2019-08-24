@@ -1,138 +1,4 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-@-webkit-keyframes grad-wave {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes grad-wave {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-html {
-  height: 100%;
-  font-size: 62.5%;
-}
-
-body {
-  height: 100%;
-  min-height: 100%;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-}
-
-.sa {
-  opacity: 0;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.sa.show {
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
-}
-
-.sa--up {
-  -webkit-transform: translate(0, 100px);
-          transform: translate(0, 100px);
-}
-
-.sa--rl {
-  -webkit-transform: translate(100px, 0);
-          transform: translate(100px, 0);
-}
-
-.sa--lr {
-  -webkit-transform: translate(-100px, 0);
-          transform: translate(-100px, 0);
-}
-
 /* Slider */
 .slick-slider {
   position: relative;
@@ -399,6 +265,140 @@ body {
 .slick-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes grad-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes grad-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+.sa {
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.sa--up {
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+}
+
+.sa--rl {
+  -webkit-transform: translate(100px, 0);
+          transform: translate(100px, 0);
+}
+
+.sa--lr {
+  -webkit-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
 }
 
 .header {
@@ -2548,4 +2548,233 @@ input, button, textarea, select {
 #int-btn .btn-arrow img {
   -webkit-transform: translateX(35%);
           transform: translateX(35%);
+}
+
+.question-content {
+  padding: 80px 0px;
+}
+
+.question-content .question-wrap .member-list li {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.question-content .question-wrap .member-list li .list-img {
+  width: 200px;
+}
+
+.question-content .question-wrap .member-list li .list-img img {
+  width: 100%;
+  height: auto;
+}
+
+.question-content .question-wrap .member-list li .list-group {
+  margin-left: 20px;
+}
+
+.question-content .question-wrap .member-list li .list-group .number {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.question-content .question-wrap .member-list li .list-group h3 {
+  margin-top: 30px;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.question-content .question-wrap .member-list li .list-group .w-position {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.question-content .question-wrap .member-list li .list-group .intro {
+  margin-top: 50px;
+  font-size: 1.6rem;
+}
+
+.question-content .question-wrap .slick-prev, .question-content .question-wrap .slick-next {
+  bottom: 0;
+}
+
+.question-content .question-wrap .slick-prev::before, .question-content .question-wrap .slick-next::before {
+  display: none;
+}
+
+.question-content .question-wrap .slick-prev::after, .question-content .question-wrap .slick-next::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: url(/images/common/slider_arrow.svg) no-repeat;
+}
+
+.question-content .question-wrap .slick-prev {
+  margin-top: -35px;
+}
+
+.question-content .question-wrap .slick-next {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.question-content .question-wrap .slide-dots {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.question-content .question-wrap .slide-dots li {
+  position: relative;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.question-content .question-wrap .slide-dots li button {
+  opacity: 0;
+}
+
+.question-content .question-wrap .slide-dots li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  background: #99cc00;
+  border-radius: 10px;
+}
+
+.question-content .question-wrap .chat-space {
+  margin-top: 30px;
+}
+
+.question-content .question-wrap .chat-space::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbeae3), to(#cae583));
+  background: linear-gradient(to bottom, #bbeae3, #cae583);
+  border-radius: 10px;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul .employee, .question-content .question-wrap .chat-space .chat-space-inner ul .questioner {
+  display: -webkit-box;
+  display: flex;
+  margin: 20px 0;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul .employee img, .question-content .question-wrap .chat-space .chat-space-inner ul .questioner img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #ccc;
+  border-radius: 40px;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul .employee .callout, .question-content .question-wrap .chat-space .chat-space-inner ul .questioner .callout {
+  position: relative;
+  width: 300px;
+  padding: 15px;
+  margin-left: 30px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul .employee .callout span, .question-content .question-wrap .chat-space .chat-space-inner ul .questioner .callout span {
+  font-weight: bold;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul .employee .callout::after, .question-content .question-wrap .chat-space .chat-space-inner ul .questioner .callout::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul .employee .callout::after {
+  left: -20px;
+  border-right: 30px solid #fff;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul .questioner .callout {
+  margin: 0 0 0 auto;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner ul .questioner .callout::after {
+  right: -20px;
+  border-left: 30px solid #fff;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner .btn-arrow {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  padding: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbcc), to(#99cc00));
+  background: linear-gradient(to bottom, #00bbcc, #99cc00);
+  border-radius: 30px;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner .btn-arrow:hover {
+  opacity: 0.8;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner .btn-arrow .inner {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.question-content .question-wrap .chat-space .chat-space-inner .btn-arrow .inner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  border-right: 2px solid #00bbcc;
+  border-bottom: 2px solid #00bbcc;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.question-content .question-veteran {
+  margin-top: 80px;
 }
