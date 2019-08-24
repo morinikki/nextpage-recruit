@@ -46,11 +46,11 @@
 }
 
 .comp-intro .comp-wrap .comp-img .comp-kei:after {
+  content: '';
+  display: block;
   position: absolute;
   bottom: -60px;
   left: -80px;
-  content: '';
-  display: block;
   width: 450px;
   height: 250px;
   background: -webkit-gradient(linear, left top, right top, from(#00bbcc), to(#99cc00));
@@ -87,6 +87,10 @@
   font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.2rem;
+}
+
+.comp-adv {
+  padding: 80px 0;
 }
 
 .comp-adv .content-wrap .content-catch h3 {
@@ -134,12 +138,14 @@
 }
 
 .comp-data {
+  margin-top: 100px;
   background: url(/images/company/bg_company_keikun.jpg) no-repeat;
   background-size: cover;
 }
 
 .comp-data .content-wrap {
   background: none;
+  padding: 60px 0 0;
 }
 
 .comp-data .content-catch h3 {
@@ -177,24 +183,34 @@
 
 .comp-data .data-col .data-ul li p {
   width: 70%;
-  line-height: 2rem;
+  line-height: 1.5;
 }
 
 .comp-data .data-col .data-ul li .data-inner {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  width: 70%;
 }
 
-.comp-data .data-col .data-ul li .data-inner li {
-  width: 300px;
+.comp-data .data-col .data-ul li .data-inner .list-item {
+  width: 50%;
+  margin: 0;
+  padding: 0;
 }
 
-.comp-data .data-col .data-ul li .data-inner li::before {
-  content: '';
+.comp-data .data-col .data-ul li .data-inner .list-item::before {
   display: none;
 }
 
-.comp-data .data-col .data-ul li .data-inner li span {
+.comp-data .data-col .data-ul li .data-inner .list-item p {
+  width: 100%;
+}
+
+.comp-data .data-col .data-ul li .data-inner .list-item p span {
+  display: inline-block;
+  margin-bottom: 10px;
   font-weight: bold;
 }

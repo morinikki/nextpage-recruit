@@ -33,11 +33,11 @@
             .comp-kei {
                 position: relative;
                 &:after {
+                    content: '';
+                    display: block;
                     position: absolute;
                     bottom: -60px;
                     left: -80px;
-                    content: '';
-                    display: block;
                     width: 450px;
                     height: 250px;
                     background: linear-gradient(to right, #00bbcc, #99cc00);
@@ -76,6 +76,7 @@
 }
 
 .comp-adv {
+    padding: 80px 0;
     .content-wrap {
         .content-catch {
             h3 {
@@ -125,8 +126,10 @@
 }
 
 .comp-data {
+    margin-top: 100px;
     .content-wrap {
         background: none;
+        padding: 60px 0 0;
     }
     .content-catch {
         h3 {
@@ -159,19 +162,27 @@
                 }
                 p {
                     width: 70%;
-                    line-height: 2rem;
+                    line-height: 1.5;
                 }
                 .data-inner {
                     display: flex;
                     flex-wrap: wrap;
-                    li {
-                        width: 300px;
+                    justify-content: space-between;
+                    width: 70%;
+                    .list-item {
+                        width: 50%;
+                        margin: 0;
+                        padding: 0;
                         &::before {
-                            content: '';
                             display: none;
                         }
-                        span {
-                            font-weight: bold;
+                        p {
+                            width: 100%;
+                            span {
+                                display: inline-block;
+                                margin-bottom: 10px;
+                                font-weight: bold;
+                            }
                         }
                     }
                 }
