@@ -51,6 +51,7 @@
 								margin 0
 								font-size 1rem
 								border-radius 8px
+								box-shadow 0px 2px 5px 2px rgba(180, 180, 180, 0.6)
 								&::after
 									top 15px
 									border-top 5px solid transparent
@@ -75,6 +76,7 @@
 					.btn-arrow
 						width 30px
 						height 30px
+						opacity 0.8
 						.inner
 							width 30px
 							height 30px
@@ -82,3 +84,7 @@
 								top 11px
 								width 5px
 								height 5px
+
+#con-btn
+	+mq()
+		margin 30px auto 0

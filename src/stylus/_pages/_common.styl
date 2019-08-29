@@ -2,7 +2,7 @@
 
 
 // #header
-.header
+#tp-header
 	+mq()
 		width 100%
 		padding 0
@@ -12,6 +12,7 @@
 			margin 0
 			padding 0
 			z-index 1000
+			animation none
 			a
 				width 30px
 				padding 12px 17px
@@ -22,7 +23,7 @@
 			width 55px
 			height 55px
 			margin 0 0 0 20px
-			ul
+			#tp-menu
 				display none
 				position absolute
 				top 0
@@ -31,8 +32,6 @@
 				height 100vh
 				padding-top 35%
 				background rgba(255,255,255, .8)
-				transition 0.3s
-			#tp-menu
 				transition 0.3s
 				&.open
 					display block
@@ -91,7 +90,8 @@
 				position absolute
 				width 30px
 				height 3px
-				background #009944
+				background #fff
+				transition 0.2s
 			.btn-menu
 				display block
 				position relative
@@ -102,13 +102,29 @@
 				&::after
 					bottom 17px
 					width 15px
+				&.open
+					&::before
+						background #009944
+						transform rotate(-135deg) translate(-7px, -5px)
+					&::after
+						width 30px
+						background #009944
+						transform rotate(135deg) translate(-7px, 6px)
+				&.sticky
+					&::before
+						background #009944
+					&::after
+						background #009944
 				span
 					display block
 					width 23px
 					height 3px
-					background #009944
+					background #fff
+					transition 0.2s
 					&.open
 						display none
+					&.sticky
+						background #009944
 
 // #under-header
 .under-header
@@ -120,6 +136,7 @@
 		.header-logo
 			width 85px
 			margin 0 0 0 15px
+			padding 16px 0 15px
 
 		.global-nav
 			#menu
@@ -134,7 +151,7 @@
 				height 100vh
 				margin 0
 				background rgba(255,255,255, .8)
-				transition 0.3s
+				transition 0.2s
 				z-index 1000
 				&.open
 					display flex
@@ -202,23 +219,36 @@
 				margin 0 auto
 				transforrm translate(-50%, -50%)
 				background #fff
+				transition 0.2s
 			.btn-menu
 				display block
-				position relative
+				position fixed
+				top 0
+				right 0
 				width 60px
 				height 60px
 				background linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9))
 				z-index 1100
+				transition 0.2s
 				&::before
 					top 20px
 				&::after
 					bottom 19px
+				&.open
+					background none
+					&::before
+						background #009944
+						transform rotate(-135deg) translate(-7px, -7px)
+					&::after
+						background #009944
+						transform rotate(135deg) translate(-5px, 6px)
 				span
 					display block
 					width 30px
 					height 3px
 					margin 0 auto
 					background #fff
+					transition 0.2s
 					&.open
 						display none
 

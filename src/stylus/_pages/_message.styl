@@ -8,6 +8,7 @@
 // スタッフ紹介
 .staff-intro
 	+mq()
+		margin-top 80px
 		.lead
 			width 65%
 			margin 30px auto 0
@@ -18,16 +19,26 @@
 // #slider
 .staff-slides
 	+mq()
-		display none
-		.slinck-list
+		margin-top -30px
+		display block
+		.slick-list
 			padding 0
 			.slide
-				width 100%
-				.slide
-					width 100%
-					margin 0
+				margin: 30px;
 			.slick-slide
 				transform scale(1)
+		.slick-prev, .slick-next
+			width 40px
+			height 40px
+			margin-top 260px
+			&::after
+				margin-left 12px
+		.slick-prev
+			left 36%
+			&::after
+				margin-left 16px
+		.slick-next
+			right 36%
 
 
 // 社員からのメッセージ
@@ -35,7 +46,7 @@
 	+mq()
 		width 100%
 		margin-top 60px
-		padding 60px 0 0 0
+		padding 60px 0 20px
 		.content-wrap
 			width 80%
 			padding 20px
@@ -87,7 +98,7 @@
 .presi-mess
 	+mq()
 		width 100%
-		padding-bottom 60px
+		padding 40px 0 80px
 		.content-wrap
 			width 80%
 			padding 20px

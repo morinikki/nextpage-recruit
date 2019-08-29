@@ -194,6 +194,13 @@
                             border-bottom: 2px solid #00bbcc;
                             transform: rotate(45deg);
                         }
+                        a {
+                            display: inline-block;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 1000;
+                        }
                     }
                 }
             }
@@ -201,5 +208,49 @@
     }
     .question-veteran {
         margin-top: 80px;
+    }
+}
+
+#con-btn {
+    display: flex;
+    align-items: center;
+    margin: 60px auto 0;
+    width: 210px;
+    height: 55px;
+    padding: 2px;
+    border-radius: 28px;
+    // background: linear-gradient(to bottom,#00bbcc,#99cc00);
+    background: linear-gradient(135deg, #00bbcc, #99cc00);
+    background-size: 300% 300%;
+    animation: grad-wave 10s ease 0s infinite normal forwards;
+    box-shadow: 0px 2px 5px 2px rgba(140,140,140,0.4);
+    transition: 0.3s;
+    &:hover {
+        box-shadow: none;
+        transform: translate(0, 5px);
+        .btn-inner {
+            background: none;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .btn-inner {
+        background: #fff;
+        width: 210px;
+        height: 55px;
+        margin: 0 auto;
+        border-radius: 26px;
+    }
+    a {
+        text-align: center;
+        display: block;
+        padding: 0.8em;
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 0.3rem;
+        line-height: 3.6rem;
+        text-decoration: none;
+        color: #009944;
     }
 }

@@ -108,18 +108,32 @@
         line-height: 3rem;
     }
     .det-btn {
-        position: relative;
         display: flex;
         align-items: center;
-        width: 231px;
-        height: 61px;
-        margin: 0 auto;
+        margin: 40px auto 0;
+        width: 200px;
+        height: 55px;
+        padding: 2px;
         border-radius: 28px;
-        background: linear-gradient(to bottom,#00bbcc,#99cc00);
+        // background: linear-gradient(to bottom,#00bbcc,#99cc00);
+        background: linear-gradient(135deg, #00bbcc, #99cc00);
+        background-size: 300% 300%;
+        animation: grad-wave 10s ease 0s infinite normal forwards;
         box-shadow: 0px 2px 5px 2px rgba(140,140,140,0.4);
+        transition: 0.3s;
+        &:hover {
+            box-shadow: none;
+            transform: translate(0, 5px);
+            .btn-inner {
+                background: none;
+                a {
+                    color: #fff;
+                }
+            }
+        }
         .btn-inner {
             background: #fff;
-            width: 225px;
+            width: 200px;
             height: 55px;
             margin: 0 auto;
             border-radius: 26px;
@@ -133,26 +147,38 @@
             letter-spacing: 0.3rem;
             line-height: 4rem;
             text-decoration: none;
-            background: #009944;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #009944;
         }
     }
 }
 .select {
     .det-btn {
-        position: relative;
         display: flex;
         align-items: center;
-        width: 231px;
-        height: 61px;
-        margin: 0 auto;
+        margin: 40px auto 0;
+        width: 200px;
+        height: 55px;
+        padding: 2px;
         border-radius: 28px;
-        background: linear-gradient(to bottom,#00bbcc,#99cc00);
+        // background: linear-gradient(to bottom,#00bbcc,#99cc00);
+        background: linear-gradient(135deg, #00bbcc, #99cc00);
+        background-size: 300% 300%;
+        animation: grad-wave 10s ease 0s infinite normal forwards;
         box-shadow: 0px 2px 5px 2px rgba(140,140,140,0.4);
+        transition: 0.3s;
+        &:hover {
+            box-shadow: none;
+            transform: translate(0, 5px);
+            .btn-inner {
+                background: none;
+                a {
+                    color: #fff;
+                }
+            }
+        }
         .btn-inner {
             background: #fff;
-            width: 225px;
+            width: 200px;
             height: 55px;
             margin: 0 auto;
             border-radius: 26px;
@@ -166,9 +192,7 @@
             letter-spacing: 0.3rem;
             line-height: 4rem;
             text-decoration: none;
-            background: #009944;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #009944;
         }
     }
 }

@@ -15,6 +15,7 @@
         float: right;
         position: relative;
         z-index: 900;
+        animation: slideIn-right 0.5s ease 0s 1 normal forwards;
     }
     .mv-catch {
         position: absolute;
@@ -24,6 +25,7 @@
         padding: 40px 0;
         z-index: 991;
         background: #fff;
+        animation: slideIn-left 1.5s ease 0s 1 normal forwards;
         opacity: 0.8;
         .main-catch {
             text-align: center;
@@ -51,6 +53,7 @@
         // background: linear-gradient(135deg, #00bbcc, #99cc00);
         // background-size: 300% 300%;
         // animation: grad-wave 10s ease 0s infinite normal forwards;
+        animation: slideIn-left 1s ease 0s 1 normal forwards;
     }
 }
 .tag-text {
@@ -180,14 +183,28 @@
         display: flex;
         align-items: center;
         margin: 100px auto 100px;
-        width: 231px;
-        height: 61px;
+        width: 200px;
+        height: 55px;
+        padding: 2px;
         border-radius: 28px;
-        background: linear-gradient(to bottom,#00bbcc,#99cc00);
+        // background: linear-gradient(to bottom,#00bbcc,#99cc00);
+        background: linear-gradient(135deg, #00bbcc, #99cc00);
+        background-size: 300% 300%;
+        animation: grad-wave 10s ease 0s infinite normal forwards;
         box-shadow: 0px 2px 5px 2px rgba(140,140,140,0.4);
+        &:hover {
+            box-shadow: none;
+            transform: translate(0, 5px);
+            .btn-inner {
+                background: none;
+                a {
+                    color: #fff;
+                }
+            }
+        }
         .btn-inner {
             background: #fff;
-            width: 225px;
+            width: 200px;
             height: 55px;
             margin: 0 auto;
             border-radius: 26px;
@@ -201,9 +218,7 @@
             letter-spacing: 0.3rem;
             line-height: 4rem;
             text-decoration: none;
-            background: #009944;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #009944;
         }
     }
     .concept {
@@ -281,6 +296,7 @@
         }
     }
     .business-content {
+        padding-bottom: 40px;
         .business-catch {
             text-align: center;
             h2 {
@@ -329,6 +345,10 @@
             align-items: center;
             width: 75%;
             margin: 110px auto 0;
+            transition: 0.2s;
+            &:hover {
+                opacity: 0.8;
+            }
             .link-text {
                 width: 500px;
                 height: 314px;
@@ -380,9 +400,22 @@
     align-items: center;
     width: 180px;
     height: 60px;
-    background: linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9));
+    // background: linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9));
+    background: linear-gradient(135deg, #00bbcc, #99cc00);
+    background-size: 300% 300%;
+    animation: grad-wave 10s ease 0s infinite normal forwards;
     box-shadow: 0px 2px 5px 2px rgba(140, 140, 140, 0.4);
+    box-sizing: border-box;
     border-radius: 30px;
+    &:hover {
+        border: 3px solid #99cc00;
+        background: rgba(255,255,255, .8);
+        a {
+            background: linear-gradient(to bottom,#00bbcc,#99cc00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
     a {
         font-size: 1.4rem;
         font-weight: bold;
