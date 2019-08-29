@@ -50,6 +50,7 @@
 					width 45px
 					height 45px
 					background linear-gradient(to bottom,rgba(150,234,16, .9),rgba(79,220,220, .9))
+					animation rotation 2s ease 0s 1 normal fowards
 
 				.main-catch
 					position relative
@@ -285,7 +286,7 @@
 					width 85%
 					height 85px
 					margin auto
-					padding 25px 0
+					padding 30px 0
 					text-align center
 					background rgba(255,255,255, .8)
 					h3
@@ -303,10 +304,27 @@
 						font-size 1.2rem
 						color #000
 					.link-det
+						position relative
 						margin 30px 0 0
+						&::after
+							content ''
+							display block
+							position absolute
+							left 0
+							right 0
+							bottom -2px
+							width 5px
+							height 5px
+							margin 0 auto
+							border-right 2px solid #009944
+							border-bottom 2px solid #009944
+							transform rotate(45deg)
 						a
+							margin-top -10px
+							padding 10px
 							font-size 1.2rem
-							color: #000;
+							color #000
+							background none
 
 				.link-img
 					width 100%
