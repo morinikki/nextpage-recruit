@@ -349,6 +349,13 @@
             &:hover {
                 opacity: 0.8;
             }
+            &:hover > .link-text > .link-det a {
+                &:hover::after {
+                    bottom: -4px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
             .link-text {
                 width: 500px;
                 height: 314px;
@@ -375,9 +382,26 @@
                 .link-det {
                     margin: 100px 0 0 0;
                     a {
+                        display: inline-block;
+                        position: relative;
+                        padding: 10px 30px 5px 10px;
                         font-size: 1.4rem;
                         color: #fff;
                         text-decoration: none;
+                        background: url(/images/common/arrow_bottom.svg) no-repeat top 15px right;
+                        background-size: 10px;
+                        &::after {
+                            position: absolute;
+                            bottom: 0px;
+                            left: 5px;
+                            content: '';
+                            width: 100%;
+                            height: 1px;
+                            background: #fff;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .3s;
+                        }
                     }
                 }
             }
