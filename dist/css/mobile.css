@@ -1563,10 +1563,13 @@
     width: 50px;
   }
   .presi-mess .content-wrap .presi-message h4 {
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
     font-size: 1.6rem;
     text-align: left;
     line-height: 1.4;
+  }
+  .presi-mess .content-wrap .presi-message h4 .sp-br {
+    display: block;
   }
   .presi-mess .content-wrap .presi-message .pre-q {
     margin: 30px 0 0 0;

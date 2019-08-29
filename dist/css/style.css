@@ -2804,6 +2804,10 @@ input, button, textarea, select {
   z-index: 900;
 }
 
+.presi-mess .presi-message h4 .sp-br {
+  display: none;
+}
+
 .presi-mess .presi-message .pre-q {
   margin: 0 0 30px 0;
   font-size: 2rem;
