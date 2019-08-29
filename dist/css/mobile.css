@@ -1626,6 +1626,17 @@
     font-size: 1.2rem;
     line-height: 1.4;
   }
+  .question-content .content-wrap .slick-prev {
+    top: 150px;
+    left: -18px;
+  }
+  .question-content .content-wrap .slick-prev::after {
+    margin-left: 16px;
+  }
+  .question-content .content-wrap .slick-next {
+    top: 150px;
+    right: 0px;
+  }
   .question-content .content-wrap .slide-dots {
     margin-top: 20px;
   }
