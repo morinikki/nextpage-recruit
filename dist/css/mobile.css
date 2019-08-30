@@ -705,6 +705,9 @@
     bottom: 15px;
     font-size: 1rem;
   }
+  .top-content .business-content {
+    padding-bottom: 0;
+  }
   .top-content .business-content .business-catch {
     padding: 60px 0 0;
   }
